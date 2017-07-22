@@ -37,8 +37,9 @@ $(document).ready(function(){
         colourChange();
     }, 500);
 
-    $(".menuItem").on("mouseover", function(){
-        
+    $(".menuItem").hover(function(){
+        $(this).next(".selection").toggleClass("hover")
+        console.log("hover")
     })
 
 

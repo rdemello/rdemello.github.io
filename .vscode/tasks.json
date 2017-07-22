@@ -4,11 +4,28 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Sass Compile",
-            "type": "shell",
-            "command": "node-sass ../css/main.scss ../css/main.css",
-            "group": "build",
+            "type": "gulp",
+            "task": "sass",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "gulp",
+            "task": "default",
             "problemMatcher": []
         }
     ]
+    // "tasks": [
+    //     {
+    //         "taskName": "Sass Compile",
+    //         "type": "shell",
+    //         "command": "node-sass",
+    //         "group": "build",
+    //         "args": [
+    //             "css/main.scss", "css/main.css"
+    //         ]
+    //     }
+    // ]
 }
