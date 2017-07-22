@@ -23,6 +23,5 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "TODAY";
   }
 }, 1000);
