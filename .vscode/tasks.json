@@ -1,0 +1,14 @@
+// SASS Configuration
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "Sass Compile",
+            "type": "shell",
+            "command": "node-sass ../css/main.scss ../css/main.css",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
