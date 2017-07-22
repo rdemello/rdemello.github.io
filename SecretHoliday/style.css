@@ -34,8 +34,7 @@ body{
 }
 
 .main{
-    /* font-family: sans-serif; */
-    margin:0px 0px 10px 0px;
+    margin:0px;
 }
 
 .sub{
@@ -46,8 +45,20 @@ body{
 }
 
  .timer{
-     margin:0px;
-     color:#aaa
+     margin:0px 2px 0px 0px;
+     color:#ddd;
+     font-size: 25px;
+     width:23px;
+     display:inline-block;
+     text-align: right;
+} 
+
+ .unit{
+     margin:0px 5px 0px 0px;
+     color:#aaa;
+     font-size:16px;
+     display:inline-block;
+     text-align: right;
 } 
 
 .checkList{
