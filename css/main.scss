@@ -1,53 +1,91 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
-
-
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+body{
+    width:100%;
+    height:100%;
+    @extend .trim;
+    background-color: #e1ddda;
+    font-family: 'Monda', serif;
+    color:#333;
 }
 
+.trim{
+    margin:0px;
+    padding:0px;
+}
 
+@mixin header-font($weight,$size,$color){
+    font-weight:$weight;
+    font-size:$size;
+    color:$color;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.menu{
+    margin:50px;
+    padding:0px;
+    width:180px;
+}
+
+.headerWrap{
+    padding:0px;
+    width:160px;
+    height:160px;
+    position:relative;
+    vertical-align:top;
+}
+
+.titleHeader{
+    @include header-font(800,17px,#ddd);
+    width:140px;
+    height:30px;
+    top:0px;
+    padding:5px 10px;
+    background-color: #e55;
+    position:relative;
+    text-align:center;
+}
+
+.pixelGrid{
+    @extend .trim;
+    top:0;
+    position:relative;
+}
+
+.pixelCol{
+    height:60px;
+    width:20px;
+    @extend .trim;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.pixel{
+    width:20px;
+    height:20px;
+    @extend .trim;
+    background-color:#e55;
+    transition: 2s all;
+}
+
+.selection{
+    position:relative;
+    margin:5px 0px 0px 0px;
+    background-color:#e88;
+    display:inline-block;
+}
+
+.menuItem{
+    @include header-font(800,17px ,#ddd );
+    width:140px;
+    height:30px;
+    padding:15px 10px;
+    margin:5px 0px 0px 0px;
+    background-color:#e55;
+    transition: .5s all;
+    display:inline-block;
+    position:relative;
+}
+
+.menuItem:hover{
+    background-color:#e76;
+    transition: .5s all;
+    cursor:pointer;
+}
