@@ -35,6 +35,7 @@ body{
     padding:0px;
     margin-left:5%;
     width:20%;
+    max-width:230px;
     min-width: 160px;
     position: absolute;
     display:inline-block;
@@ -126,6 +127,20 @@ body{
     height:230px;
     width:100%;
     padding:10px;
+    vertical-align: top;
     margin-bottom:10px;
     background-color: #fff;
+}
+
+.image{
+    height:210px;
+    width:50%;
+    margin:10px;
+    background-color: #e55;
+    display:inline-block;
+}
+
+.tileContent{
+    display:inline-block;
+    vertical-align: top;
 }
