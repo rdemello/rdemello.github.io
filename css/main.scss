@@ -1,10 +1,23 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.alignment{
+    vertical-align: top;
+    display:inline-block;
+}
+
 body{
     width:100%;
+    min-width:500px;
     height:100%;
     @extend .trim;
     background-color: #e1ddda;
     font-family: 'Monda', serif;
     color:#333;
+}
+
+h3{
+    margin:0px;
 }
 
 .wrap{
@@ -15,19 +28,6 @@ body{
 .trim{
     margin:0px;
     padding:0px;
-}
-
-@mixin header-font($weight,$size,$color){
-    font-weight:$weight;
-    font-size:$size;
-    color:$color;
-}
-
-@mixin transition($value){
-    -webkit-transition: $value all;
-    -moz-transition: $value all;
-    -o-transition: $value all;
-    transition: $value all;
 }
 
 @media screen and (min-width: 720px){
@@ -107,8 +107,7 @@ body{
     height:60px;
     width:20px;
     @extend .trim;
-    display:inline-block;
-    vertical-align: top;
+    @extend .alignment;
 }
 
 .pixel{
@@ -134,6 +133,7 @@ body{
 
 .menuItem{
     @include header-font(800,17px ,#eee );
+    @extend .alignment;
     width:49%;
     height:30px;
     padding:5px 0px;
@@ -141,7 +141,6 @@ body{
     margin:5px 0px 5px 0px;
     background-color:#e55;
     transition: .5s all;
-    display:inline-block;
     position:relative;
 }
 
@@ -167,14 +166,15 @@ body{
 }
 
 .image{
-    height:210px;
-    width:50%;
-    margin:10px;
+    height:230px;
+    margin-left:230px;
     background-color: #e55;
-    display:inline-block;
+    display:block;
 }
 
 .tileContent{
-    display:inline-block;
-    vertical-align: top;
+    width:200px;
+    padding:15px;
+    position:absolute;
+    @extend .alignment;
 }
