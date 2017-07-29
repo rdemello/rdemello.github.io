@@ -91,6 +91,7 @@ h3{
     margin-left:0%;
     height:auto;
     display: inline-block;
+    background-color: #fff;
     vertical-align: top;
 }
 
@@ -200,4 +201,14 @@ h3{
 .description{
     margin-top:20px;
     font-size:0.9em;
+}
+
+
+
+.workContent{
+    background-color: #fff;
+}
+
+.profilePic{
+    border-radius: 50%;
 }
