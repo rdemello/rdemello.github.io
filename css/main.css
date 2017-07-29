@@ -6,28 +6,54 @@ body {
   color: #333; }
 
 .wrap {
-  width: 90%;
-  margin: 5% 0%;
-  padding: 0px; }
+  margin: 0px 0px;
+  padding: 20px 20px; }
 
 .trim, body, .pixelGrid, .pixelCol, .pixel {
   margin: 0px;
   padding: 0px; }
 
+@media screen and (min-width: 720px) {
+  .menu {
+    width: 20% !important;
+    margin-left: 5% !important;
+    position: absolute !important;
+    max-width: 230px; }
+  .menuItem {
+    width: 120px;
+    height: 30px;
+    padding: 15px 10px;
+    margin: 0px 0px 0px 0px;
+    background-color: #e55;
+    text-align: left; }
+  .content {
+    margin-left: 25% !important;
+    width: 75% !important; }
+  .headerWrap {
+    position: absolute;
+    display: block; } }
+
 .menu {
   padding: 0px;
-  margin-left: 5%;
-  width: 20%;
-  max-width: 230px;
+  margin: 5px 0px;
   min-width: 160px;
-  position: absolute;
-  display: inline-block; }
+  position: relative;
+  display: block; }
+
+.content {
+  width: 100%;
+  padding: 0px 0px;
+  margin-left: 0%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top; }
 
 .headerWrap {
   padding: 0px;
+  margin: 0px auto;
   width: 160px;
   height: 160px;
-  position: relative;
+  display: block;
   vertical-align: top; }
 
 .titleHeader {
@@ -79,34 +105,31 @@ body {
   font-weight: 800;
   font-size: 17px;
   color: #eee;
-  width: 120px;
+  width: 49%;
   height: 30px;
-  padding: 15px 10px;
-  margin: 5px 0px 0px 0px;
+  padding: 5px 0px;
+  text-align: center;
+  margin: 5px 0px 5px 0px;
   background-color: #e55;
   transition: .5s all;
   display: inline-block;
   position: relative; }
+
+.GIT {
+  margin-left: 2%; }
 
 .menuItem:hover {
   background-color: #e76;
   transition: .5s all;
   cursor: pointer; }
 
-.content {
-  width: 75%;
-  padding: 0px 20px;
-  margin-left: 25%;
-  height: auto;
-  display: inline-block;
-  vertical-align: top; }
-
 .tile {
   width: 100%;
   height: 230px;
   width: 100%;
-  padding: 10px;
+  padding: 0px;
   vertical-align: top;
+  margin: 0px 0px 10px 0px;
   margin-bottom: 10px;
   background-color: #fff; }
 
