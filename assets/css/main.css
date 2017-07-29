@@ -4,7 +4,6 @@
 
 body {
   width: 100%;
-  min-width: 500px;
   height: 100%;
   background-color: #e1ddda;
   font-family: 'Monda', serif;
@@ -21,25 +20,37 @@ h3 {
   margin: 0px;
   padding: 0px; }
 
-@media screen and (min-width: 720px) {
-  .menu {
-    width: 20% !important;
-    margin-left: 5% !important;
-    position: absolute !important;
-    max-width: 230px; }
-  .menuItem {
-    width: 120px;
-    height: 30px;
-    padding: 15px 10px;
-    margin: 0px 0px 0px 0px;
-    background-color: #e55;
-    text-align: left; }
-  .content {
-    margin-left: 25% !important;
-    width: 75% !important; }
-  .headerWrap {
+@media only screen and (min-width: 720px) {
+  .wrap {
+    width: 90%;
+    padding: 0%;
+    margin: 5%; }
+    .wrap .menu {
+      width: 160px;
+      margin: 0px;
+      position: absolute;
+      display: block; }
+      .wrap .menu .menuItem {
+        width: 130px;
+        height: 30px;
+        padding: 15px;
+        margin: 0px 0px 0px 0px;
+        border-top: 3px solid #e1ddda;
+        background-color: #e55;
+        text-align: left; }
+      .wrap .menu .menuItem:hover {
+        background-color: #e76;
+        transition: .5s all; }
+    .wrap .content {
+      margin-left: 180px;
+      display: block;
+      width: auto; }
+  .menuWrap {
     position: absolute;
-    display: block; } }
+    display: block; }
+    .menuWrap .headerWrap {
+      width: auto;
+      margin: 0px; } }
 
 .menu {
   padding: 0px;
@@ -51,16 +62,22 @@ h3 {
 .content {
   width: 100%;
   padding: 0px 0px;
+  margin-top: 20px;
   margin-left: 0%;
   height: auto;
   display: inline-block;
   vertical-align: top; }
 
 .headerWrap {
-  padding: 0px;
-  margin: 0px auto;
   width: 160px;
   height: 160px;
+  margin: 0px auto; }
+
+.menuWrap {
+  padding: 0px;
+  margin: 0px auto;
+  width: 100%;
+  height: 200px;
   display: block;
   vertical-align: top; }
 
@@ -118,15 +135,11 @@ h3 {
   margin: 5px 0px 5px 0px;
   background-color: #e55;
   transition: .5s all;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .GIT {
   margin-left: 2%; }
-
-.menuItem:hover {
-  background-color: #e76;
-  transition: .5s all;
-  cursor: pointer; }
 
 .tile {
   width: 100%;
@@ -148,3 +161,7 @@ h3 {
   width: 200px;
   padding: 15px;
   position: absolute; }
+
+.description {
+  margin-top: 20px;
+  font-size: 0.9em; }

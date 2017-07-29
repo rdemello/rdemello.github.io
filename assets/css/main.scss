@@ -30,28 +30,46 @@ h3{
     padding:0px;
 }
 
-@media screen and (min-width: 720px){
-    .menu{
-        width:20% !important;
-        margin-left:5% !important;
-        position:absolute !important;
-        max-width:230px;
-    }
+@media only screen and (min-width: 720px){
 
-    .menuItem{
-        width:120px;
-        height:30px;
-        padding:15px 10px;
-        margin:0px 0px 0px 0px;
-        background-color:#e55;
-        text-align: left;
-    }
-    .content{
-        margin-left:25% !important;
-        width:75% !important;
-    }
+    .wrap{
+        width:90%;
+        padding:0%;
+        margin:5%;
+        .menu{
+            width:160px;
+            margin:0px;
+            position:absolute;
+            display:block;
 
-    .headerWrap{
+            .menuItem{
+                width:130px;
+                height:30px;
+                padding:15px;
+                margin:0px 0px 0px 0px;
+                border-top:3px solid #e1ddda;
+                background-color:#e55;
+                text-align: left;
+            }
+
+            .menuItem:hover{
+                background-color:#e76;
+                transition: .5s all;
+            }
+        }
+        .content{
+            margin-left:180px;
+            display:block;
+            width:auto;
+        }
+    }
+    .menuWrap{
+
+        .headerWrap{
+            width:auto;
+            margin:0px;
+        }
+
         position:absolute;
         display:block;
     }
@@ -61,8 +79,6 @@ h3{
 .menu{
     padding:0px;
     margin:5px 0px;
-    // width:100%;
-    // max-width:230px;
     min-width: 160px;
     position: relative;
     display:block;
@@ -71,6 +87,7 @@ h3{
 .content{
     width:100%;
     padding:0px 0px;
+    margin-top:20px;
     margin-left:0%;
     height:auto;
     display: inline-block;
@@ -78,10 +95,16 @@ h3{
 }
 
 .headerWrap{
-    padding:0px;
-    margin:0px auto;
     width:160px;
     height:160px;
+    margin:0px auto;
+}
+
+.menuWrap{
+    padding:0px;
+    margin:0px auto;
+    width:100%;
+    height:200px;
     display:block;
     vertical-align:top;
 }
@@ -142,16 +165,11 @@ h3{
     background-color:#e55;
     transition: .5s all;
     position:relative;
+    cursor:pointer;
 }
 
 .GIT{
     margin-left:2%;
-}
-
-.menuItem:hover{
-    background-color:#e76;
-    transition: .5s all;
-    cursor:pointer;
 }
 
 .tile{
@@ -177,4 +195,9 @@ h3{
     padding:15px;
     position:absolute;
     @extend .alignment;
+}
+
+.description{
+    margin-top:20px;
+    font-size:0.9em;
 }
