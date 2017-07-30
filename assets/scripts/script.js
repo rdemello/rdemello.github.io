@@ -39,7 +39,6 @@ $(document).ready(function(){
 
     $(".menuItem").hover(function(){
         $(this).next(".selection").toggleClass("hover")
-        console.log("hover")
     })
 
 

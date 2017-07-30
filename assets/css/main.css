@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+  color: #333; }
+
 .alignment, .pixelCol, .menuItem, .tileContent {
   vertical-align: top;
   display: inline-block; }
@@ -14,13 +18,16 @@ h3 {
 
 .wrap {
   margin: 0px 0px;
-  padding: 20px 20px; }
+  padding: 0px; }
 
 .trim, body, .pixelGrid, .pixelCol, .pixel {
   margin: 0px;
   padding: 0px; }
 
 @media only screen and (min-width: 720px) {
+  .project.wrap {
+    margin-right: 0%;
+    width: 95%; }
   .wrap {
     width: 90%;
     padding: 0%;
@@ -35,8 +42,10 @@ h3 {
         height: 30px;
         padding: 15px;
         margin: 0px 0px 0px 0px;
+        color: #333;
         border-top: 3px solid #e1ddda;
         background-color: #e55;
+        color: #eee;
         text-align: left; }
       .wrap .menu .menuItem:hover {
         background-color: #e76;
@@ -48,17 +57,19 @@ h3 {
       .wrap .content .aboutMe {
         text-align: left;
         margin: 50px; }
-  .menuWrap {
-    position: absolute;
-    display: block; }
-    .menuWrap .headerWrap {
-      width: auto;
-      margin: 0px; } }
+    .wrap .menuWrap {
+      margin: 0px;
+      position: absolute;
+      display: block; }
+      .wrap .menuWrap .headerWrap {
+        width: auto;
+        margin: 0px; } }
 
 .menu {
   padding: 0px;
   margin: 5px 0px;
   min-width: 160px;
+  text-align: center;
   position: relative;
   display: block; }
 
@@ -74,12 +85,13 @@ h3 {
 .headerWrap {
   width: 160px;
   height: 160px;
-  margin: 0px auto; }
+  margin: 20px auto; }
 
 .menuWrap {
   padding: 0px;
-  margin: 0px auto;
-  width: 100%;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  width: 70%;
   height: 200px;
   display: block;
   vertical-align: top; }
@@ -130,13 +142,12 @@ h3 {
 .menuItem {
   font-weight: 800;
   font-size: 17px;
-  color: #eee;
-  width: 49%;
+  color: #333;
+  width: 30%;
   height: 30px;
   padding: 5px 0px;
   text-align: center;
   margin: 5px 0px 5px 0px;
-  background-color: #e55;
   transition: .5s all;
   position: relative;
   cursor: pointer; }
@@ -157,6 +168,8 @@ h3 {
 .image {
   height: 230px;
   margin-left: 230px;
+  background-position: 50% 50%;
+  background-size: cover;
   background-color: #e55;
   display: block; }
 
@@ -179,3 +192,48 @@ h3 {
   border-radius: 50%;
   width: 250px;
   margin: 50px auto; }
+
+.headerPage {
+  color: #ddd;
+  min-height: 270px;
+  height: auto;
+  padding: 10px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #e55;
+  text-align: center;
+  display: block; }
+  .headerPage p {
+    width: 70%;
+    margin: 10px auto 20px auto;
+    font-size: 0.8em;
+    text-align: center; }
+  .headerPage .description {
+    color: #ddd; }
+  .headerPage .disclaimer {
+    color: #aaa;
+    font-style: italic; }
+
+.workDivision {
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #eee; }
+  .workDivision h1 {
+    color: #333;
+    margin: 10px 20px 20px 20px; }
+  .workDivision .description {
+    color: #333;
+    margin: 10px 20px 20px 20px;
+    font-size: 0.8em; }
+
+@media only screen and (min-width: 720px) {
+  .workContent .workDivision {
+    text-align: left; }
+    .workContent .workDivision h1 {
+      margin: 20px auto 20px auto;
+      width: 70%; }
+    .workContent .workDivision .description {
+      font-size: 1em;
+      width: 70%;
+      margin: 10px auto 20px auto; } }
