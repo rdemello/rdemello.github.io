@@ -75,8 +75,9 @@ h3{
             width:auto;
 
             .aboutMe{
-                text-align: left;
-                margin:50px;
+                text-align: center;
+                width:60%;
+                margin:10px auto;
             }
         }
 
@@ -179,7 +180,7 @@ h3{
 .menuItem{
     @include header-font(800,17px ,#333 );
     @extend .alignment;
-    width:30%;
+    width:40%;
     height:30px;
     padding:5px 0px;
     text-align: center;
@@ -210,7 +211,7 @@ h3{
     margin-left:230px;
     background-position: 50% 50%;
     background-size: cover;
-    background-color: #e55;
+    background-color: #e1ddda;
     display:block;
 }
 
@@ -234,6 +235,7 @@ h3{
 
 .aboutMe{
     text-align: center;
+    margin:0px 50px;
 }
 
 .profilePic{
@@ -273,19 +275,30 @@ h3{
     }
 }
 
+.myRole{
+    background-color: #232323;
+    color: #ddd;
+}
+
 .workDivision{
+    background-color:#eee;
+    color:#333;
+}
+
+.division{
     height:auto;
-    padding:10px;
+    padding:10px 10px 20px 10px;
     text-align: center;
-    background-color: #eee;
+
+    ul{
+        text-align: left;
+    }
 
     h1{
-        color:#333;
         margin: 10px 20px 20px 20px;
     }
 
     .description{
-        color:#333;
         margin:10px 20px 20px 20px;
         font-size: 0.8em;
         
@@ -294,7 +307,7 @@ h3{
 
 @media only screen and (min-width: 720px){
     .workContent{
-        .workDivision{
+        .division{
             text-align: left;
             h1{
                 margin:20px auto 20px auto;
@@ -306,5 +319,11 @@ h3{
                 margin:10px auto 20px auto;
             }
         }
+
     }
+}
+
+.epdGraph{
+    background-color: #fff;
+    padding:20px 15%;
 }
