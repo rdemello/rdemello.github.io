@@ -11,6 +11,7 @@ body{
     background-color: #e55;
      min-height: 100%; 
     font-family: 'Playfair Display SC', serif;
+     position:fixed;
     background: url("dontBeNosey.jpg")  no-repeat center center fixed !important;
     background-size: cover !important;
     -webkit-background-size: cover !important;
