@@ -11,17 +11,18 @@ body{
     background-color: #e55;
     min-height: 100%; 
     font-family: 'Playfair Display SC', serif;
- 
-}
-
-.image{
-    padding:60px 0px 120px 0px;
-         position:fixed;
+    position:fixed;
     background: url("dontBeNosey.jpg")  no-repeat center center fixed !important;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
+ 
+}
+
+.image{
+    padding:60px 0px 120px 0px;
+         
 }
 
 .header{
