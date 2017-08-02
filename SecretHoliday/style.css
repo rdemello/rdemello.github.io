@@ -19,6 +19,7 @@ body{
     width:100%;
     margin:0px auto;
     position:absolute;
+    padding-bottom:100px;
 }
 
 .image{
@@ -53,6 +54,7 @@ body{
     font-weight: 800;
     font-size:70px;
     margin:0px;
+    
 }
 
  .timer{
