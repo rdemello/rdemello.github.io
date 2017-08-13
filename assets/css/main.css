@@ -36,7 +36,7 @@ h3 {
       opacity: 0;
       display: inline-block;
       position: fixed;
-      color: #e1ddda;
+      color: #fff;
       background-color: #e55;
       z-index: 300;
       transition: .2s all;
