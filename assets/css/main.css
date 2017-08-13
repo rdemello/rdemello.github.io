@@ -251,6 +251,8 @@ h3 {
     text-align: left; }
   .division h1 {
     margin: 10px 20px 20px 20px; }
+  .division h2 {
+    margin: 0px; }
   .division .description {
     margin: 10px 20px 20px 20px;
     font-size: 0.8em; }
@@ -260,6 +262,9 @@ h3 {
     text-align: left; }
     .workContent .division h1 {
       margin: 20px auto 20px auto;
+      width: 70%; }
+    .workContent .division h2 {
+      margin: 0px auto;
       width: 70%; }
     .workContent .division .description {
       font-size: 1em;
