@@ -32,6 +32,19 @@ h3 {
     width: 90%;
     padding: 0%;
     margin: 5%; }
+    .wrap .tracker {
+      opacity: 0;
+      display: inline-block;
+      position: fixed;
+      color: #e1ddda;
+      background-color: #e55;
+      z-index: 300;
+      transition: .2s all;
+      padding: 10px;
+      width: 140px; }
+      .wrap .tracker h1 {
+        font-size: 1.5em;
+        margin: 0px; }
     .wrap .menu {
       width: 160px;
       margin: 0px;
@@ -73,6 +86,9 @@ h3 {
   text-align: center;
   position: relative;
   display: block; }
+
+.tracker {
+  display: none; }
 
 .content {
   width: 100%;
@@ -216,9 +232,12 @@ h3 {
     color: #aaa;
     font-style: italic; }
 
-.myRole {
+.workDivisionDark, .myRole {
   background-color: #232323;
   color: #ddd; }
+
+.center {
+  text-align: center !important; }
 
 .workDivision {
   background-color: #eee;
@@ -250,3 +269,39 @@ h3 {
 .epdGraph {
   background-color: #fff;
   padding: 20px 15%; }
+
+.potImage {
+  width: 350px;
+  height: 700px;
+  display: inline-block; }
+
+.potImage .base {
+  z-index: 2;
+  position: absolute;
+  margin-right: 200px;
+  opacity: 1;
+  transition: 1s all; }
+
+.potImage .soil {
+  margin-top: 415px; }
+
+.potImage .carbon {
+  margin-top: 342px; }
+
+.potImage .pot {
+  margin-top: 325px; }
+
+.potImage .plant {
+  margin-top: 32px; }
+
+.overlays {
+  opacity: 0.1;
+  z-index: 3;
+  position: absolute;
+  transition: 1s all; }
+
+.potText h2 {
+  margin-bottom: 0px; }
+
+.potText p {
+  margin-top: 5px; }
