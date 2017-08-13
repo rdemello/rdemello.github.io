@@ -8,6 +8,24 @@ var colours = [
     "#e77"
 ]
 
+var selectedColours = [];
+
+function color(r,g,b){
+    selectedColours =[
+        'rgb('+r+','+g+','+b+')',
+        'rgb('+r+','+parseInt(g+17)+','+b+')',
+        'rgb('+r+','+g+','+parseInt(b+17)+')',
+        'rgb('+r+','+parseInt(g+17)+','+parseInt(b+17)+')',
+        'rgb('+r+','+parseInt(g+17)+','+parseInt(b+34)+')',
+        'rgb('+r+','+parseInt(g+34)+','+parseInt(b+17)+')',
+        'rgb('+r+','+parseInt(g+34)+','+parseInt(b+34)+')'
+    ];
+}
+
+function setColor(r,g,b){
+    $('.titleHeader,.pixel,.tracker').css("background-color",'rgb('+r+','+g+','+b+')');
+}
+
 function createGrid(x, y){
     for(i=0; i<x; i++){
         var newPixelCol = document.createElement("div")
@@ -24,18 +42,13 @@ function createGrid(x, y){
 function colourChange(){
     $('.pixel').each(function(){
         if(Math.floor(Math.random()*10)>7){
-            $(this).css("background-color", colours[Math.floor(Math.random() * 7)]);
+            $(this).css("background-color", selectedColours[Math.floor(Math.random() * 7)]);
         }
     })
-
 }
 
 $(document).ready(function(){
     createGrid(8,8)
-    colourChange();
-    window.setInterval(function(){
-        colourChange();
-    }, 500);
 
     $(".menuItem").hover(function(){
         $(this).next(".selection").toggleClass("hover")

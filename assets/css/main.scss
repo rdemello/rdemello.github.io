@@ -77,13 +77,14 @@ h3{
                 margin:0px 0px 0px 0px;
                 color:#333;
                 border-top:3px solid #e1ddda;
-                background-color:#e55;
+                background-color:#333;
+                transition: .5s all;
                 color:#eee;
                 text-align: left;
             }
 
             .menuItem:hover{
-                background-color:#e76;
+                background-color:#555;
                 transition: .5s all;
             }
         }
@@ -207,7 +208,7 @@ h3{
     padding:5px 0px;
     text-align: center;
     margin:5px 0px 5px 0px;
-    // background-color:#e55;
+    background-color:#e1ddda;
     transition: .5s all;
     position:relative;
     cursor:pointer;
@@ -246,6 +247,7 @@ h3{
 
 .description{
     margin-top:20px;
+    position:relative;
     font-size:0.9em;
 }
 
@@ -270,7 +272,7 @@ h3{
 
 .headerPage{
     color:#ddd;
-    min-height:270px;
+    min-height:350px;
     height:auto;
     padding:10px;
     background-position: 50% 50%;
@@ -282,7 +284,7 @@ h3{
     p{
         width:70%;
         margin:10px auto 20px auto;
-        font-size: 0.8em;
+        font-size: 1em;
         text-align: center;
     }
 
@@ -362,6 +364,19 @@ h3{
 .epdGraph{
     background-color: #fff;
     padding:20px 15%;
+}
+
+.plus{
+    color:#2e8b57;
+    font-weight: 600;
+    font-size:1.2em;
+}
+
+.minus{
+    color:#b22222;
+    font-weight: 600;
+    font-size: 1.2em;
+    max-height:10px;
 }
 
 // BEO
