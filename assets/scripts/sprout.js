@@ -9,7 +9,7 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
     setColor(39,130,62)
-    color(39, 130, 62);
+    color(39, 130, 62,10);
     
     colourChange();
     window.setInterval(function(){

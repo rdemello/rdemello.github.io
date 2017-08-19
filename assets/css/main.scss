@@ -74,17 +74,28 @@ h3{
                 width:130px;
                 height:30px;
                 padding:15px;
-                margin:0px 0px 0px 0px;
-                color:#333;
-                border-top:3px solid #e1ddda;
-                background-color:#333;
+                margin:3px 0px 0px 0px;
+                
+                // border-top:3px solid #e1ddda;
+                
                 transition: .5s all;
                 color:#eee;
                 text-align: left;
             }
 
+            .menuItem.dark{
+                color:#fff;
+                background-color:#333;
+            }
+
+            .menuItem.white{
+                color: #333;
+                background-color: #fff ;
+            }
+            
             .menuItem:hover{
                 background-color:#555;
+                color:#fff;
                 transition: .5s all;
             }
         }
@@ -166,6 +177,10 @@ h3{
     text-align:center;
 }
 
+.titleHeader.dark{
+    color:#333;
+}
+
 .pixelGrid{
     @extend .trim;
     top:0;
@@ -208,10 +223,14 @@ h3{
     padding:5px 0px;
     text-align: center;
     margin:5px 0px 5px 0px;
-    background-color:#e1ddda;
+    background-color:transparent;
     transition: .5s all;
     position:relative;
     cursor:pointer;
+}
+
+.menuItem.white{
+    color:#fff;
 }
 
 .GIT{
@@ -252,7 +271,7 @@ h3{
 }
 
 .workContent{
-    background-color: #e9e9e9;
+    // background-color: #e9e9e9;
 }
 
 //ABOUT
@@ -387,8 +406,9 @@ h3{
 // }
 
 .potImage{
-    width:350px;
-    height:700px;
+    // width:350px;
+    // height:700px;
+    width:30%;
     display:inline-block;
 }
 

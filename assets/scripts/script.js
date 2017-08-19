@@ -10,15 +10,15 @@ var colours = [
 
 var selectedColours = [];
 
-function color(r,g,b){
+function color(r,g,b,x){
     selectedColours =[
         'rgb('+r+','+g+','+b+')',
-        'rgb('+r+','+parseInt(g+17)+','+b+')',
-        'rgb('+r+','+g+','+parseInt(b+17)+')',
-        'rgb('+r+','+parseInt(g+17)+','+parseInt(b+17)+')',
-        'rgb('+r+','+parseInt(g+17)+','+parseInt(b+34)+')',
-        'rgb('+r+','+parseInt(g+34)+','+parseInt(b+17)+')',
-        'rgb('+r+','+parseInt(g+34)+','+parseInt(b+34)+')'
+        'rgb('+r+','+parseInt(g+x)+','+b+')',
+        'rgb('+r+','+g+','+parseInt(b+x)+')',
+        'rgb('+r+','+parseInt(g+x)+','+parseInt(b+x)+')',
+        'rgb('+r+','+parseInt(g+x)+','+parseInt(b+2*x)+')',
+        'rgb('+r+','+parseInt(g+2*x)+','+parseInt(b+x)+')',
+        'rgb('+r+','+parseInt(g+2*x)+','+parseInt(b+2*x)+')'
     ];
 }
 

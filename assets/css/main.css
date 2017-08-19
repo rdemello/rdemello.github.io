@@ -54,15 +54,19 @@ h3 {
         width: 130px;
         height: 30px;
         padding: 15px;
-        margin: 0px 0px 0px 0px;
-        color: #333;
-        border-top: 3px solid #e1ddda;
-        background-color: #333;
+        margin: 3px 0px 0px 0px;
         transition: .5s all;
         color: #eee;
         text-align: left; }
+      .wrap .menu .menuItem.dark {
+        color: #fff;
+        background-color: #333; }
+      .wrap .menu .menuItem.white {
+        color: #333;
+        background-color: #fff; }
       .wrap .menu .menuItem:hover {
         background-color: #555;
+        color: #fff;
         transition: .5s all; }
     .wrap .content {
       margin-left: 180px;
@@ -126,6 +130,9 @@ h3 {
   position: relative;
   text-align: center; }
 
+.titleHeader.dark {
+  color: #333; }
+
 .pixelGrid {
   top: 0;
   position: relative; }
@@ -166,10 +173,13 @@ h3 {
   padding: 5px 0px;
   text-align: center;
   margin: 5px 0px 5px 0px;
-  background-color: #e1ddda;
+  background-color: transparent;
   transition: .5s all;
   position: relative;
   cursor: pointer; }
+
+.menuItem.white {
+  color: #fff; }
 
 .GIT {
   margin-left: 2%; }
@@ -201,9 +211,6 @@ h3 {
   margin-top: 20px;
   position: relative;
   font-size: 0.9em; }
-
-.workContent {
-  background-color: #e9e9e9; }
 
 .aboutMe {
   text-align: center;
@@ -290,8 +297,7 @@ h3 {
   max-height: 10px; }
 
 .potImage {
-  width: 350px;
-  height: 700px;
+  width: 30%;
   display: inline-block; }
 
 .potImage .base {
