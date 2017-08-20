@@ -3,16 +3,18 @@
 
 <head>
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
-	<meta name="title" content="Project Sprout">
+	<meta name="title" content="Glass Selector">
     <meta name="description" content="Ryan de Mello Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Project Sprout</title>
+	<title>Glass Selector</title>
 	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
 
-	<link rel="shortcut icon" type="image/x-icon" href="../assets/media/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/media/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/lightbox.css">
     <link id="defaultSheet" rel="stylesheet" type="text/css" href="../assets/css/main.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+    
     <script src="../assets/scripts/script.js" type="text/javascript"></script>
     <script src="../assets/scripts/glass.js" type="text/javascript"></script>
 </head>
@@ -68,77 +70,118 @@
             <div class=" division workDivision">
                 <h1>The Starting Point</h1>
                 <p class="description">
-                    Specifying glass into a building is a long and complicated process
+                    Specifying glass into a building is a long and complicated process, and more often than not, non-linear:
                 </p>
             </div>
 
-            <div class="division workDivision"><img src="../assets/media/glass/process.png" style="width:100%;"></div>
+            <div class="division workDivision"><img class="glassProcess"></div>
 
             <div class=" division workDivision">
+                <br><br>
                 <p class="description">
-                    100 EPD's were examined, and the following issues were found:</p>
-                    <ul class="description">
-                        <li>The level of detail and length varied from 6 to 22 pages</li>
-                        <li>There were inconsistencies in the functional unit applied for the calculations e.g. some would have a panel as a unit, others would have 1m<sup>3</sup> of material</li>
-                        <li>There was no visual consistency between EPD’s</li>
-                        <li>There are a number of technical terms and acronyms that are rarely explained</li>
-                    </ul>
-                    <p class="description">Ultimately this meant that the important information wasn't accessible to the designers.
-                    From speaking with architects and the managers on projects, the tasks related to sifting through the 
-                    information would be delegated to a handful of "experts" or not considered.</p>
+                    This also highlights the complexity of the teams that can be involved in this process:
+                </p>
+                <br><br>
+                <div class="stakeholder">
+                    <h2>The Architects</h2>
+                    <p class="description">
+                        They have the vision for the building and
+                        need the glass to fit in with the bigger picture,
+                        relying on renders and mockups to make their
+                        selection
+                    </p>
+                </div>
 
+                <div class="stakeholder">
+                    <h2>Environmental Engineering (EE)</h2>
+                    <p class="description">
+                        EE needs the building to perform in the
+                        required ways, particularly to meet relevant
+                        codes and standards. Their laid out
+                        requirements must be me
+                    </p>
+                </div>
+
+                <div class="stakeholder">
+                    <h2>Specialist Modelling Group (SMG)</h2>
+                    <p class="description">
+                        In complex projects, they work on
+                        parametrically modelling geometry,
+                        and other aspects of design such as
+                        lighting or acoustics
+                    </p>
+                </div>
+
+                <div class="stakeholder">
+                    <h2>Structural Engineering</h2>
+                    <p class="description">
+                        Models the architects designs, adding
+                        structure and analysing to ensure
+                        suitability
+                    </p>
+                </div>
+
+                <div class="stakeholder">
+                    <h2>Construction Review Group (CRG)</h2>
+                    <p class="description">
+                        Reviews the final concept ensuring
+                        the specified design is suitable for
+                        construction
+                    </p>
+                </div>
+
+                <div class="stakeholder">
+                    <h2>Sustainability Group</h2>
+                    <p class="description">
+                        Evaluates the performance of the
+                        project in relation to any standards or
+                        qualifications that it is aiming for
+                    </p>
+                </div>
+
+                <div class="stakeholder">
+                    <h2>Material Research Centre (MRC)</h2>
+                    <p class="description">
+                        Supports the teams in choosing the
+                        correct materials, usually with the
+                        physical samples to evaluate
+                    </p>
+                </div>
+
+                <div class="stakeholder">
+                    <h2>Visualisation</h2>
+                    <p class="description">
+                        Creates all the visuals for the project,
+                        which are presented both internally
+                        and to clients
+                    </p>
+                </div>
+                <br>
+                <p class="description">
+                    Whilst this is a big list of stakeholders, ultimately the architects and environmental engineers have the biggest influence on the decision making.
+                    Their input would then trickle down into the other teams, and so these primary users became the focus.
                 </p>
             </div>
 
-            <img src="../assets/media/sprout/epd.JPG" style="width:100%"
-            
-            ><div class="division workDivisionDark"><br>
-                <h1 style="text-align:center">How can they be used?</h1><br>
+
+            <div class="division workDivisionDark"><br>
+                <h1 style="text-align:center">User Journeys</h1><br>
             </div>
         
             <div class="division workDivision">
-                <h1>The Existing Tools</h1>
-                <p class="description">
-                    EPD's form the datasets for tools that allow the comparisons of designs. They vary from free excel sheets, to fully-fledged software costing thousands of pounds.
-                    <br><br>
-                    These solutions attempt to address the issues, but the uptake is low. From some user trials and direct feedback,
-                    the competition could be categorised into 3 types, with the following pros and cons:
-                </p>
-                <h2>Entry Level</h2>
-                <p style="font-size:0.9em;margin:0px auto;width:80%">ICE Database</p>
-                <p class="description">
-                    <span class="plus">+</span> Information and products are listed simply and clearly<br>
-                    <span class="minus">-</span> Most of the data is research based, resulting in extremely dated information<br>
-                    <span class="minus">-</span> Not all sources are listed, with limited transparency<br>
-                </p>
-                <h2>Mid</h2>
-                <p style="font-size:0.9em;margin:0px auto;width:80%">Athena, One Click LCA, eTool LCD</p>
-                <p class="description">
-                    <span class="plus">+</span>  Builds up calculations from the architectural stand point<br>
-                    <span class="plus">+</span>  Speeds up the process and reduces the technical skills needed<br>
-                    <span class="minus">-</span> Shortcuts taken can result in wildly inaccurate results<br>
-                    <span class="minus">-</span> Locality of data not necessarily relevant<br>
-                </p>
-                <h2>In-Depth</h2>
-                <p style="font-size:0.9em;margin:0px auto;width:80%">GaBi, SimaPro</p>
-                <p class="description">
-                    <span class="plus">+</span>  Has great transparency to see the origins of the data and supply chains<br>
-                    <span class="plus">+</span>  Good levels of details and accuracy, with a lot of freedom to create custom profiles<br>
-                    <span class="minus">-</span> Requires a training course or experience to use properly<br>
-                    <span class="minus">-</span> Targeted at products, not buildings<br>
-                </p>
+                <h1>The Architect:</h1>
+                <a href="../assets/media/glass/architectProcess.png" data-lightbox="image-1" data-title="Architect"><img src="../assets/media/glass/architectProcess.png" style="width:100%;"></a>
+            <br><br>
+                <h1>The Environmental Engineer:</h1>
+                <a href="../assets/media/glass/engineerProcess.png" data-lightbox="image-2" data-title="Engineer"><img src="../assets/media/glass/engineerProcess.png" style="width:100%;"></a>
+
+                <p class="description"></p>
+
             </div>
 
-
-            <div style="text-align:center;" class="epdGraph" ><img src="../assets/media/sprout/competitors.PNG" style="width:100%; max-width:600px;"></div>
            
             <div class="division workDivision">
                 
-                <p class="description">
-                    From these options, the Mid-End options were the most common in industry. 
-                    They had been tailored towards architects, with the input process relating more to a building than a product. 
-                    They also limited their materials data to include only typical architectural materials, reducing the stress when selecting materials.
-                </p>
 
             <!-- </div>
 
@@ -223,9 +266,10 @@
 
             </div>
 
-
+            <img src="../assets/media/glass/endBanner.jpg" style="width:100%">
 
         </div>
 
     </div>
+    <script src="../assets/scripts/lightbox.js" type="text/javascript"></script>
 </body>

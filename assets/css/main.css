@@ -312,6 +312,22 @@ h3 {
   vertical-align: top;
   width: 60%; }
 
+.glassProcess {
+  content: url("../media/glass/process_vertical.png");
+  width: 100%; }
+
+@media screen and (min-width: 1200px) {
+  .glassProcess {
+    content: url("../media/glass/process.png"); }
+  .division .stakeholder {
+    width: 49%;
+    display: inline-block; } }
+
+.stakeholder {
+  width: 100%;
+  vertical-align: top;
+  margin-bottom: 20px; }
+
 .potImage {
   width: 30%;
   display: inline-block; }
