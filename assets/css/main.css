@@ -37,13 +37,17 @@ h3 {
       display: inline-block;
       position: fixed;
       color: #fff;
-      background-color: #e55;
+      background-color: #e1ddda;
       z-index: 300;
       transition: .2s all;
       padding: 10px;
-      width: 140px; }
+      width: 140px;
+      cursor: pointer; }
+      .wrap .tracker p {
+        margin: 0px;
+        font-size: 0.7em; }
       .wrap .tracker h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin: 0px; }
     .wrap .menu {
       width: 160px;
@@ -126,7 +130,7 @@ h3 {
   height: 30px;
   top: 0px;
   padding: 5px 10px;
-  background-color: #e55;
+  background-color: #e1ddda;
   position: relative;
   text-align: center; }
 
@@ -228,7 +232,7 @@ h3 {
   padding: 10px;
   background-position: 50% 50%;
   background-size: cover;
-  background-color: #e55;
+  background-color: #e1ddda;
   text-align: center;
   display: block; }
   .headerPage p {
@@ -305,7 +309,8 @@ h3 {
 
 .kpiInfo {
   display: inline-block;
-  width: 50%; }
+  vertical-align: top;
+  width: 60%; }
 
 .potImage {
   width: 30%;

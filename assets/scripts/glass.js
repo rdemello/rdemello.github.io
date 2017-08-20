@@ -11,8 +11,8 @@ $(document).ready(function(){
     // setColor(39,130,62)
     // color(39, 130, 62,10);
 
-    setColor(127,176,73);
-    color(127,176,73,8)
+    setColor(64,128,187);
+    color(64,128,187,8)
     
     colourChange();
     window.setInterval(function(){

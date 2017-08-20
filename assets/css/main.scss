@@ -1,6 +1,8 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+$bg: #e1ddda;
+
 a{
     text-decoration: none;
     color:#333;
@@ -16,7 +18,7 @@ body{
     // min-width:500px;
     height:100%;
     @extend .trim;
-    background-color: #e1ddda;
+    background-color: $bg;
     font-family: 'Monda', serif;
     color:#333;
 }
@@ -52,14 +54,20 @@ h3{
             display: inline-block;
             position:fixed;
             color:#fff;
-            background-color: #e55;
+            background-color: $bg;
             z-index:300;
             transition: .2s all;
             padding:10px;
             width:140px;
+            cursor:pointer;
+
+            p{
+                margin:0px;
+                font-size: 0.7em;
+            }
 
             h1{
-                font-size: 1.5em;
+                font-size: 1.2em;
                 margin:0px;
             }
         }
@@ -172,7 +180,7 @@ h3{
     height:30px;
     top:0px;
     padding:5px 10px;
-    background-color: #e55;
+    background-color: $bg;
     position:relative;
     text-align:center;
 }
@@ -296,7 +304,7 @@ h3{
     padding:10px;
     background-position: 50% 50%;
     background-size: cover;
-    background-color: #e55;
+    background-color: $bg;
     text-align: center;
     display:block;
 
@@ -407,7 +415,8 @@ h3{
 
 .kpiInfo{
     display: inline-block;
-    width:50%;
+    vertical-align: top;
+    width:60%;
 }
 
 // BEO
