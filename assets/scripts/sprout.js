@@ -8,11 +8,15 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
-    setColor(39,130,62)
+    // setColor(39,130,62)
     color(39, 130, 62,10);
+
+    setColor(127,176,73);
+    color(127,176,73,8)
     
     colourChange();
     window.setInterval(function(){
         colourChange();
     }, 500);
+
 })

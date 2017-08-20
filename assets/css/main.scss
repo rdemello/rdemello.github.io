@@ -291,7 +291,7 @@ h3{
 
 .headerPage{
     color:#ddd;
-    min-height:350px;
+    min-height:250px;
     height:auto;
     padding:10px;
     background-position: 50% 50%;
@@ -314,13 +314,14 @@ h3{
     .disclaimer{
         color:#aaa;
         font-style: italic;
-        
+        font-size:0.8em;
     }
 }
 
 .workDivisionDark, .myRole{
     background-color: #232323;
     color: #ddd;
+    
 }
 
 .center{
@@ -328,7 +329,7 @@ h3{
 }
 
 .workDivision{
-    background-color:#eee;
+    background-color:#fff;
     color:#333;
 }
 
@@ -362,17 +363,17 @@ h3{
             text-align: left;
             h1{
                 margin:20px auto 20px auto;
-                width:70%;
+                width:80%;
             }
 
             h2{
                 margin:0px auto;
-                width:70%;
+                width:80%;
             }
 
             .description{
                 font-size:1em;
-                width:70%;
+                width:80%;
                 margin:10px auto 20px auto;
             }
         }
@@ -396,6 +397,17 @@ h3{
     font-weight: 600;
     font-size: 1.2em;
     max-height:10px;
+}
+.kpi{
+    width:100%;
+    display: inline-block;
+    margin:0px;
+    vertical-align: middle;
+}
+
+.kpiInfo{
+    display: inline-block;
+    width:50%;
 }
 
 // BEO

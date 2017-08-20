@@ -223,7 +223,7 @@ h3 {
 
 .headerPage {
   color: #ddd;
-  min-height: 350px;
+  min-height: 250px;
   height: auto;
   padding: 10px;
   background-position: 50% 50%;
@@ -240,7 +240,8 @@ h3 {
     color: #ddd; }
   .headerPage .disclaimer {
     color: #aaa;
-    font-style: italic; }
+    font-style: italic;
+    font-size: 0.8em; }
 
 .workDivisionDark, .myRole {
   background-color: #232323;
@@ -250,7 +251,7 @@ h3 {
   text-align: center !important; }
 
 .workDivision {
-  background-color: #eee;
+  background-color: #fff;
   color: #333; }
 
 .division {
@@ -272,13 +273,13 @@ h3 {
     text-align: left; }
     .workContent .division h1 {
       margin: 20px auto 20px auto;
-      width: 70%; }
+      width: 80%; }
     .workContent .division h2 {
       margin: 0px auto;
-      width: 70%; }
+      width: 80%; }
     .workContent .division .description {
       font-size: 1em;
-      width: 70%;
+      width: 80%;
       margin: 10px auto 20px auto; } }
 
 .epdGraph {
@@ -295,6 +296,16 @@ h3 {
   font-weight: 600;
   font-size: 1.2em;
   max-height: 10px; }
+
+.kpi {
+  width: 100%;
+  display: inline-block;
+  margin: 0px;
+  vertical-align: middle; }
+
+.kpiInfo {
+  display: inline-block;
+  width: 50%; }
 
 .potImage {
   width: 30%;
