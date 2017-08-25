@@ -1,0 +1,374 @@
+body{
+	font-family: "akzidenz-grotesk",sans-serif;
+	color: #333;
+	font-size:15px;
+	margin:0px;
+    padding:0;
+}
+
+/* Possibly illegal, don't look here */
+.mapboxgl-ctrl-logo{
+    display: none !important;
+}
+
+
+/* ========== OVERLAY =========== */
+
+.searchBar{
+	z-index:5;
+	position: absolute;
+	top:30px;
+	left:30px;
+	
+}
+
+.search:focus{
+	background-color:#fff;
+	color:#333;
+	
+	border:3px solid #ffc266;
+	outline:none;
+	transition: .5s all;
+}
+
+.search{
+	width:0px;
+	height:20px;
+	padding:10px 20px;
+	background-color: #fff;
+	border:3px solid #ffc266;
+	color:#ffc266;
+	transition: .5s all;
+	/*border-radius:25px;*/
+}
+
+.searchButton{
+	position:absolute;
+	background-color:#ffc266;
+	border:3px solid #ffc266;
+	/*border-radius: 25px;*/
+	font-weight: 500;
+	height:20px;
+	width:20px;
+	padding:5px 10px 15px 10px;
+	top:0px;
+	color:#fff;
+	font-size: 20px;
+	left:0px;
+	cursor: pointer;
+	transition:.5s all;
+}
+
+.searchButton.open{
+	left:227px;
+	transition:.5s all;
+}
+
+.searchButton:hover{
+	transition: .5s all;
+	border:3px solid #333;
+	background-color:#333;
+}
+
+.search.open{
+	width:200px;
+	height:20px;
+	font-weight:600;
+	font-size:18px;
+	transition: .5s all;
+	background-color:#fff;
+	color:#333;
+	border:3px solid #ffc266;
+	transition: .5s all;
+}
+
+.overlay{
+	position:fixed;
+	z-index: 1;
+	margin: 90px 0px 0px 30px;
+	width:300px;
+	max-height:80%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color:#ffc266;
+}
+
+::-webkit-scrollbar {
+	background-color: #333;
+}
+
+.result{
+	min-height:15px;
+	position:relative;
+	right:0px;
+	height:auto;
+	max-width:250px;
+	background: linear-gradient(#ffc266, #ffbb33);
+	font-weight:600;
+	font-size:14px;
+	color:#222;
+	padding:12px;
+	margin-bottom:2px;
+	vertical-align:top;
+	cursor:pointer;
+	transition: .5s all;
+	opacity:1;
+}
+
+.result.hidden{
+	opacity:0;
+	transition: .5s all;
+	right:300px;
+}
+
+.result.selected{
+	background: #333 !important;
+	color:#fff;
+}
+
+.result:hover{
+	background: linear-gradient(#ffad33, #ffad33);
+	transition: .2s all;
+}
+
+
+/* ========== TIMBER INFO ======= */
+
+.timberInfo{
+	width: 300px;
+	height: auto;
+	/*background-color: #333;*/
+	position: fixed;
+	z-index: 2;
+	top:90px;
+	left: 340px;
+	display:inline-block;
+	opacity:1;
+	transition:1s all;
+
+}
+
+.closeIcon{
+	position:absolute;
+	width:10px;
+	left:305px;
+	height: 10px;
+	padding:5px 11px 15px 9px;
+	background-color: #ffc266;
+	color:#fff;
+	cursor:pointer;
+	transition: .5s all;
+}
+
+.closeIcon:hover{
+	transition: .5s all;
+	background-color:#333;
+}
+
+.timberInfo.hidden{
+	opacity:0;
+	transition:1s all;
+	display:none;
+}
+
+.timberTitle{
+	max-height:100px;
+	color:#fff;
+	background-color:#333;
+	/*border-radius:5px 5px 0px 0px;*/
+	font-size:20px;
+	font-weight:600;
+	padding:5%;
+	width:90%;
+	transition:1s all;
+}
+
+.timberSci{
+	max-height:100px;
+	height:auto;
+	color:#333;
+	background-color:#ffc266;
+	font-style: italic;
+	font-size:14px;
+	font-weight:400;
+	padding:3% 5%;
+	width:90%;
+	transition:1s all;
+}
+
+.timberPic{
+	width:300px;
+	height:300px;
+	background-image:url('../media/wood.jpg');
+	background-size: cover;
+}
+
+
+.infoBar{
+	height:40px;
+	width:300px;
+	background-color:#222;
+}
+
+.infoButton{
+	width:98px;
+	height:16px;
+	padding:12px 0px;	
+	margin-right:2px;
+	background-color:#555;
+	display:inline-block;
+	cursor: pointer;
+	transition: .2s all;
+	color:#ddd;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: top;
+}
+
+.infoButton:hover{
+	background-color: #888;
+	transition: .2s all;
+}
+
+.infoButton.active{
+	background-color:#ffc266;
+	color:#333;
+}
+
+.scrollingInfo{
+	width:305px;
+	height:400px;
+}
+
+.scrollingInfo .open{
+	display:inline-block;
+}
+
+.scrollingInfo .closed{
+	display:none;
+}
+
+.technicalData{
+	width:260px;
+	padding:20px;
+	color:#fff;
+	background-color:#333;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align: top;
+	border-radius:0px 0px 5px 5px;
+}
+
+.timberStatus{
+	width:260px;
+	padding:20px;
+	color:#fff;
+	background-color:#333;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align: top;
+	border-radius:0px 0px 5px 5px;
+}
+
+.techTitle{
+	display:block;
+	font-size:14px;
+	font-weight:600;
+}
+
+
+.techInfo{
+	font-weight:400;
+	display:block;
+	margin-bottom:5px;
+	font-size:12px;
+}
+
+
+.graphWrap{
+	width:280px;
+	padding:10px;
+	height:200px;
+	display: inline-block;
+	background-color: #333;
+	vertical-align: top;
+	border-radius:0px 0px 5px 5px;
+	overflow:hidden;
+}
+
+.performanceChart{
+	display:inline-block; 
+	padding:10px;
+	max-width:280px;
+	max-height:180px;
+}
+
+/* ========== BAR =============== */
+
+.footer{
+	width:100%;
+	z-index:100;
+	height:5px;
+	overflow:hidden;
+	top:0px;
+	background-color: #222;
+	transition: 1s all;
+	position:fixed;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+}
+
+.bar{
+	width:520px;
+	height:0px;
+	overflow:hidden;
+	background-color: #222;
+	color:#fff;
+	position:fixed;
+	transition: 1s all;
+}
+
+.logo{
+	height:auto;
+	vertical-align: top;
+	margin-left:20px;
+}
+
+.mail{
+	content:"\2709";
+	position:absolute;
+	font-size:23px;
+	margin:0px;
+	background-color:#222;
+	color:#fff;
+	top:9px;
+	right:15px;
+	cursor:pointer;
+	transition:.5s all;
+	z-index: 1;
+	border-radius:50%;
+	width:24px;
+	height:34px;
+	padding:0px 5px;
+	transition:.3s all;
+}
+
+.mail:hover{
+	background-color:#ddd;
+	color:#333;
+	border-radius:10%;
+	transition:.3s all;
+}
+
+.pgs{
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 600;
+	font-size: 16px;
+	margin-left: 12px;
+	margin-top: 17px;
+	color:#fff;
+}
