@@ -1,0 +1,209 @@
+.alignment, .sizeSelector, .sizeSelector input[type="radio"] + label:after, .results, .allCards, .card, .bigCard, .stonePic, .bigStonePic, .stoneInfo {
+  vertical-align: top;
+  display: inline-block; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ddd;
+  color: #333;
+  margin: 0px;
+  padding: 0px; }
+
+.searchHeader {
+  background-color: #eee;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0px;
+  height: 60px;
+  transition: .5s all;
+  z-index: 1; }
+
+.searchWrapper {
+  padding: 0px 10px;
+  width: 500px;
+  display: inline-block;
+  margin: 0px 0px 0px 5%; }
+
+.searchBar {
+  width: 480px;
+  height: 30px;
+  padding: 12px 20px;
+  background-color: #fff;
+  border: 0px none; }
+
+.searchBar:focus {
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: .5s all; }
+
+.searchButton {
+  position: relative;
+  background-color: #FABE5D;
+  float: right;
+  font-weight: 500;
+  height: 23px;
+  width: 23px;
+  padding: 8px 10px 15px 13px;
+  top: -50px;
+  color: #fff;
+  font-size: 20px;
+  left: 15px;
+  cursor: pointer;
+  transition: .3s all; }
+
+.searchButton:hover {
+  transition: .3s all;
+  background-color: #333; }
+
+.sizeSelector {
+  position: absolute;
+  right: 50px;
+  margin-top: 10px; }
+
+.sizeLabel {
+  font-size: 14px;
+  margin: 10px; }
+
+input[type="radio"] {
+  display: none; }
+
+.sizeSelector input[type="radio"] + label:after {
+  border: 0px none;
+  content: "\00a0";
+  cursor: pointer;
+  margin: 0 10px 0 0; }
+
+.sizeSelector input[type="radio"]:checked + label:after {
+  content: ""; }
+
+.sizeSelector input[type="radio"]:checked + label:after {
+  font-weight: bold; }
+
+.smallbox:checked + label:after {
+  background: #FABE5D;
+  height: 20px;
+  width: 20px;
+  transition: .5s all; }
+
+.smallbox + label:after {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 20px;
+  width: 20px;
+  transition: .5s all; }
+
+.largebox:checked + label:after {
+  background: #FABE5D;
+  height: 40px;
+  width: 40px;
+  transition: .5s all; }
+
+.largebox + label:after {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 40px;
+  width: 40px;
+  transition: .5s all; }
+
+.results {
+  width: 90%;
+  margin: 100px 5%; }
+
+.allCards, .card, .bigCard {
+  height: auto;
+  margin: 10px;
+  background-color: #fff;
+  top: 0px;
+  border-radius: 12px; }
+
+.card {
+  width: 250px;
+  border: 3px solid #ddd;
+  transition: .2s border; }
+
+.card.open {
+  width: 520px; }
+
+.bigCard {
+  width: 350px;
+  border: 3px solid #ddd;
+  transition: .2s border; }
+
+.bigCard.open {
+  width: 725px;
+  height: 650px; }
+
+.bigCard.open, .card.open {
+  border: 3px solid #f7d0a3;
+  transition: .2s border; }
+
+/*.card:hover, .bigCard:hover{
+    border:3px solid #EE7F00;
+    transition: .5s border;
+}*/
+img {
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+  filter: blur(0);
+  image-rendering: pixelated; }
+
+.stonePic {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  min-height: 115px;
+  margin: 0px;
+  cursor: pointer; }
+
+.stonePic.open {
+  height: 350px; }
+
+.bigStonePic {
+  width: 100%;
+  height: 350px;
+  margin: 0px;
+  cursor: pointer; }
+
+.bigStonePic.open {
+  width: 725px;
+  height: 450px; }
+
+.stoneInfo {
+  width: 90%;
+  padding: 10px 5%; }
+
+.dark {
+  color: #ddd;
+  border-radius: 0px 0px 10px 10px;
+  font-weight: bold;
+  background-color: #333; }
+
+.stoneName {
+  font-size: 14px;
+  vertical-align: top; }
+
+.subInfo {
+  font-size: 11px;
+  vertical-align: top; }
+
+.finishes {
+  height: 20px;
+  margin: 0px 0px 1px 0px;
+  /*margin:5px 0px;*/
+  padding: 5px 5%;
+  background-color: #f2f2f2;
+  width: 90%;
+  cursor: pointer; }
+
+.singleFinish {
+  height: 20px;
+  padding: 5px 5%;
+  background-color: #efb97a;
+  width: 90%; }
+
+.finishes:hover {
+  background-color: #f7d0a3; }
+
+.finishes.selected {
+  background-color: #efb97a; }
+
+/*# sourceMappingURL=defaultStyle.css.map */

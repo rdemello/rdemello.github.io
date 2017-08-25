@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en" xmlns:og="http://opengraphprotocol.org/schema/">
+
+<head>
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="title" content="Quarry">
+    <meta name="Author" content="Ryan de Mello">
+	<meta name="description" content="Stone Selector">
+	<title>Quarry</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/common/media/favicon.ico" />
+    <script src="assets/common/js/stoneData.js" type="text/javascript"></script>
+	<link id="defaultSheet" rel="stylesheet" type="text/css" href="assets/common/css/defaultStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="assets/lib/jquery/jquery.js" type="text/javascript"></script>
+    <script src="assets/lib/fuse.js" type="text/javascript"></script>
+    <script src="assets/lib/isotope.js" type="text/javascript"></script>
+	<script src="assets/common/js/mainScript.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="topSection" class="topSection">
+        <div id="searchHeader" class="searchHeader">
+
+            <div class="searchWrapper">
+                <input type="text" class="searchBar" id="query" placeholder="Search..." 
+                ><div class="searchButton">&#128269</div>
+            </div>
+
+            <form class="sizeSelector">
+                <input id="small" name="sizeSelector" class="smallbox" value="small" type="radio" checked ><label for="small"></label>
+				<input id="large" name="sizeSelector" class="largebox" value="large" type="radio"><label for="large"></label>
+            </form>
+
+            <!--<button id="showList">Show List</button>-->
+        </div>
+    </div>
+
+    <div id="bottomSection" class="bottomSection">
+        <!--<div class="list" id="list">Testoijoisdg</div-->
+        
+        <div class="results" id="results">
+        </div>
+    </div>
+</body>

@@ -1,0 +1,11 @@
+@mixin borders($colour){
+     border:3px solid $colour;
+     transition: .2s border;
+}
+
+@mixin selectorSizes($size){
+    height: $size;
+    width: $size;
+	transition: .5s all;
+}
+

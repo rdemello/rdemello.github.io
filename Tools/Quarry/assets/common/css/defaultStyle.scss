@@ -1,0 +1,276 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.alignment{
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ddd;
+    color:#333;
+    margin:0px;
+    padding:0px;
+}
+
+.searchHeader{
+    background-color:#eee;
+    position:fixed;
+    width:100%;
+    padding:20px 0px;
+    height:60px;
+    transition:.5s all;
+    z-index: 1;
+}
+
+.searchWrapper{
+    padding:0px 10px;
+    width:500px;
+    display:inline-block;
+    margin:0px 0px 0px 5%;
+}
+
+.searchBar{
+    width:480px;
+    height:30px;
+    padding:12px 20px;
+    background-color: #fff;
+    border: 0px none;
+}
+
+.searchBar:focus{
+    background-color:#fff;
+    color:#333;
+    outline:none;
+    transition: .5s all;
+}
+
+.searchButton{
+    position:relative;
+    background-color:$primaryColor;
+    // @include borders($primaryColor);
+    float:right;
+    font-weight: 500;
+    height:23px;
+    width:23px;
+    padding:8px 10px 15px 13px;
+    top:-50px;
+    color:#fff;
+    font-size: 20px;
+    left:15px;
+    cursor: pointer;
+    transition:.3s all;
+}
+
+
+.searchButton:hover{
+    transition: .3s all;
+    // @include borders(#333);
+    background-color:#333;
+}
+
+.sizeSelector{
+    position: absolute;
+    right: 50px;
+    margin-top:10px;
+    @extend .alignment;
+}
+
+.sizeLabel{
+    font-size:14px;
+    margin:10px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.sizeSelector input[type="radio"] + label:after{
+	border: 0px none;
+	content: "\00a0";
+    cursor:pointer;
+	margin: 0 10px 0 0;
+    @extend .alignment;
+}
+
+.sizeSelector input[type="radio"]:checked + label:after {
+	content: "";
+}
+
+.sizeSelector input[type="radio"]:checked + label:after {
+ 	font-weight: bold;
+}
+
+
+.smallbox:checked + label:after{
+	background: $primaryColor;
+    @include selectorSizes($selectorSmall);
+}
+
+.smallbox + label:after{
+	background-color:$lightGrey;
+    @include selectorSizes($selectorSmall);
+} 
+
+.largebox:checked + label:after{
+	background: $primaryColor;
+    @include selectorSizes($selectorBig);
+}
+
+.largebox + label:after{
+	background-color:$lightGrey;
+    @include selectorSizes($selectorBig);
+} 
+
+.results{
+    width:90%;
+    margin:100px 5%;
+    @extend .alignment;
+}
+
+// .results.split{
+//     width:60%;
+//     min-width:800px;
+//     margin:30px;
+// }
+
+// .list{
+//     width:0%;
+//     height:100%;
+//     margin:0px 0%;
+//     overflow:hidden;
+//     vertical-align: top;
+//     display:inline-block;
+// }
+
+// .list.open{
+//     width:400px;
+//     margin:30px;
+
+// }
+
+.allCards{
+    height:auto;
+    margin:10px;
+    background-color: #fff;
+    top:0px;
+    border-radius:12px;
+    @extend .alignment;
+}
+
+.card{
+    width:$smallWidth;
+    @extend .allCards;
+    @include borders(#ddd);
+}
+
+.card.open{
+    width:520px; 
+}
+
+.bigCard{
+    width:$bigWidth;
+    @extend .allCards;
+    @include borders(#ddd);
+}
+
+.bigCard.open{
+    width:725px;
+    height:650px;
+}
+
+.bigCard.open, .card.open{
+    @include borders($tertColour);
+}
+
+/*.card:hover, .bigCard:hover{
+    border:3px solid #EE7F00;
+    transition: .5s border;
+}*/
+
+img{
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+    filter: blur(0);
+    image-rendering: pixelated;
+}
+
+.stonePic{
+    width:100%;
+    height:$smallWidth;
+    object-fit: cover;
+    min-height:115px;
+    margin:0px;
+    cursor:pointer;
+    @extend .alignment;
+}
+
+.stonePic.open{
+    height:350px;
+}
+
+.bigStonePic{
+    width:100%;
+    height:$bigWidth;
+    margin:0px;
+    // background-image:url("../media/na.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    cursor:pointer;
+    @extend .alignment;
+}
+
+.bigStonePic.open{
+    width:725px;
+    height:450px;
+}
+
+.stoneInfo{
+    width:90%;
+    padding:10px 5%;
+    @extend .alignment;
+}
+
+.dark{
+    color:#ddd;
+    border-radius:0px 0px 10px 10px;
+    font-weight:bold;
+    background-color:#333;
+}
+
+.stoneName{
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.subInfo{
+    font-size: 11px;
+    vertical-align: top;
+}
+
+.finishes{
+    height:20px;
+    margin:0px 0px 1px 0px;
+    /*margin:5px 0px;*/
+    padding:5px 5%;
+    background-color:#f2f2f2;
+    width:90%;
+    cursor:pointer;
+}
+
+.singleFinish{
+    height:20px;
+    padding:5px 5%;
+    background-color:$secColour;
+    width:90%;
+}
+
+.finishes:hover{
+    background-color:$tertColour;
+}
+
+.finishes.selected{
+    background-color:$secColour;
+}
