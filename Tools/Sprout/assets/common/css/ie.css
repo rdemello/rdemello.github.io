@@ -1,0 +1,39 @@
+html { 
+	background: url(../images/back_full.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body{
+	font-family: "akzidenz-grotesk",sans-serif;
+	line-height:1.4;
+}
+
+.window{
+	width:440px;
+	height:200px;
+	padding:20px;
+	position: absolute;
+	left: 20%;
+	top: 30%;		
+}
+
+.head {
+	width:350px;;
+	color: rgb(100,170,110); 
+	border-radius:10px 10px 0px 0px;
+	border: 0px none;
+	font-size:55px;
+	font-weight: 600;
+}
+
+.message {
+	width:450px;
+	height:70px;
+	padding-top:10px;
+	border-radius:0px 0px 10px 10px;
+	font-size: 18px;
+	color: #fff;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en" xmlns:og="http://opengraphprotocol.org/schema/">
+
+<head>
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="title" content="Sprout">
+    <meta name="Author" content="Ryan de Mello">
+	<meta name="description" content="Comparing sustainability of materials">
+	<title>Sprout</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/common/images/favicon.ico" />
+
+	<link id="defaultSheet" rel="stylesheet" type="text/css" href="assets/common/css/defaultStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  	<script src="assets/common/js/check.js" type="text/javascript"></script>
+    <script src="assets/lib/jquery/jquery.js" type="text/javascript"></script>
+	<script src="assets/lib/isotope.js" type="text/javascript"></script>
+	<script src="assets/common/js/data.js" type="text/javascript"></script>
+	<script src="assets/lib/chart.js" type="text/javascript"></script>
+	<script src="assets/common/js/mainScript.js" type="text/javascript"></script>
+</head>
+ 
+<body ng-app="ECOMEApp">
+	<!--
+
+		What's up dog?
+
+		^..^      /
+		/_/\_____/
+	      /\   /\
+	     /  \ /  \
+
+	 -->
+	<div class="footer">
+		<div class="bar">
+			<a href="http://intranet/mrcintranet">
+				<img src="assets/common/images/mrcic_black_nobar.png" style="width:80px; margin-top:17px;" class="logo">
+			</a>
+			<div style="border-left:1px solid #111;height:25px; display: inline-block; margin:13px -5px 10px 10px;"></div>
+			<p class="pgs">Sprout</p>
+			
+		</div>
+		<div class="extraInfo"><p>?</p></div>
+		<a href="mailto:mrcgroup@fosterandpartners.com?Subject=Sprout">
+			<p class="mail">&#9993</p>
+		</a>
+	</div>
+	<div class="infoBackdrop">
+		<div id="infobox" class="infoBox">
+			<div class="closeInfo">X</div>
+			<p><span style="color:#8dc13b; font-weight:600">Sprout</span> collates certified EPD's for building materials from various sources for comparison. Each material has a set functional unit in either m<sup>2</sup> or m<sup>3</sup> either based on individual products, or an average from a number of supply chains. As these are done to ISO standards, there is no deviation possible from the function unit. These set thicknesses are labelled for each material, and should be considered when comparing materials.
+			<br><br>
+			The material's chosen for this database are all based on European production, and so are comparable between each other, but will not be representative of products from other continents.
+			<br><br>
+			The sourcing options provided are two set hypothetical distances that offer a generic comparison between sourcing products locally and internationally.
+			<br>
+
+
+
+			<p style="width:100px; margin: 0px auto; font-size:18px;">Glossary</p>
+
+			<p><span style="font-weight:600">EPD: </span>An environmental product declaration (EPD) is a method of measuring the imapcts of a material through a particular supply chain</p>
+			<p><span style="font-weight:600">GWP: </span>Global Warming Potential (GWP) is a measure of the impacts of various greenhouse gases trapped in the atmosphere</p>
+			<p><span style="font-weight:600">kg CO<sub>2</sub>e: </span> Kilograms of carbon dioxide equivalent is a unit of measurement for the impacts to global warming from various sources, normalised to Carbon Dioxide </p>
+			
+		</div>
+	</div>
+	 <div class="backdrop" id="backdrop">
+		<a href="http://intranet/mrcintranet">
+			<img src="assets/common/images/mrcic_white.png" style="width:80px; margin-top:17px;" class="logo">
+		</a>
+
+		<div class="introContainer">
+			<div class="logoContainer" id="logoContainer">
+				<img src="assets/common/images/logo/static.gif" style="display:none;">
+				<img src="assets/common/images/logo/outro.gif" style="display:none">
+				<img id="loadingLogo" class="loadingLogo">
+			</div>
+			<div id="textbox" class="textBox">
+				<p>Sprout collates certified EPD's for building materials from various sources for comparison.<br><br>
+				The materials are given in either m<sup>2</sup> for Flooring and Cladding, m<sup>3</sup> for Structural, and a mix for Other.<br><br>
+				There are options to choose generic distances for Local and International sourcing of the materials to give an insight into transportation impacts.<br><br>
+				<span style="font-weight:600">This is an advisory tool that has a number of assumptions, and should be used as only a generic guideline.</span>
+				</p>
+				<div class="acceptButton">Start</div>
+			</div>
+		</div>
+		<img src="assets/common/images/fp_white.png" width="150" style="width:150px; position:fixed; left:0px; bottom:20px;" class="logo">
+    </div>
+
+	<div class="sidebar position-fixed-y">
+		<div class="filterHeader" style="margin-top:0px;">Filter by Application 
+			<div class="wrapper active">
+				<span class="arrow"></span>
+			</div>
+		</div>
+		<div class="filterGroup hidden" data-filter-group="application" >
+			<button type="button" class=" appButton button active" data-filter="*" style="width:298px">Show All</button
+			><button type="button" class=" appButton button flfilter" data-filter=".flooring">Flooring</button
+			><button type="button" class=" appButton button clfilter" data-filter=".cladding">Cladding/Facade</button
+			><button type="button" class=" appButton button stfilter" data-filter=".structural">Structural/Core</button
+			><button type="button" class=" appButton button otfilter" data-filter=".other">Other</button>
+		</div>
+
+		<div class="filterHeader">Filter by Material
+			<div class="wrapper active">
+				<span class="arrow"></span>
+			</div>
+		</div>
+		<div class="filterGroup hidden" data-filter-group="type" id="matType">
+			<button type="button" class="button active" data-filter="*" style="width:298px">Show All</button
+			><button type="button" class="button" data-filter=".Timber">Timber</button
+			><button type="button" class="button" data-filter=".Metal">Metal</button
+			><button type="button" class="button" data-filter=".Polymer">Polymer</button
+			><button type="button" class="button" data-filter=".Composite">Composite</button
+			><button type="button" class="button" data-filter=".Stone">Stone</button
+			><button type="button" class="button" data-filter=".Glass">Glass</button
+			><button type="button" class="button" data-filter=".Textile">Textile</button
+			><button type="button" class="button" data-filter=".Other">Other</button>
+		</div>
+
+		<div class="filterHeader">Sort
+			<div class="wrapper active">
+				<span class="arrow"></span>
+			</div>
+		</div>
+		<div class="filterGroup hidden">
+			<button type="button" class="sort active" data-sort-by="name" style="padding-right:27px">Alphabetically</button
+			><button type="button" class="sort" data-sort-by="value">Value</button
+			><button type="button" class="sort" data-sort-by="type">Type</button>
+		</div>
+		<div class="filterHeader">Material List</div>
+		<div class="list" id="list"></div>
+		<div class="filterHeader warning" id="warningMessage">
+			<span class="symbol">&#9888</span><h1>WARNING</h1>
+			<p>You are comparing structural materials measured volumetrically in m<sup>3</sup> with interior/exterior finishes measured in m<sup>2</sup>. <br>Your results will not be comparable
+		</div>
+		<!--<button type="button" class="addGraph" onclick="updateGraph()">Add to Graph</button>-->
+	</div>
+
+	<div id="leftCol" class="leftCol">
+		<div class="mainSection">
+			<br>
+			<div style="padding-left:20px;">
+				<canvas id="myChart" width="850" height="500" style="display:inline-block;max-height:500px;"></canvas>
+			</div>
+			<div class="section" id="section"></div>
+
+		</div>
+	</div>
+
+	<script src="assets/common/js/check.js" type="text/javascript"></script>
+</body>
