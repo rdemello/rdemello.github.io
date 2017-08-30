@@ -298,7 +298,7 @@ h3{
 //SPROUT
 
 .headerPage{
-    color:#ddd;
+    color:#fff;
     min-height:250px;
     height:auto;
     padding:10px;
@@ -419,12 +419,24 @@ h3{
     width:60%;
 }
 
+.bannerWrap{
+    width:100%;
+    position: relative;
+    text-align: center;
+}
+
+.seeMore{
+    position: absolute;
+    left:45%;
+    width:30%;
+    top:20%;
+    color:#fff;
+    background-color: #333;
+    padding:10px;
+}
+
 // BEO
-// .product{
-//     float:right;
-//     margin-right:15%;
-//     width:700px;
-// }
+
 
 .glassProcess{
     content:url("../media/glass/process_vertical.png");
