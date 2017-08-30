@@ -11,7 +11,8 @@ body {
   height: 100%;
   background-color: #e1ddda;
   font-family: 'Monda', serif;
-  color: #333; }
+  color: #333;
+  transition: 1s all; }
 
 h3 {
   margin: 0px; }
@@ -28,6 +29,7 @@ h3 {
   .project.wrap {
     margin-right: 0%;
     width: 90%; }
+
   .wrap {
     width: 90%;
     padding: 0%;
@@ -87,7 +89,6 @@ h3 {
       .wrap .menuWrap .headerWrap {
         width: auto;
         margin: 0px; } }
-
 .menu {
   padding: 0px;
   margin: 5px 0px;
@@ -196,7 +197,28 @@ h3 {
   vertical-align: top;
   margin: 0px 0px 10px 0px;
   margin-bottom: 10px;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: .5s all; }
+
+.hover {
+  color: #fff;
+  transition: .5s all; }
+
+.hover.sprout {
+  background-color: #7fb049;
+  transition: .5s all; }
+
+.hover.glass {
+  background-color: #4080bb;
+  transition: .5s all; }
+
+.hover.firefly {
+  background-color: #e55;
+  transition: .5s all; }
+
+.hover.beo {
+  background-color: #555;
+  transition: .5s all; }
 
 .image {
   height: 230px;
@@ -272,6 +294,11 @@ h3 {
     margin: 10px 20px 20px 20px;
     font-size: 0.8em; }
 
+@media only screen and (min-width: 1600px) {
+  .content .tile {
+    height: 500px; }
+    .content .tile .image {
+      height: 500px; } }
 @media only screen and (min-width: 720px) {
   .workContent .division {
     text-align: left; }
@@ -285,7 +312,6 @@ h3 {
       font-size: 1em;
       width: 80%;
       margin: 10px auto 20px auto; } }
-
 .epdGraph {
   background-color: #fff;
   padding: 20px 15%; }
@@ -333,10 +359,10 @@ h3 {
 @media screen and (min-width: 1200px) {
   .glassProcess {
     content: url("../media/glass/process.png"); }
+
   .division .stakeholder {
     width: 49%;
     display: inline-block; } }
-
 .stakeholder {
   width: 100%;
   vertical-align: top;
@@ -376,3 +402,5 @@ h3 {
 
 .potText p {
   margin-top: 5px; }
+
+/*# sourceMappingURL=main.css.map */

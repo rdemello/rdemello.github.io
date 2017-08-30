@@ -8,4 +8,9 @@ $(document).ready(function(){
     window.setInterval(function(){
         colourChange();
     }, 500);
+    
+    $('.tile').hover(function(){
+        $(this).toggleClass('hover')
+    })
+    
 })

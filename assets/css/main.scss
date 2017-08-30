@@ -21,6 +21,7 @@ body{
     background-color: $bg;
     font-family: 'Monda', serif;
     color:#333;
+    transition:1s all;
 }
 
 h3{
@@ -254,6 +255,32 @@ h3{
     margin:0px 0px 10px 0px;
     margin-bottom:10px;
     background-color: #fff;
+    transition: .5s all;
+}
+
+.hover{
+    color:#fff;
+    transition:.5s all;
+}
+
+.hover.sprout{
+    background-color: rgb(127,176,73);
+    transition:.5s all;
+}
+
+.hover.glass{
+    background-color: rgb(64,128,187);
+    transition:.5s all;
+}
+
+.hover.firefly{
+    background-color: #e55;
+    transition:.5s all;
+}
+
+.hover.beo{
+    background-color: #555;
+    transition:.5s all;
 }
 
 .image{
@@ -362,6 +389,17 @@ h3{
         margin:10px 20px 20px 20px;
         font-size: 0.8em;
         
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .content{
+        .tile{
+            height:500px;
+            .image{
+                height:500px;
+            }
+        }
     }
 }
 
