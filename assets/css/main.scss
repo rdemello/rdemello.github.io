@@ -19,9 +19,15 @@ body{
     height:100%;
     @extend .trim;
     background-color: $bg;
-    font-family: 'Monda', serif;
+    font-family: 'Monda', sans-serif;
+    line-height: 1.8em;
+    font-size: 1.2em;
     color:#333;
     transition:1s all;
+}
+
+h1, h2{
+    font-family: 'Monda', sans-serif;
 }
 
 h3{
@@ -45,71 +51,35 @@ h3{
         width:90%;
     }
 
+    .workContent{
+        .division{
+            text-align: left;
+            h1{
+                margin:20px auto 20px auto;
+                width:70%;
+            }
+
+            h2{
+                margin:0px auto;
+                width:70%;
+            }
+
+            .description{
+                font-size:1em;
+                width:70%;
+                margin:10px auto 20px auto;
+            }
+        }
+
+    }
+
     .wrap{
         width:90%;
         padding:0%;
         margin:5%;
-
-        .tracker{
-            opacity:0;
-            display: inline-block;
-            position:fixed;
-            color:#fff;
-            background-color: $bg;
-            z-index:300;
-            transition: .2s all;
-            padding:10px;
-            width:140px;
-            cursor:pointer;
-
-            p{
-                margin:0px;
-                font-size: 0.7em;
-            }
-
-            h1{
-                font-size: 1.2em;
-                margin:0px;
-            }
-        }
-
-        .menu{
-            width:160px;
-            margin:0px;
-            position:absolute;
-            display:block;
-
-            .menuItem{
-                width:130px;
-                height:30px;
-                padding:15px;
-                margin:3px 0px 0px 0px;
-                
-                // border-top:3px solid #e1ddda;
-                
-                transition: .5s all;
-                color:#eee;
-                text-align: left;
-            }
-
-            .menuItem.dark{
-                color:#fff;
-                background-color:#333;
-            }
-
-            .menuItem.white{
-                color: #333;
-                background-color: #fff ;
-            }
-            
-            .menuItem:hover{
-                background-color:#555;
-                color:#fff;
-                transition: .5s all;
-            }
-        }
+        
         .content{
-            margin-left:180px;
+            // margin-left:8%;
             display:block;
             width:auto;
 
@@ -119,20 +89,7 @@ h3{
                 margin:10px auto;
             }
         }
-
-        .menuWrap{
-
-            .headerWrap{
-                width:auto;
-                margin:0px;
-            }
-            
-            margin:0px;
-            position:absolute;
-            display:block;
-        }
     }
-
 }
 
 
@@ -169,8 +126,9 @@ h3{
     padding:0px;
     margin:20px auto;
     margin-bottom:40px;
-    width:70%;
-    height:200px;
+    width:100%;
+    height:180px;
+    width:180px;
     display:block;
     vertical-align:top;
 }
@@ -255,7 +213,7 @@ h3{
     margin:0px 0px 10px 0px;
     margin-bottom:10px;
     background-color: #fff;
-    transition: .5s all;
+    transition: .2s all;
 }
 
 .hover{
@@ -297,6 +255,7 @@ h3{
     padding:15px;
     position:absolute;
     @extend .alignment;
+    line-height:1.2em;
 }
 
 .description{
@@ -326,9 +285,10 @@ h3{
 
 .headerPage{
     color:#fff;
+    font-family: 'Monda', sans-serif;
     min-height:250px;
     height:auto;
-    padding:10px;
+    padding:30px 10px;
     background-position: 50% 50%;
     background-size: cover;
     background-color: $bg;
@@ -349,13 +309,17 @@ h3{
     .disclaimer{
         color:#aaa;
         font-style: italic;
-        font-size:0.8em;
+        font-size:0.7em;
+        line-height: 1.3em;
+        bottom:10px;
     }
 }
 
 .workDivisionDark, .myRole{
     background-color: #232323;
     color: #ddd;
+    line-height: 1.8em;
+    font-size:1.3em;
     
 }
 
@@ -370,8 +334,9 @@ h3{
 
 .division{
     height:auto;
-    padding:10px 10px 20px 10px;
+    padding:80px 10px 100px 10px;
     text-align: center;
+    font-family: 'Monda', serif; //lora
 
     ul{
         text-align: left;
@@ -395,36 +360,90 @@ h3{
 @media only screen and (min-width: 1600px){
     .content{
         .tile{
-            height:500px;
-            .image{
-                height:500px;
+            width:45%;
+            display: inline-block;
+            margin: 0% 1% 2% 1%;
+        }
+        margin-left: 180px;
+        
+    }
+    .wrap{
+
+        .tracker{
+            opacity:0;
+            display: inline-block;
+            position:fixed;
+            color:#fff;
+            background-color: $bg;
+            font-family: 'Monda', sans-serif;
+            z-index:300;
+            transition: .2s all;
+            padding:10px;
+            width:140px;
+            cursor:pointer;
+            
+            p{
+                font-size: 0.7em;
+                margin:0px;
             }
+
+            h1{
+                font-size: 1.2em;
+                margin:0px;
+            }
+        }
+
+        .menu{
+            width:160px;
+            margin:0px;
+            position:absolute;
+            display:block;
+
+            .menuItem{
+                width:130px;
+                height:30px;
+                padding:15px;
+                margin:3px 0px 0px 0px;
+                
+                // border-top:3px solid #e1ddda;
+                
+                transition: .5s all;
+                color:#eee;
+                text-align: left;
+            }
+
+            .menuItem.dark{
+                color:#fff;
+                background-color:#333;
+            }
+
+            .menuItem.white{
+                color: #333;
+                background-color: #fff ;
+            }
+            
+            .menuItem:hover{
+                background-color:#555;
+                color:#fff;
+                transition: .5s all;
+            }
+        }
+        .menuWrap{
+            
+            .headerWrap{
+                width:auto;
+                margin:0px;
+            }
+            
+            margin:0px;
+            position:absolute;
+            display:block;
         }
     }
 }
 
 @media only screen and (min-width: 720px){
-    .workContent{
-        .division{
-            text-align: left;
-            h1{
-                margin:20px auto 20px auto;
-                width:80%;
-            }
-
-            h2{
-                margin:0px auto;
-                width:80%;
-            }
-
-            .description{
-                font-size:1em;
-                width:80%;
-                margin:10px auto 20px auto;
-            }
-        }
-
-    }
+    
 }
 
 .epdGraph{
@@ -468,9 +487,16 @@ h3{
     left:45%;
     width:30%;
     top:20%;
+    color:#333;
+    background-color: #fff;
+    padding:10px;
+    transition: .2s all;
+}
+
+.seeMore:hover{
     color:#fff;
     background-color: #333;
-    padding:10px;
+    transition:.2s all;
 }
 
 // BEO
