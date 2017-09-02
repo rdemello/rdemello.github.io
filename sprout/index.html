@@ -14,6 +14,8 @@
     <link id="defaultSheet" rel="stylesheet" type="text/css" href="../assets/css/main.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+
+    <script src="../assets/scripts/parallax.js" type="text/javascript"></script>
     <script src="../assets/scripts/script.js" type="text/javascript"></script>
     <script src="../assets/scripts/sprout.js" type="text/javascript"></script>
 </head>
@@ -21,16 +23,16 @@
 <body>
 
     <div class="project wrap">
-        <div class="menu">
-            <a href="../index.html"><div class="menuItem dark">Work </div
-            ></a><a href="../about/index.html"><div class="menuItem dark GIT">About</div></a>
-        </div>
-
+        
         <div class="menuWrap"> 
             <div class="headerWrap">
                 <div class="pixelGrid" id="pixelGrid"></div>
                 <div class="titleHeader">Ryan de Mello</div>
             </div>
+            <!-- <div class="menu">
+                <a href="../index.html"><div class="menuItem dark">Work </div
+                ></a><a href="../about/index.html"><div class="menuItem dark GIT">About</div></a>
+            </div> -->
         </div> 
         
         <div class="tracker">
@@ -39,7 +41,7 @@
         </div>
 
         <div class="content workContent">
-            <div class="headerPage" style="background-image:url('../assets/media/maggies.jpg')">
+            <div class="headerPage">
                 <h1>Project Sprout</h1>
                 <p class="description">Making sustainable information more accessible to architects in the design process</p>
                 <p class="disclaimer">Some information has been omitted from this case study due to confidentiality. The views and information shown are based of my own opinions and findings, which are not necessarily representative of Foster+Partners</p>
@@ -84,7 +86,7 @@
                 </p>
             </div>
 
-            <img src="../assets/media/sprout/epd.JPG" style="width:100%; display:block;"
+            <div id="epdPic" src="../assets/media/sprout/epd.JPG" style="width:100%; height:600px;" ></div
             
             ><div class="division workDivisionDark"><br>
                 <h1 style="text-align:center">How can they be used?</h1><br>
@@ -171,7 +173,7 @@
                         </p>
                     </div>
                 </div>
-                <br><br><br>
+                <br><br>
                 <h1>So how to solve it?</h1>
 
                 <p class="description">

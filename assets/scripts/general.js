@@ -9,7 +9,7 @@ $(document).ready(function(){
         colourChange();
     }, 500);
     
-    $('.tile').hover(function(){
+    $('.button').hover(function(){
         $(this).toggleClass('hover')
     })
     

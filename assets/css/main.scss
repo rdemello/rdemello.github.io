@@ -65,7 +65,7 @@ h3{
             }
 
             .description{
-                font-size:1em;
+                font-size:0.9em;
                 width:70%;
                 margin:10px auto 20px auto;
             }
@@ -177,11 +177,6 @@ h3{
     @include transition(.5s);
 }
 
-.hover{
-    right:0px;
-    @include transition(.5s);
-}
-
 .menuItem{
     @include header-font(800,17px ,#333 );
     @extend .alignment;
@@ -206,13 +201,29 @@ h3{
 
 .tile{
     width:100%;
-    height:230px;
+    height:280px;
     width:100%;
     padding:0px;
     vertical-align: top;
     margin:0px 0px 10px 0px;
     margin-bottom:10px;
     background-color: #fff;
+    transition: .2s all;
+    border-radius: 5px;
+}
+
+.button{
+    font-size: 0.8em;
+    background-color:#fff;
+    color:#333;
+    text-align: center;
+    border-radius: 5px;
+    padding:10px;
+    width:100px;
+    position: absolute;
+    right:30px;
+    bottom:30px;
+    cursor: pointer;
     transition: .2s all;
 }
 
@@ -242,12 +253,13 @@ h3{
 }
 
 .image{
-    height:230px;
+    height:280px;
     margin-left:230px;
     background-position: 50% 50%;
     background-size: cover;
     background-color: #e1ddda;
     display:block;
+    position: relative;
 }
 
 .tileContent{
@@ -261,7 +273,7 @@ h3{
 .description{
     margin-top:20px;
     position:relative;
-    font-size:0.9em;
+    font-size:0.8em;
 }
 
 .workContent{
@@ -288,10 +300,10 @@ h3{
     font-family: 'Monda', sans-serif;
     min-height:250px;
     height:auto;
-    padding:30px 10px;
-    background-position: 50% 50%;
+    padding:50px 10px;
+    // background-position: 50% 50%;
     background-size: cover;
-    background-color: $bg;
+    // background-color: $bg;
     text-align: center;
     display:block;
 
@@ -319,7 +331,7 @@ h3{
     background-color: #232323;
     color: #ddd;
     line-height: 1.8em;
-    font-size:1.3em;
+    font-size:1em;
     
 }
 
@@ -335,7 +347,7 @@ h3{
 .division{
     height:auto;
     padding:80px 10px 100px 10px;
-    text-align: center;
+    // text-align: center;
     font-family: 'Monda', serif; //lora
 
     ul{
@@ -360,11 +372,11 @@ h3{
 @media only screen and (min-width: 1600px){
     .content{
         .tile{
-            width:45%;
+            width:48%;
             display: inline-block;
             margin: 0% 1% 2% 1%;
         }
-        margin-left: 180px;
+        // margin-left: 180px;
         
     }
     .wrap{
@@ -393,57 +405,53 @@ h3{
             }
         }
 
-        .menu{
-            width:160px;
-            margin:0px;
-            position:absolute;
-            display:block;
+        // .menu{
+        //     width:160px;
+        //     margin:0px;
+        //     position:absolute;
+        //     display:block;
 
-            .menuItem{
-                width:130px;
-                height:30px;
-                padding:15px;
-                margin:3px 0px 0px 0px;
+        //     .menuItem{
+        //         width:130px;
+        //         height:30px;
+        //         padding:15px;
+        //         margin:3px 0px 0px 0px;
                 
-                // border-top:3px solid #e1ddda;
+        //         // border-top:3px solid #e1ddda;
                 
-                transition: .5s all;
-                color:#eee;
-                text-align: left;
-            }
+        //         transition: .5s all;
+        //         color:#eee;
+        //         text-align: left;
+        //     }
 
-            .menuItem.dark{
-                color:#fff;
-                background-color:#333;
-            }
+        //     .menuItem.dark{
+        //         color:#fff;
+        //         background-color:#333;
+        //     }
 
-            .menuItem.white{
-                color: #333;
-                background-color: #fff ;
-            }
+        //     .menuItem.white{
+        //         color: #333;
+        //         background-color: #fff ;
+        //     }
             
-            .menuItem:hover{
-                background-color:#555;
-                color:#fff;
-                transition: .5s all;
-            }
-        }
-        .menuWrap{
+        //     .menuItem:hover{
+        //         background-color:#555;
+        //         color:#fff;
+        //         transition: .5s all;
+        //     }
+        // }
+        // .menuWrap{
             
-            .headerWrap{
-                width:auto;
-                margin:0px;
-            }
+        //     .headerWrap{
+        //         width:auto;
+        //         margin:0px;
+        //     }
             
-            margin:0px;
-            position:absolute;
-            display:block;
-        }
+        //     margin:0px;
+        //     position:absolute;
+        //     display:block;
+        // }
     }
-}
-
-@media only screen and (min-width: 720px){
-    
 }
 
 .epdGraph{
@@ -455,6 +463,8 @@ h3{
     color:#2e8b57;
     font-weight: 600;
     font-size:1.2em;
+    left:-20px;
+    position: absolute;
 }
 
 .minus{
@@ -462,6 +472,8 @@ h3{
     font-weight: 600;
     font-size: 1.2em;
     max-height:10px;
+    left:-20px;
+    position: absolute;
 }
 .kpi{
     width:100%;
@@ -512,13 +524,24 @@ h3{
         content:url("../media/glass/process.png");
     }
 
+    .content{
+        .tile{
+            width:48%;
+            display: inline-block;
+            margin: 0% 1% 2% 1%;
+        }
+        // margin-left: 180px;
+        
+    }
+
     .division{
         .stakeholder{
             width:49%;
             display: inline-block;
         }
-    }
 
+
+    }
 }
 
 
