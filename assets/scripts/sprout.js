@@ -25,5 +25,5 @@ $(document).ready(function(){
     })
 
     $('.headerPage').parallax({imageSrc: '../assets/media/maggies.jpg'});
-    $('#epdPic').parallax({imageSrc: '../assets/media/sprout/epd.jpg'});
+    $('#epdPic').parallax({imageSrc: '../assets/media/sprout/epd.JPG'});
 })
