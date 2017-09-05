@@ -286,13 +286,14 @@ h3 {
     opacity: 0;
     display: inline-block;
     position: fixed;
+    top: 5%;
     color: #fff;
     background-color: #e1ddda;
     font-family: 'Monda', sans-serif;
     z-index: 300;
     transition: .2s all;
-    padding: 10px;
-    width: 140px;
+    padding: 10px 4px 10px 16px;
+    width: 30px;
     cursor: pointer; }
     .wrap .tracker p {
       font-size: 0.7em;
