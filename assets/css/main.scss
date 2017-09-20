@@ -93,13 +93,30 @@ h3{
 }
 
 
+// .menu{
+//     padding:0px;
+//     margin:5px 0px;
+//     min-width: 160px;
+//     text-align:center;
+//     position: relative;
+//     display:block;
+// }
+
 .menu{
-    padding:0px;
-    margin:5px 0px;
-    min-width: 160px;
-    text-align:center;
-    position: relative;
-    display:block;
+    width:100%;
+    position:fixed;
+    height:50px;
+    background-color: #222;
+    color:#fff;
+    top:0px;
+    z-index:1;
+    opacity:0;
+    transition:.2s all;
+    font
+}
+
+.menu p{
+    display:inline-block;
 }
 
 .tracker{
