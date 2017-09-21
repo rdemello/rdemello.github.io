@@ -5,7 +5,6 @@ $bg: #e1ddda;
 
 a{
     text-decoration: none;
-    color:#333;
 }
 
 .alignment{
@@ -102,26 +101,68 @@ h3{
 //     display:block;
 // }
 
-.menu{
-    width:100%;
+
+.menuFixed{
     position:fixed;
-    height:50px;
-    background-color: #222;
-    color:#fff;
     top:0px;
-    z-index:1;
-    opacity:0;
-    transition:.2s all;
-    font
 }
 
-.menu p{
-    display:inline-block;
+.menuMove{
+    position:absolute;
+    top:380px;
 }
 
-.tracker{
-    display:none;
-}
+// .menu{
+//     width:90%;
+//     margin:0px 5%;
+//     padding:10px 0px;
+//     height:35px;
+//     background-color: rgba(0,0,0,0);
+//     color:#fff;
+//     border-bottom:0px solid #666;
+//     z-index:1;
+
+//     transition:.5s background-color;
+//     text-align: center;
+    
+
+//     .align{
+//         width:800px;
+//         margin:0px auto;
+//         .sub{
+//             font-size:0.8em;
+//             cursor:pointer;
+//             border-bottom:2px solid rgba(255,255,255,0);
+//             height:27px;
+//             transition: .2s all;
+//             width:140px;
+//             display:inline-block;
+//             text-align: left;
+//         }
+
+//         .sub:hover{
+//             border-bottom:2px solid rgba(255,255,255,1);
+//             transition: .2s all;
+//         }
+
+
+//         a{
+//             color:#fff;
+//         }
+//     }
+
+// }
+
+// .menu p{
+//     display:inline-block;
+//     margin:0px 15px;
+// }
+
+
+
+// .tracker{
+//     display:none;
+// }
 
 .content{
     width:100%;
@@ -159,6 +200,8 @@ h3{
     background-color: $bg;
     position:relative;
     text-align:center;
+    cursor:pointer;
+    transition: .2s all;
 }
 
 .titleHeader.dark{

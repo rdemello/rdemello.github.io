@@ -1,6 +1,5 @@
 a {
-  text-decoration: none;
-  color: #333; }
+  text-decoration: none; }
 
 .alignment, .pixelCol, .menuItem, .tileContent {
   vertical-align: top;
@@ -59,22 +58,13 @@ h3 {
         text-align: center;
         width: 60%;
         margin: 10px auto; } }
-.menu {
-  width: 100%;
+.menuFixed {
   position: fixed;
-  height: 50px;
-  background-color: #222;
-  color: #fff;
-  top: 0px;
-  z-index: 1;
-  opacity: 0;
-  transition: .2s all; }
+  top: 0px; }
 
-.menu p {
-  display: inline-block; }
-
-.tracker {
-  display: none; }
+.menuMove {
+  position: absolute;
+  top: 380px; }
 
 .content {
   width: 100%;
@@ -110,7 +100,9 @@ h3 {
   padding: 5px 10px;
   background-color: #e1ddda;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer;
+  transition: .2s all; }
 
 .titleHeader.dark {
   color: #333; }

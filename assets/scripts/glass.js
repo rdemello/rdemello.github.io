@@ -1,9 +1,9 @@
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
-        $('.tracker').css('opacity',1)
+        $('.menu').css('opacity',1)
     }
     else {
-        $('.tracker').css('opacity',0)
+        $('.menu').css('opacity',0)
     }
 });
 
@@ -13,6 +13,7 @@ $(document).ready(function(){
 
     setColor(64,128,187);
     color(64,128,187,8)
+    $('.menu').css("background-color","rgb(64,128,187)")
     
     colourChange();
     window.setInterval(function(){

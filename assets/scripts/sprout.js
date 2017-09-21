@@ -1,9 +1,11 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        $('.menu').css('opacity',1)
+    if ($(window).scrollTop() > 350) {
+        $('#menu').attr("class","menu menuFixed")
+        $('.menu').css("background-color","rgb(127,176,73)")
     }
     else {
-        $('.menu').css('opacity',0)
+        $('#menu').attr("class","menu menuMove")
+        $('.menu').css("background-color","rgba(127,176,73,0)")
     }
 });
 
@@ -13,13 +15,15 @@ $(document).ready(function(){
 
     setColor(127,176,73);
     color(127,176,73,8);
+    // $('.menu').css("background-color","rgb(127,176,73)")
+
 
     colourChange();
     window.setInterval(function(){
         colourChange();
     }, 500);
 
-    $('.tracker').on('click',function(){
+    $('#toTop').on('click',function(){
         $('html, body').animate({ scrollTop: 0 }, 'bounce');
 
     })
