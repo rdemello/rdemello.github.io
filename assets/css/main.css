@@ -268,10 +268,8 @@ h3 {
   font-family: 'Monda', serif; }
   .division ul {
     text-align: left; }
-  .division h1 {
+  .division h1, .division h2 {
     margin: 10px 20px 20px 20px; }
-  .division h2 {
-    margin: 0px; }
   .division .description {
     margin: 10px 20px 20px 20px;
     font-size: 0.8em; }
