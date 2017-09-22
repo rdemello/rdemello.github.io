@@ -17,7 +17,7 @@ body{
     // min-width:500px;
     height:100%;
     @extend .trim;
-    background-color: $bg;
+    background-color: #eee;
     font-family: 'Monda', sans-serif;
     line-height: 1.8em;
     font-size: 1.2em;
@@ -328,12 +328,16 @@ h3{
     position:absolute;
     @extend .alignment;
     line-height:1.2em;
+    .description{
+        
+    }
 }
 
 .description{
     margin-top:20px;
     position:relative;
-    font-size:0.8em;
+    font-size:0.9em;
+    font-family: 'Jaldi', sans-serif;
 }
 
 .workContent{
@@ -408,7 +412,7 @@ h3{
     height:auto;
     padding:80px 10px 100px 10px;
     // text-align: center;
-    font-family: 'Monda', serif; //lora
+    font-family: 'Jaldi', serif; //lora
 
     ul{
         text-align: left;
@@ -438,7 +442,8 @@ h3{
         
     }
     .wrap{
-
+        max-width:1600px;
+        margin:5% auto !important;
         .tracker{
             opacity:0;
             display: inline-block;

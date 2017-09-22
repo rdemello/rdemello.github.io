@@ -28,6 +28,6 @@ $(document).ready(function(){
 
     })
 
-    $('.headerPage').parallax({imageSrc: '../assets/media/maggies.jpg'});
+    $('.headerPage').parallax({imageSrc: '../assets/media/sprout.jpg'});
     $('#epdPic').parallax({imageSrc: '../assets/media/sprout/epd.JPG'});
 })
