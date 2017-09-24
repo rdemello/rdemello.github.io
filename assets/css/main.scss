@@ -410,7 +410,7 @@ h3{
 
 .division{
     height:auto;
-    padding:80px 10px 100px 10px;
+    padding:80px 10px 70px 10px;
     // text-align: center;
     font-family: 'Jaldi', serif; //lora
 
@@ -523,21 +523,23 @@ h3{
     padding:20px 15%;
 }
 
+.bullet{
+    font-weight: 600;
+    font-size: 0.5em;
+    left:-15px;
+    position: absolute;
+}
+
 .plus{
     color:#2e8b57;
-    font-weight: 600;
-    font-size:1.2em;
-    left:-20px;
-    position: absolute;
+    line-height:1.4em;
+    font-size: 1.2em;
 }
 
 .minus{
     color:#b22222;
-    font-weight: 600;
     font-size: 1.2em;
-    max-height:10px;
-    left:-20px;
-    position: absolute;
+    line-height:1.4em;
 }
 .kpi{
     width:100%;
