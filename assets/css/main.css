@@ -341,9 +341,10 @@ h3 {
 .seeMore {
   position: absolute;
   left: 45%;
-  width: 30%;
+  width: 40%;
   top: 20%;
   color: #333;
+  font-family: 'Jaldi', sans-serif;
   background-color: #fff;
   padding: 10px;
   transition: .2s all; }
