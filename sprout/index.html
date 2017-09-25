@@ -120,19 +120,25 @@
                 <h1>How can they be used?</h1>
                 <p class="description">Ultimately this meant that the important information wasn't accessible to the designers.
                     From speaking with architects and the managers on projects, the tasks related to sifting through the 
-                    information would be delegated to a handful of "experts" or not considered.</p>
+                    information would be delegated to a handful of "experts" or not considered. So how was this done?</p>
             </div>
         
             <div class="division workDivision">
                 <h1>The Existing Tools</h1>
                 <p class="description">
-                    EPD's form the datasets for tools that allow the comparisons of designs. They vary from free excel sheets, to fully-fledged software costing thousands of pounds.
+                    EPD's are the base datasets for tools that allow the comparisons of designs. 
+                    They vary from free excel sheets, to fully-fledged software packages costing thousands of pounds.
                     <br><br>
                     These solutions attempt to address the issues, but the uptake is low. From some user trials and direct feedback,
                     the competition could be categorised into 3 types, with the following pros and cons:
                 </p><br>
                 <h2>Entry Level</h2>
                 <p style="font-size:0.9em;margin:0px auto;width:70%">ICE Database</p>
+                <p class="description">
+                    The Inventory of Carbon and Energy (ICE) Database was compiled by Bath University, in an attempt to provide some context to the most common building materials.
+                    Although it was last updated in 2011, architects and sustainbility engineers were both familiar with and had used it in the past. However, one of the core issues
+                    is the quality of the data. A number of the material profiles seemed to be based on research work, and not from full ISO complaint EPDs, partly due to how old the dataset is.
+                </p>
                 <p class="description">
                     <span class="plus">+</span> Information and products are listed simply and clearly<br>
                     <span class="minus">-</span> Most of the data is research based, resulting in extremely dated information<br>
@@ -141,6 +147,14 @@
                 <h2>Mid</h2>
                 <p style="font-size:0.9em;margin:0px auto;width:70%">Athena, One Click LCA, eTool LCD</p>
                 <p class="description">
+                    These mid-range tools were attempting to fill the sweet spot for the construction industry. They're process of building up an analysis carried the user through the steps of a building e.g.
+                    the core structure volumes, facade areas and build ups, floor build ups etc. However there were still issues, which were limiting the uptake of these solutions, 
+                    eTool LCD for example primarily used Australian based data, with varying grid emissions to the rest of the world.
+                    One Click LCA tried to present a simple one button solution that read a list of materials and provided results, however discussions with the company revealed that there weren't fail-safe methods in place
+                    to ensure that the correct material profile was selected, meaning the results could be off by almost 100%. Whilst this range was a step in the right direction to other solutions, there were still barriers in place
+                    that were slowing down uptake.
+                </p>
+                <p class="description">
                     <span class="plus">+</span>  Builds up calculations from the architectural stand point<br>
                     <span class="plus">+</span>  Speeds up the process and reduces the technical skills needed<br>
                     <span class="minus">-</span> Shortcuts taken can result in wildly inaccurate results<br>
@@ -148,6 +162,13 @@
                 </p><br>
                 <h2>In-Depth</h2>
                 <p style="font-size:0.9em;margin:0px auto;width:70%">GaBi, SimaPro</p>
+                <p class="description">
+                    Both GaBi and Simapro are the established tools in the industry, with SimaPro having the larger market share. 
+                    They have both been used to carry out the calculations in order to produce EPD's, with all this information on the systems, assumptions etc. included in the material profiles for transparency.
+                    Although targetted at smaller scale products, they are both capable of calculations for buildings, with GaBi recently creating a Construction Database with specific material profiles.
+                    This level of detail comes at the cost of a higher entry skill level, and skill ceiling. Both organisations offer 2-3 day workshops in order to train users up in how to use the software,
+                    which results in a bottleneck in the work flow if only a few people are trained in using it.                    
+                </p>
                 <p class="description">
                     <span class="plus">+</span>  Has great transparency to see the origins of the data and supply chains<br>
                     <span class="plus">+</span>  Good levels of details and accuracy, with a lot of freedom to create custom profiles<br>
@@ -164,43 +185,38 @@
                 <p class="description">
                     From these options, the Mid-End options were the most common in industry. 
                     They had been tailored towards architects, with the input process relating more to a building than a product. 
-                    They also limited their materials data to include only typical architectural materials, reducing the stress when selecting materials.
+                    They also limited their materials data to include only typical architectural materials, reducing the complexity when selecting the material list.
                 </p>
 
             <!-- </div>
 
             <div class="division workDivision"> -->
                 
-                <p class="description">The key issues surrounding the topic started to become clear:</p>
+                <p class="description">The key issues surrounding the topic started to become clear, and thus opportunites formed in creating a solution:</p>
 
                 <div class="description">
                     <div class="kpi">
                         <img src="../assets/media/sprout/questionMark.png" style="height:150px; margin:0px 25px;display:inline-block"
                         
-                        ><p class="kpiInfo">There was a clear lack of knowledge
-                        on the topic as a whole. It would be
-                        important to walk them through the
-                        process of inputting the information
+                        ><p class="kpiInfo">
+                            There was a clear lack of knowledge on the topic as a whole. The value of walking the user through the steps in an analysis was evident in
+                            the existing tools, and the language of architecture should continue 
                         </p>
                     </div>
 
                     <div class="kpi">
                         <img src="../assets/media/sprout/metric.png" style="height:125px; display:inline-block">
                         
-                        <p class="kpiInfo">There are other metrics beyond just
-                        carbon footprint included in EPD’s, and
-                        raising awareness of these to inform
-                        decision making would be helpful
+                        <p class="kpiInfo">There are other metrics beyond just carbon footprint included in EPD’s, and whilst the issues with carbon are well established, some of the other
+                            environmental concerns should be brought up to ensure a balanced view of the design choices.
                         </p>
                     </div>
                     <br>
                     <div class="kpi">
-                        <img src="../assets/media/sprout/shipping.png" style="height:85px; display:inline-block">
+                        <img src="../assets/media/sprout/shipping.png" style="margin-top:20px; height:85px; display:inline-block">
                         
-                        <p class="kpiInfo">The differences in transport can have
-                        more of an impact than the material
-                        choice, which would be important to
-                        illustrate
+                        <p class="kpiInfo">In a number of cases, the differences in transport can have more of an impact than the material choice. Although it was known to some extent, a number of
+                            users didn't realise the true disparity.
                         </p>
                     </div>
                 </div>
@@ -208,9 +224,8 @@
                 <h1>So how to solve it?</h1>
 
                 <p class="description">
-                    Being able to walk the user through the process, 
-                    highlighting how each decision can affect the impact would be monumental in starting a shift
-                    in perception.
+                    From discussions with the architects, I saw how they ideally would want to go through a process of selecting a material, and importantly how this could be supplemented
+                    with cues and feedback to address some of the earlier issues.
                 </p>
 
                 <h2>1. Project Location</h2>
