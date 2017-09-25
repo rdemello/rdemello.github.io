@@ -25,6 +25,6 @@ $(document).ready(function(){
 
     })
 
-    $('.headerPage').parallax({imageSrc: '../assets/media/gherkin.jpg'});
+    $('.headerPage').parallax({imageSrc: '../assets/media/big/gherkin.jpg'});
 
 })
