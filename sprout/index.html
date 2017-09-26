@@ -72,7 +72,7 @@
                 <h1>The Starting Point</h1>
                 <p class="description">
                     A manufacturer can work with a trained individual, in order to carry out a life cycle analysis (LCA) of a product they produce. 
-                    There are ISO standards that this analysis must adhere to, which means there will always be a certain level of consistency between the information produced.
+                    There are ISO standards that this analysis must adhere to, which means there will always be a certain level of consistency between the set of information produced from different parties.
                     At the end of the study, the information is presented in the form of an Environmental Product Declaration (EPD).
                     Each EPD declares which parts of the life cycle it will be adressing: Production, Transport, Installation, Use, Disposal.
                     Typically there are two types of depth to an EPD:
@@ -140,9 +140,12 @@
                     Although it was last updated in 2011, architects and sustainbility engineers were both familiar with and had used it in the past. However, one of the core issues
                     is the quality of the data. A number of the material profiles seemed to be based on research work, and not from full ISO complaint EPDs, partly due to how old the dataset is.
                 </p>
+
+                <div style="text-align:center;" class="epdGraph" ><img src="../assets/media/sprout/ice.JPG" style="width:100%; max-width:800px;"></div>
+
                 <p class="description">
                     <span class="plus">+</span> Information and products are listed simply and clearly<br>
-                    <span class="minus">-</span> Most of the data is research based, resulting in extremely dated information<br>
+                    <span class="minus">-</span> Most of the data is research based<br>
                     <span class="minus">-</span> Not all sources are listed, with limited transparency<br>
                 </p><br>
                 <h2>Mid</h2>
@@ -150,11 +153,12 @@
                 <p class="description">
                     These mid-range tools were attempting to fill the sweet spot for the construction industry. They're process of building up an analysis carried the user through the steps of a building e.g.
                     the core structure volumes, facade areas and build ups, floor build ups etc. However there were still issues, which were limiting the uptake of these solutions, 
-                    eTool LCD for example primarily used Australian based data, with varying grid emissions to the rest of the world.
+                    eTool LCD for example primarily used Australian based data, with varying grid emissions to the rest of the world.<br><br>
                     One Click LCA tried to present a simple one button solution that read a list of materials and provided results, however discussions with the company revealed that there weren't fail-safe methods in place
                     to ensure that the correct material profile was selected, meaning the results could be off by almost 100%. Whilst this range was a step in the right direction to other solutions, there were still barriers in place
                     that were slowing down uptake.
                 </p>
+                <div style="text-align:center;" class="epdGraph" ><img src="../assets/media/sprout/etool.JPG" style="width:100%; max-width:800px;"></div>
                 <p class="description">
                     <span class="plus">+</span>  Builds up calculations from the architectural stand point<br>
                     <span class="plus">+</span>  Speeds up the process and reduces the technical skills needed<br>
@@ -167,22 +171,18 @@
                     Both GaBi and Simapro are the established tools in the industry, with SimaPro having the larger market share. 
                     They have both been used to carry out the calculations in order to produce EPD's, with all this information on the systems, assumptions etc. included in the material profiles for transparency.
                     Although targetted at smaller scale products, they are both capable of calculations for buildings, with GaBi recently creating a Construction Database with specific material profiles.
-                    This level of detail comes at the cost of a higher entry skill level, and skill ceiling. Both organisations offer 2-3 day workshops in order to train users up in how to use the software,
+                    <br><br>This level of detail comes at the cost of a higher entry skill level, and skill ceiling. Both organisations offer 2-3 day workshops in order to train users up in how to use the software,
                     which results in a bottleneck in the work flow if only a few people are trained in using it.                    
                 </p>
+                <div style="text-align:center;" class="epdGraph" ><img src="../assets/media/sprout/gabi.JPG" style="width:100%; max-width:800px;"></div>
                 <p class="description">
-                    <span class="plus">+</span>  Has great transparency to see the origins of the data and supply chains<br>
-                    <span class="plus">+</span>  Good levels of details and accuracy, with a lot of freedom to create custom profiles<br>
+                    <span class="plus">+</span>  Has great transparency to see the origins of data<br>
+                    <span class="plus">+</span>  Good levels of details and accuracy<br>
                     <span class="minus">-</span> Requires a training course or experience to use properly<br>
                     <span class="minus">-</span> Targeted at products, not buildings<br>
                 </p>
-            </div>
 
-
-            <div style="text-align:center;" class="epdGraph" ><img src="../assets/media/sprout/competitors.PNG" style="width:100%; max-width:600px;"></div>
-           
-            <div class="division workDivision">
-                
+                <img src="../assets/media/sprout/competitors.PNG" style="max-width:600px;" class="img">
                 <p class="description">
                     From these options, the Mid-End options were the most common in industry. 
                     They had been tailored towards architects, with the input process relating more to a building than a product. 
@@ -193,7 +193,7 @@
 
             <div class="division workDivision"> -->
                 
-                <p class="description">The key issues surrounding the topic started to become clear, and thus opportunites formed in creating a solution:</p>
+                <!--<p class="description">The key issues surrounding the topic started to become clear, and thus opportunites formed in creating a solution:</p>
 
                 <div class="description">
                     <div class="kpi">
@@ -220,8 +220,8 @@
                             users didn't realise the true disparity.
                         </p>
                     </div>
-                </div>
-                <br><br>
+                </div>-->
+                <br>
                 <h1>So how to solve it?</h1>
 
                 <p class="description">
@@ -243,24 +243,27 @@
                 
                 <h2>Dimensions</h2>
                 <p class="description">
-                    The functional unit in EPD's vary so much, which is an extra step in the process of analysis.
+                    The functional unit in EPD's vary so much, and architects are familiar with both volumetric values for elements such as structure, and surface area for the skin. Some of them even
+                    struggled with converting between these functional unit, opening up the analysis to mistakes. By interpretting the EPD's, and forming a new dataset with comparable values, the user
+                    would be able to choose their volumes in a language they were more familiar with.
                 </p>
 
                 <h2>Manufacturer Location</h2>
                 <p class="description">
-                    To calculate transport, other solutions require raw distance values e.g. "500 km". However with the searchable locations, this process can be done automatically with geocoding.
+                    The other tools require a value to be inputted for the transport in either km or miles, which would either be calculated using Google Maps or similar, or guessed entirely with an
+                    arbitrary value. This task could be automated through geocoding the place names and using a formula to calculate the distance, thus simplifying the process.
                 </p>
 
                 <h2>Transport Methods</h2>
                 <p class="description">
-                    There are times in projects where poor planning can result in the need for speedier transport. This cna results in much larger impacts, 
-                    and so it would be valuable to provide options to see the disparity between different vehicles 
+                    There are times in projects where poor planning can result in the need for speedier transport. Whilst the actual distance is an obvious component in scaling the impacts of sourcing,
+                    the transport method has a much bigger impact due to the magnitude of difference between transporting an item a certain distance between sea freight and plane (almost x100).
                 </p>
 
                 <h2>Results</h2>
                 <p class="description">
-                    The existing tools keep the final outcomes behind the calculations, so if changes were to be made the entire process would have to be
-                    started again. With all these variables, it would be essential to have the results update instantly
+                    The existing tools keep the final outcomes behind the calculations, which can be a lengthy process. If changes were to be made to any of the entries, the entire process would have to be
+                    started again. With all these variables, it would be essential to have the results update instantly, so that the user can quickly learn how the sustainability of their decisions.
                 </p>
 
             </div>

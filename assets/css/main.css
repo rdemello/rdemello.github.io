@@ -33,6 +33,7 @@ h3 {
   .project.wrap {
     margin-right: 0%;
     width: 90%; }
+
   .workContent .division {
     text-align: left; }
     .workContent .division h1 {
@@ -45,6 +46,7 @@ h3 {
       font-size: 0.9em;
       width: 70%;
       margin: 10px auto 20px auto; }
+
   .wrap {
     width: 90%;
     padding: 0%;
@@ -56,7 +58,6 @@ h3 {
         text-align: center;
         width: 60%;
         margin: 10px auto; } }
-
 .menuFixed {
   position: fixed;
   top: 0px; }
@@ -279,6 +280,7 @@ h3 {
     width: 48%;
     display: inline-block;
     margin: 0% 1% 2% 1%; }
+
   .wrap {
     max-width: 1600px;
     margin: 5% auto !important; }
@@ -301,7 +303,6 @@ h3 {
       .wrap .tracker h1 {
         font-size: 1.2em;
         margin: 0px; } }
-
 .epdGraph {
   background-color: #fff;
   padding: 20px 15%; }
@@ -354,6 +355,11 @@ h3 {
   background-color: #333;
   transition: .2s all; }
 
+.img {
+  width: 100%;
+  display: block;
+  margin: 0px auto; }
+
 .glassProcess {
   content: url("../media/glass/process_vertical.png");
   width: 100%; }
@@ -361,14 +367,15 @@ h3 {
 @media screen and (min-width: 1200px) {
   .glassProcess {
     content: url("../media/glass/process.png"); }
+
   .content .tile {
     width: 48%;
     display: inline-block;
     margin: 0% 1% 2% 1%; }
+
   .division .stakeholder {
     width: 49%;
     display: inline-block; } }
-
 .stakeholder {
   width: 100%;
   vertical-align: top;
@@ -408,3 +415,5 @@ h3 {
 
 .potText p {
   margin-top: 5px; }
+
+/*# sourceMappingURL=main.css.map */
