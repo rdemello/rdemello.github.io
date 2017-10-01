@@ -52,6 +52,13 @@ h3 {
     .wrap .content {
       display: block;
       width: auto; }
+      .wrap .content .tile .tileContent {
+        width: 200px;
+        padding: 15px;
+        position: absolute;
+        line-height: 1.2em; }
+      .wrap .content .tile .image {
+        margin-left: 230px; }
       .wrap .content .aboutMe {
         text-align: center;
         width: 60%;
@@ -101,6 +108,7 @@ h3 {
   position: relative;
   text-align: center;
   cursor: pointer;
+  background-color: #323232;
   transition: .2s all; }
 
 .titleHeader.dark {
@@ -117,7 +125,7 @@ h3 {
 .pixel {
   width: 20px;
   height: 20px;
-  background-color: #e55;
+  background-color: #323232;
   transition: 2s all; }
 
 .selection {
@@ -197,7 +205,7 @@ h3 {
 
 .image {
   height: 280px;
-  margin-left: 230px;
+  margin-left: 180px;
   background-position: 50% 50%;
   background-size: cover;
   background-color: #e1ddda;
@@ -206,7 +214,7 @@ h3 {
   position: relative; }
 
 .tileContent {
-  width: 200px;
+  width: 150px;
   padding: 15px;
   position: absolute;
   line-height: 1.2em; }

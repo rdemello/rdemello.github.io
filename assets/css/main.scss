@@ -82,6 +82,19 @@ h3{
             display:block;
             width:auto;
 
+            .tile{
+                .tileContent{
+                    width:200px;
+                    padding:15px;
+                    position:absolute;
+                    
+                    line-height:1.2em;
+                }
+                .image{
+                    margin-left:230px;
+                }
+            }
+
             .aboutMe{
                 text-align: center;
                 width:60%;
@@ -201,6 +214,7 @@ h3{
     position:relative;
     text-align:center;
     cursor:pointer;
+    background-color: #323232;
     transition: .2s all;
 }
 
@@ -225,7 +239,7 @@ h3{
     width:20px;
     height:20px;
     @extend .trim;
-    background-color:#e55;
+    background-color:#323232;
     transition: 2s all;
 }
 
@@ -313,7 +327,7 @@ h3{
 
 .image{
     height:280px;
-    margin-left:230px;
+    margin-left:180px;
     background-position: 50% 50%;
     background-size: cover;
     background-color: #e1ddda;
@@ -323,7 +337,7 @@ h3{
 }
 
 .tileContent{
-    width:200px;
+    width:150px;
     padding:15px;
     position:absolute;
     @extend .alignment;
