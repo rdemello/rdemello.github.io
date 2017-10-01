@@ -13,6 +13,8 @@ $(document).ready(function(){
     // setColor(39,130,62)
     // color(39, 130, 62,10);
 
+    
+
     setColor(127,176,73);
     color(127,176,73,8);
     // $('.menu').css("background-color","rgb(127,176,73)")
