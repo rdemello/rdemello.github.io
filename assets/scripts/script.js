@@ -51,8 +51,8 @@ $(document).ready(function(){
     createGrid(8,8)
 
     window.sr = ScrollReveal();
-    sr.reveal('.description', { duration: 900, scale:1 });
-    sr.reveal('h1, h2, .tile', { duration: 1300, scale:1 });
+    sr.reveal('.description', { duration: 900, scale:1, viewFactor:0.1 });
+    sr.reveal('h1, h2, .tile', { duration: 1300, scale:1, viewFactor:0.1  });
 
     $(".menuItem").hover(function(){
         $(this).next(".selection").toggleClass("hover")
