@@ -569,14 +569,13 @@ h3{
 .bannerWrap{
     width:100%;
     position: relative;
-    text-align: center;
 }
 
 .seeMore{
     position: absolute;
-    left:45%;
-    width:40%;
-    top:20%;
+    left:30%;
+    // width:40%;
+    top:30%;
     color:#333;
     font-family: 'Jaldi', sans-serif;
     background-color: #fff;
@@ -599,7 +598,7 @@ h3{
 .smallImg{
     background-color:#ccc;
     width:100%;
-    height:300px;
+    height:auto;
     display:inline-block;
 }
 
