@@ -29,11 +29,30 @@ h3 {
   margin: 0px;
   padding: 0px; }
 
+.kpi {
+  width: 95%;
+  display: inline-block;
+  text-align: center;
+  margin: 0px 2%; }
+
+.kpiInfo {
+  max-width: 400px;
+  width: 100%;
+  margin: 0px auto; }
+
+.kpiTitle {
+  font-size: 1.1em;
+  font-weight: bold; }
+
+.icon {
+  width: 100%;
+  max-width: 200px;
+  margin: 0px auto; }
+
 @media only screen and (min-width: 720px) {
   .project.wrap {
     margin-right: 0%;
     width: 90%; }
-
   .workContent .division {
     text-align: left; }
     .workContent .division h1 {
@@ -49,7 +68,6 @@ h3 {
       .workContent .division .description .smallImg {
         width: 45%;
         margin: 2%; }
-
   .wrap {
     width: 90%;
     padding: 0%;
@@ -68,6 +86,51 @@ h3 {
         text-align: center;
         width: 60%;
         margin: 10px auto; } }
+
+@media only screen and (min-width: 900px) {
+  .division .kpi {
+    width: 28%;
+    margin: 0px 2% 10px 2%; } }
+
+@media screen and (min-width: 1200px) {
+  .glassProcess {
+    content: url("../media/glass/process.png"); }
+  .content .tile {
+    width: 48%;
+    display: inline-block;
+    margin: 0% 1% 2% 1%; }
+  .division .stakeholder {
+    width: 49%;
+    display: inline-block; } }
+
+@media only screen and (min-width: 1600px) {
+  .content .tile {
+    width: 48%;
+    display: inline-block;
+    margin: 0% 1% 2% 1%; }
+  .wrap {
+    max-width: 1600px;
+    margin: 5% auto !important; }
+    .wrap .tracker {
+      opacity: 0;
+      display: inline-block;
+      position: fixed;
+      top: 5%;
+      color: #fff;
+      background-color: #e1ddda;
+      font-family: 'Monda', sans-serif;
+      z-index: 300;
+      transition: .2s all;
+      padding: 10px 4px 10px 16px;
+      width: 30px;
+      cursor: pointer; }
+      .wrap .tracker p {
+        font-size: 0.7em;
+        margin: 0px; }
+      .wrap .tracker h1 {
+        font-size: 1.2em;
+        margin: 0px; } }
+
 .menuFixed {
   position: fixed;
   top: 0px; }
@@ -286,34 +349,6 @@ h3 {
     margin: 10px 20px 20px 20px;
     font-size: 0.8em; }
 
-@media only screen and (min-width: 1600px) {
-  .content .tile {
-    width: 48%;
-    display: inline-block;
-    margin: 0% 1% 2% 1%; }
-
-  .wrap {
-    max-width: 1600px;
-    margin: 5% auto !important; }
-    .wrap .tracker {
-      opacity: 0;
-      display: inline-block;
-      position: fixed;
-      top: 5%;
-      color: #fff;
-      background-color: #e1ddda;
-      font-family: 'Monda', sans-serif;
-      z-index: 300;
-      transition: .2s all;
-      padding: 10px 4px 10px 16px;
-      width: 30px;
-      cursor: pointer; }
-      .wrap .tracker p {
-        font-size: 0.7em;
-        margin: 0px; }
-      .wrap .tracker h1 {
-        font-size: 1.2em;
-        margin: 0px; } }
 .epdGraph {
   background-color: #fff;
   padding: 20px 15%; }
@@ -333,17 +368,6 @@ h3 {
   color: #b22222;
   font-size: 1.2em;
   line-height: 1.4em; }
-
-.kpi {
-  width: 100%;
-  display: inline-block;
-  margin: 0px;
-  vertical-align: middle; }
-
-.kpiInfo {
-  display: inline-block;
-  vertical-align: top;
-  width: 60%; }
 
 .bannerWrap {
   width: 100%;
@@ -374,18 +398,6 @@ h3 {
   content: url("../media/glass/process_vertical.png");
   width: 100%; }
 
-@media screen and (min-width: 1200px) {
-  .glassProcess {
-    content: url("../media/glass/process.png"); }
-
-  .content .tile {
-    width: 48%;
-    display: inline-block;
-    margin: 0% 1% 2% 1%; }
-
-  .division .stakeholder {
-    width: 49%;
-    display: inline-block; } }
 .stakeholder {
   width: 100%;
   vertical-align: top;
@@ -425,5 +437,3 @@ h3 {
 
 .potText p {
   margin-top: 5px; }
-
-/*# sourceMappingURL=main.css.map */
