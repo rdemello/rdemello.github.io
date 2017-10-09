@@ -48,11 +48,13 @@ h3{
     display: inline-block;
     text-align: center;
     margin:0px 2%;
+    vertical-align: top;
 }
 
 .kpiInfo{
     max-width:400px;
     width:100%;
+    font-size: 0.9em;
     margin:0px auto;
 }
 
@@ -63,7 +65,7 @@ h3{
 
 .icon{
     width:100%;
-    max-width:200px;
+    max-width:150px;
     margin:0px auto;
 }
 
@@ -144,7 +146,7 @@ h3{
 
 @media screen and (min-width: 1200px) {
     .glassProcess{
-        content:url("../media/glass/process.png");
+        content:url("../media/glass/process.png") !important;
     }
 
     .content{
@@ -656,6 +658,9 @@ h3{
 .glassProcess{
     content:url("../media/glass/process_vertical.png");
     width:100%;
+    max-width:1400px;
+    margin:0px auto;
+    display:block;
 }
 
 
