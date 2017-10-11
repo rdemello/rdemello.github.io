@@ -20,13 +20,10 @@ $(document).ready(function(){
         colourChange();
     }, 500);
 
-    $('.tracker').on('click',function(){
-        $('html, body').animate({ scrollTop: 0 }, 'bounce');
 
-    })
 
-    $('.headerPage').parallax({imageSrc: '../assets/media/big/gherkin.jpg'});
-    $('#mrc').parallax({imageSrc: '../assets/media/glass/mrc.jpg'});
-    $('#wireframe').parallax({imageSrc: '../assets/media/glass/wireframe.JPG'});
+    $('.headerPage').parallax({imageSrc: '../../assets/media/big/gherkin.jpg'});
+    $('#mrc').parallax({imageSrc: '../../assets/media/glass/mrc.jpg'});
+    $('#wireframe').parallax({imageSrc: '../../assets/media/glass/wireframe.JPG'});
 
 })
