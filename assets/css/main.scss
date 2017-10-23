@@ -59,13 +59,13 @@ body{
     @extend .trim;
     background-color: #eee;
     font-family: 'Monda', sans-serif;
-    line-height: 1.8em;
+    line-height: 1.6em;
     font-size: 1.2em;
     color:#333;
     transition:1s all;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: 'Monda', sans-serif;
 }
 
@@ -121,7 +121,7 @@ h3{
 
     .project.wrap{
         margin-right:0%;
-        width:90%;
+        width:80%;
     }
 
     .workContent{
@@ -133,7 +133,7 @@ h3{
                 width:70%;
             }
 
-            h2{
+            h2,h3{
                 margin:0px auto;
                 width:70%;
             }
@@ -156,15 +156,16 @@ h3{
             .seeMore{
                 top:25%;
                 font-size:0.9em;
+                line-height:2em;
             }
         }
 
     }
 
     .wrap{
-        width:90%;
+        width:80%;
         padding:0%;
-        margin:5%;
+        margin:10%;
         
         .content{
             // margin-left:8%;
@@ -231,6 +232,7 @@ h3{
             .seeMore{
                 top:35%;
                 font-size:1em;
+                line-height: 2em;
             }
         }
     }
@@ -589,7 +591,7 @@ h3{
 .headerPage{
     color:#fff;
     font-family: 'Monda', sans-serif;
-    min-height:250px;
+    min-height:180px;
     height:auto;
     padding:50px 10px;
     // background-position: 50% 50%;
@@ -620,7 +622,7 @@ h3{
 
 .workDivisionDark, .myRole{
     background-color: #232323;
-    color: #ddd;
+    color: #eee;
     line-height: 1.8em;
     font-size:1em;
     
@@ -645,7 +647,7 @@ h3{
         text-align: left;
     }
 
-    h1, h2{
+    h1, h2, h3{
         margin: 10px 20px 20px 20px;
     }
 
@@ -693,10 +695,10 @@ h3{
 .seeMore{
     position: absolute;
     left:35%;
-    top:0%;
+    top:20%;
     color:#333;
     font-family: 'Jaldi', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.7em;
     background-color: #fff;
     padding:10px;
     margin-top:-10px;
@@ -738,7 +740,7 @@ h3{
 .stakeholder{
     width:100%;
     vertical-align: top;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .potImage{
@@ -785,4 +787,41 @@ h3{
 
 .potText p{
     margin-top:5px;
+}
+
+.backToTop{
+    text-align: center;
+    cursor: pointer;
+    width:100px;
+    margin: 100px auto 40px auto;
+    font-weight: bold;
+    color: #888
+}
+
+.backToTop p{
+    margin:0px;
+}
+
+.arrow{
+    font-size:1.5em;
+    position: relative;
+    top:0px;
+    transition: .5s all;
+}
+
+.arrowTop{
+    width:50px;
+    height: 2px;
+    background-color: #888;
+}
+
+.backToTop:hover .arrow,{
+    top:-10px;
+    color:#222;
+    transition: .5s all;
+}
+
+.backToTop:hover .arrowTop{
+    background-color:#222;
+    transition: .5s all;
 }

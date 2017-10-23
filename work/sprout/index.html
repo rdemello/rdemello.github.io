@@ -50,11 +50,18 @@
         <div class="content workContent">
             <div class="headerPage">
                 <h1>Project Sprout</h1>
-                <p class="description">Making sustainable information more accessible to architects in the design process</p>
+                <br>
                 <p class="disclaimer">Some information has been omitted from this case study due to confidentiality. The views and information shown are based of my own opinions and findings, which are not necessarily representative of Foster+Partners</p>
-            </div
-            
-            ><div class="division myRole">
+            </div>
+            <div class="bannerWrap">
+                <img src="../../assets/media/sprout/endbanner.jpg" style="width:100%; min-height:100px;">
+                <p class="seeMore">
+                    <b style="font-weight:800;">Goal:</b> Making sustainable information more accessible<br>
+                    <b style="font-weight:800;">My Role:</b> Researcher, Designer and Developer<br>
+                    <b style="font-weight:800;">Code:</b> VBA, HTML, SASS and Javascript<br>
+                </p>
+            </div>
+            <div class="division myRole">
                 <h1>The Problem</h1>
                 <p class="description">
                     Sustainable design has always been an important facet of architecture, and usually encompasses the integration of the building into its surrounding environment as a whole.
@@ -63,8 +70,6 @@
                     Whilst there are practices in place to address the concerns of carbon, the tools used to carry out these calculations are either not focused in architecture, or relatively new.
                     Thus these methods are yet to successfully integrate into the design process, resulting in them usually being sidelined.
                     <br><br>
-                    <b style="font-weight:800;">My Role:</b> Researcher, Designer and Developer
-                    
                 </p>
             </div>
 
@@ -98,12 +103,13 @@
             </div>
 
             <div id="epdPic" src="../../assets/media/sprout/epd.JPG" style="width:100%; height:600px;" ></div>
-
-
+            
+            
             <div class=" division workDivision">
+                <h2>Technical Barriers</h2>
                 <p class="description">
-                    In order to do this, 100 EPDs were selected, covering a range of typical building products including glazing, concrete, metal sheeting etc. 
-                    The selection was reviewed with an architect, to be able to ascertain what the issues were:</p>
+                    100 EPDs were selected, covering a range of typical building products including glazing, concrete, metal sheeting etc. 
+                    The selection was reviewed with architects, to be able to ascertain what the issues were:</p>
                     <p class="description">
                         <span class="bullet">&#9679</span>The level of detail varied considerably, length from 6 to 22 pages</br>
                         <span class="bullet">&#9679</span>There were inconsistencies in the functional unit applied for the calculations e.g. some would have a panel as a unit, others would have 1 cubic meter of material, or a tonne of material</br>
@@ -153,7 +159,7 @@
                     <span class="minus">-</span> Most of the data is research based<br>
                     <span class="minus">-</span> Not all sources are listed, with limited transparency<br>
                 </p><br>
-                <h2>Mid</h2>
+                <h2>Mid-Range</h2>
                 <p style="font-size:0.9em" class="description">Athena, One Click LCA, eTool LCD</p>
                 <p class="description">
                     These mid-range tools were attempting to fill the sweet spot for the construction industry. They're process of building up an analysis carried the user through the steps of a building e.g.
@@ -197,63 +203,94 @@
                 <br>
             </div>
             <div class="division workDivisionDark">
-                <h1>Guiding the User</h1>
+                <h1>Holding Hands</h1>
                 <p class="description">
                     From discussions with the architects, I saw how they ideally would want to go through a process of selecting a material, and importantly how this could be supplemented
                     with cues and feedback to address some of the earlier issues.
+                    <br><br>
+                    This wasn't just onboarding, but being able to walk them through how their decisions can affect the final embodied carbon. No tool existed like 
                 </p>
             </div>
 
             <div class="division workDivision">
 
-                <h2>Project Location</h2>
+                <p class="description">
+                    <img src="../../assets/media/sprout/process_cropped.jpg" style="max-width:1100px;" class="img">
+                </p>
+                <br><br>
+                <h3>Project Location</h3>
                 <p class="description">
                     The project location will never change, but importantly by allowing them to search for a physical world location, this can be geocoded and the longitude and latitude can 
                     be used later to calculate estimated distances automatically.
-                </p>
+                </p><br>
 
-                <h2>Choose Material/Product</h2>
+                <h3>Choose Material/Product</h3>
                 <p class="description">
                     Supporting information on each material and product would help validate the decisions, but importantly give the transparency where necessary to see the source of the data
                     if further clarification is needed.
-                </p>
+                </p><br>
                 
-                <h2>Dimensions</h2>
+                <h3>Dimensions</h3>
                 <p class="description">
                     The functional unit in EPD's vary so much, and architects are familiar with both volumetric values for elements such as structure, and surface area for the skin. Some of them even
                     struggled with converting between these functional unit, opening up the analysis to mistakes. By interpretting the EPD's, and forming a new dataset with comparable values, the user
                     would be able to choose their volumes in a language they were more familiar with.
-                </p>
+                </p><br>
 
-                <h2>Manufacturer Location</h2>
+                <h3>Manufacturer Location</h3>
                 <p class="description">
                     The other tools require a value to be inputted for the transport in either km or miles, which would either be calculated using Google Maps or similar, or guessed entirely with an
                     arbitrary value. However this task could be automated through geocoding the place names and using a formula to calculate the distance, thus simplifying the process.
-                </p>
+                </p><br>
 
-                <h2>Transport Methods</h2>
+                <h3>Transport Methods</h3>
                 <p class="description">
                     There are times in projects where poor planning can result in the need for speedier transport. Whilst the actual distance is an obvious component in scaling the impacts of sourcing,
                     the transport method has a much bigger impact due to the magnitude of difference between transporting an item a certain distance between sea freight and plane (almost x100).
-                </p>
+                </p><br>
 
-                <h2>Results</h2>
+                <h3>Results</h3>
                 <p class="description">
                     The existing tools keep the final outcomes behind the calculations, which can be a lengthy process. If changes were to be made to any of the entries, the entire process would have to be
                     started again. With all these variables, it would be essential to have the results update instantly, so that the user can quickly learn how the sustainability of their decisions.
                 </p><br>
 
+                <h2>Prototyping</h2>
                 <p class="description">
-                    <img src="../../assets/media/sprout/process_cropped.jpg" style="max-width:1100px;" class="img">
+                    This then laid out the flow of the design, and so I began to make quick principle proving prototypes in Excel VBA in order to test out a number of the features and ideas, but also
+                    to guage how valuable it could be
                     <br><br>
-                    This then laid out the flow of the design, and so I began to make quick principle proving prototypes in order to test out a number of the features and ideas
+                    <img src="../../assets/media/glass/excel.jpg" class="smallImg" style="display:block; width:100%;margin:0px auto;"></img>
+                    <br><br>
+                    The sheet was set up on the "Holding the Hand" principle, having the user fill out a form on a step-by-step basis using a breakdown of the overall process.
+                    It was distributed to architects and engineers for testing and feedback.
                 </p>
+                <div class="description">
+                    <div class="kpi">
+                        <p class="kpiTitle">Knowledge</p>
+                        <img class="icon" src="../../assets/media/sprout/questionMark.png">
+                        <p class="kpiInfo">As a whole, the users were very unfamiliar with the process and the magnitude of impacts between materials</p>
+                    </div
+                    ><div class="kpi">
+                        <p class="kpiTitle">Shipping</p>
+                        <img class="icon" src="../../assets/media/sprout/shipping.png">
+                        <p class="kpiInfo">The impacts of transport were known to some degree, but were not expected to the scale presented</p>    
+                    </div
+                    ><div class="kpi">
+                        <p class="kpiTitle">Metric</p>
+                        <img class="icon" src="../../assets/media/sprout/metric.png">
+                        <p class="kpiInfo">There were questions raised on other metrics outside of embodied carbon</p>    
+                    </div>
+
+                </div>
             </div>
 
-            <div class="bannerWrap">
-                <img src="../../assets/media/sprout/endbanner.jpg" style="width:100%; min-height:100px;">
-                <p class="seeMore">Unfortunately a lot of this work can't be shown publicy<br> If you'd like to hear more about it, get in touch</p>
-            </div>
+        </div>
+
+        <div class="backToTop">
+            <hr class="arrowTop">
+            <p class="arrow">&#8593</p>
+            <p class="description">Back to Top</p>
         </div>
 
     </div>

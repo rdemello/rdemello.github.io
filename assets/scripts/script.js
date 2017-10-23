@@ -58,5 +58,8 @@ $(document).ready(function(){
         $(this).next(".selection").toggleClass("hover")
     })
 
+    $('.backToTop').on('click',function(){
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+    })
 
 })
