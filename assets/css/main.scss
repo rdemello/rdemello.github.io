@@ -206,9 +206,28 @@ h3{
     }
 }
 
+@media only screen and (max-width:600px){
+    .menuWrap{
+        .return{
+            left:-10px !important;
+        }
+    }
+    .footer{
+        .return{
+            left:-20px !important;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .glassProcess{
         content:url("../media/glass/process.png") !important;
+    }
+
+    .menuWrap{
+        .return{
+            left:-150px !important;
+        }
     }
 
     .content{
@@ -413,18 +432,119 @@ h3{
     width:160px;
     height:160px;
     margin:20px auto;
+    display: inline-block;
+}
+
+
+
+.return:hover .arrow{
+    left:-10px;
+    color:#222;
+    transition: .5s all;
+}
+
+.return:hover .rop{
+    color:#222;
+    transition: .5s all;
+}
+
+
+.footer{
+    width:300px;
+    margin:0px auto;
+    .return{
+        display:inline-block;
+        width:100px;
+        vertical-align: top;
+        font-size:1em;
+        color:#888;
+        line-height: 1em;
+        margin-top:130px;
+        text-align: center;
+        left:-100px;
+        position:relative;
+        cursor:pointer;
+        transition: .5s all;
+        -webkit-user-select: none;
+        .rop{
+            display:inline-block;
+            font-size:0.9em;
+            font-family: 'Jaldi', sans-serif;
+            transition: .5s all;
+            font-weight: bold;
+        }
+        .arrow{
+            display: inline-block;
+            top:-3px;
+            transition: .5s all;
+            left:0px;
+            font-weight:400;
+            color:#aaa;
+        }
+    }
+    .return:hover .arrow{
+        left:-10px;
+        color:#222;
+        transition: .5s all;
+    }
+    
+    .return:hover .rop{
+        color:#222;
+        transition: .5s all;
+    }
 }
 
 .menuWrap{
     padding:0px;
     margin:20px auto;
     margin-bottom:40px;
-    width:100%;
     height:180px;
-    width:180px;
+    width:380px;
     display:block;
-    vertical-align:top;
+
+    .return{
+        display:inline-block;
+        width:100px;
+        vertical-align: top;
+        font-size:0.9em;
+        color:#888;
+        line-height: 1em;
+        text-align: center;
+        margin-top:70px;
+        left:-100px;
+        position:relative;
+        cursor:pointer;
+        transition: .5s all;
+        -webkit-user-select: none;
+        .rop{
+            display:inline-block;
+            font-size:0.9em;
+            font-family: 'Jaldi', sans-serif;
+            transition: .5s all;
+        }
+        .arrow{
+            display: inline-block;
+            top:-3px;
+            transition: .5s all;
+            left:0px;
+            font-weight:400;
+            color:#aaa;
+        }
+    }
+
+    .return:hover .arrow{
+        left:-10px;
+        color:#222;
+        transition: .5s all;
+    }
+    
+    .return:hover .rop{
+        color:#222;
+        transition: .5s all;
+    }
+
 }
+
 
 .titleHeader{
     @include header-font(800,17px,#eee);
@@ -791,12 +911,14 @@ h3{
 }
 
 .backToTop{
+    -webkit-user-select: none;
     text-align: center;
     cursor: pointer;
     width:100px;
     margin: 100px auto 40px auto;
     font-weight: bold;
-    color: #888
+    color: #888;
+    display: inline-block;
 }
 
 .backToTop p{

@@ -27,33 +27,22 @@
 
 <body>
 
-    <!--<div class="menu">
-        <div class="align">
-            <a href="../index.html"><p class="sub" style="left:0px;">Return to Projects</p></a>
-            <p class="main">Glass Selector</p>
-            <p class="sub" style="right:0px" id="toTop">Back to Top</p>
-        </div>
-    </div>-->
-
     <div class="project wrap">
 
-
         <div class="menuWrap"> 
-            <div class="headerWrap">
+            <a href="../../">
+                <div class="return headerSplit">
+                    <p class="arrow">&#8592</p>
+                    <p class="rop">Return to <br>Projects</p>
+                </div>
+            </a
+
+            ><div class="headerWrap headerSplit">
                 <div class="pixelGrid" id="pixelGrid"></div>
                 <a href="../../"><div class="titleHeader">Ryan de Mello</div></a>
             </div>
-            <!-- <div class="menu">
 
-                style="background-image:url('../assets/media/gherkin.jpg')"
-                <a href="../index.html"><div class="menuItem dark">Work </div
-                ></a><a href="../about/index.html"><div class="menuItem dark GIT">About</div></a>
-            </div> -->
         </div> 
-        
-        <!-- <div class="tracker">
-            <h1>^</h1>
-        </div> -->
 
         <div class="content workContent">
             <div class="headerPage" >
@@ -68,9 +57,9 @@
                     <b style="font-weight:800;">My Role:</b> Researcher, Designer and Developer<br>
                     <b style="font-weight:800;">Code:</b> VBA, HTML, SASS and Javascript<br>
                 </p>
-            </div>
-
-            <div class="division myRole">
+            </div
+            
+            ><div class="division myRole">
                 <h1>The Problem</h1>
                 <p class="description">
                         My desk at Foster+Partners (F+P) was located in a room filled with over 20,000
@@ -90,11 +79,11 @@
                     
                     
                 </p>
-            </div>
-
-            <div id="mrc" src="../../assets/media/glass/mrc.JPG" style="width:100%; height:600px;" ></div>
-
-            <div class=" division workDivision">
+            </div
+            
+            ><div id="mrc" src="../../assets/media/glass/mrc.JPG" style="width:100%; height:600px;" ></div
+                
+            ><div class=" division workDivision">
                 <h1>The Starting Point</h1>
                 <p class="description">
                     Specifying glass into a building is a long and complicated process, and more often than not, non-linear. Although the architect would have been thought to be the driving force,
@@ -291,7 +280,11 @@
                 <p class="description">
                     Moving forward with some of the outcomes from discussions, I began prototyping a web-based solution which could handle the streamlined data and present this information in an easy to use way.<br><br>
                     Whilst this was mostly fueled from the insights gained from the use of the prototype tool, no tool like this existed, and so the users had plenty of ideas and suggestions of what could improve
-                    their workflow. These went through an evaluation process to judge feasibility and how beneficial they could be based on the research.
+                    their workflow. 
+                    <br><br>
+                    <img class="img" src="../../assets/media/glass/userbenefit.png" style="max-width:400px;">
+                    <br>
+                    These went through an evaluation process to judge feasibility and how beneficial they could be based on the research vs my limitation of time that I could spend working on implementing the features
                 </p>
             </div>
 
@@ -301,8 +294,29 @@
                 <p class="description">
                     Contrary to what was expected from a selection process that relied on prescriptive input, the engineers in particular sought the ability to "explore" the options. From
                     their calculations, they would always give a soft and hard limit for the environmental performance of the structure, and so they used their results as a conversation starter
-                    for discussions, with leeway in their parameters.
+                    for discussions, with leeway in their parameters.<br><br>
+                    The tool was therefore divided into 3 sections:
                 </p>
+                <br>
+                <h3>Dynamic Inputs and Results</h3>
+                <p class="description">
+                    Here the user could "play" around with their performance requirements and filter down to the products that meet their requirements on the fly
+                </p>
+                <br>
+                <h3>Detailed Information</h3>
+                <p class="description">
+                    When a particular product was selected, it would bring up further detailed information regarding other aspects of the glass that were usually asked such as:<br>
+                    <span class="bullet">&#9679</span>Maximum size available</br>
+                    <span class="bullet">&#9679</span>Contact information for company representative</br>
+                    <span class="bullet">&#9679</span>Glass build up the data is based on</br>
+                    <span class="bullet">&#9679</span>Other technical data</br>
+                </p>
+                <br>
+                <h3>Selected Products</h3>
+                <p class="description">
+                    With a number of products that can meet the same requirements, users could build up a list of products for exporting out into their own tables, with all the data shown
+                </p>
+
                 <br><br>
                 <img src="../../assets/media/glass/lowfiwireframe.png" class="img" style="max-width:600px;"></img>
                 <p class="description">
@@ -312,23 +326,51 @@
                 </p>
                 <br><br>
                 <img src="../../assets/media/glass/development.jpg" class="img" style="max-width:600px;"></img>
+                <br><br>
             </div>
 
             <div class="division hover glass">
                 <h1>Launching</h1>
-                <p class="description">
-                    Following an initial approval process, the tool was launched onto the Foster+Partners intranet.
-                </p>
                 <br><br>
-                <img src="../../assets/media/glass/noBgMockup.png" class="img" style="max-width:400px;"></img>
+                <img src="../../assets/media/glass/finish.png" class="img" style="max-width:800px;"></img>
+                <p class="description">
+                    Following an initial approval process, the tool was launched onto the Foster+Partners intranet, a long with a logger to be able to track who was using it. 
+                    Overall it was received quite well, with a high number of users from various teams.<br><br>
+                    Following this initial launch, the logger was analysed to reveal that the primary users of the tool were actually members from support teams, including EE, SMG, Sustainability and CRG.
+                    I had spoke with some of them, and found that they had been using it both as a supporting tool when discussing with architects, but also for their own work which involves modelling or suggestions that 
+                    require a range of products.
+                </p>
             </div>
 
+            <div class="division workDivisionDark">
+                <h1>Moving Forward</h1>
+                <p class="description">
+                    From the post-launch discussions, I had learnt a bit more about the culture that was unique to F+P. As mentioned at the start,
+                    it's a big practice, which allows for multiple teams to be able to support architects with their work. This means that although
+                    the architect in theory has the biggest decisions when it comes to glass, they have the luxury of ensuring that there is someone
+                    from a support team there to be able to help with the technical aspects of it<br><br>
+                    There were also a number of suggestions from the situations where the technical experts were using the tool independently:
+                    <span class="bullet">&#9679</span>F+P Specific building data including past projects</br>
+                    <span class="bullet">&#9679</span>Further technical information such as spectral transmission data</br>
+                    <span class="bullet">&#9679</span>And others...</br><br>
+                    Some of these features are currently being evaluated for feasibility, and a design criteria will be drawn up for version 2.0 
+                </p>
+            </div>
         </div>
 
-        <div class="backToTop">
-            <hr class="arrowTop">
-            <p class="arrow">&#8593</p>
-            <p class="description">Back to Top</p>
+        <div class="footer">
+            <a href="../../">
+                <div class="return">
+                    <p class="arrow">&#8592</p>
+                    <p class="rop">Return to <br>Projects</p>
+                </div>
+            </a>
+        
+            <div class="backToTop">
+                <hr class="arrowTop">
+                <p class="arrow">&#8593</p>
+                <p class="description">Back to Top</p>
+            </div>
         </div>
 
     </div>
