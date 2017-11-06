@@ -56,7 +56,8 @@ body {
   transition: 1s all; }
 
 h1, h2, h3 {
-  font-family: 'Monda', sans-serif; }
+  font-family: 'Monda', sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 h3 {
   margin: 0px; }
