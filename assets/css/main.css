@@ -5,6 +5,7 @@
   font-weight: 400;
   src: local("Monda Regular"), local("Monda-Regular"), url(https://fonts.gstatic.com/s/monda/v7/Y20I6o_YfoFb_IiaBS52CIDGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
 /* latin */
 @font-face {
   font-family: 'Monda';
@@ -12,6 +13,7 @@
   font-weight: 400;
   src: local("Monda Regular"), local("Monda-Regular"), url(https://fonts.gstatic.com/s/monda/v7/ChjMNN9DcSvFUU7hNHsyKaCWcynf_cDxXwCLxiixG1c.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+
 /* devanagari */
 @font-face {
   font-family: 'Jaldi';
@@ -19,6 +21,7 @@
   font-weight: 400;
   src: local("Jaldi"), local("Jaldi-Regular"), url(https://fonts.gstatic.com/s/jaldi/v3/kTRAg9q58LudDIEZFZXIcYDGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
   unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
 /* latin-ext */
 @font-face {
   font-family: 'Jaldi';
@@ -26,6 +29,7 @@
   font-weight: 400;
   src: local("Jaldi"), local("Jaldi-Regular"), url(https://fonts.gstatic.com/s/jaldi/v3/foHLzZKtaHoaIW1zgrfkyYDGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
 /* latin */
 @font-face {
   font-family: 'Jaldi';
@@ -33,6 +37,7 @@
   font-weight: 400;
   src: local("Jaldi"), local("Jaldi-Regular"), url(https://fonts.gstatic.com/s/jaldi/v3/R7sRqFCzItiE1f2XuS2_TaCWcynf_cDxXwCLxiixG1c.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+
 a {
   text-decoration: none; }
 
@@ -98,7 +103,6 @@ h3 {
   .project.wrap {
     margin-right: 0%;
     width: 80%; }
-
   .workContent .division {
     text-align: left; }
     .workContent .division h1 {
@@ -118,7 +122,6 @@ h3 {
     top: 25%;
     font-size: 0.9em;
     line-height: 2em; }
-
   .wrap {
     width: 80%;
     padding: 0%;
@@ -140,42 +143,40 @@ h3 {
         text-align: center;
         width: 60%;
         margin: 10px auto; } }
+
 @media only screen and (min-width: 900px) {
   .division .kpi {
     width: 28%;
     margin: 0px 2% 10px 2%; } }
+
 @media only screen and (max-width: 600px) {
   .menuWrap .return {
     left: -10px !important; }
-
   .footer .return {
     left: -20px !important; } }
+
 @media screen and (min-width: 1200px) {
   .glassProcess {
     content: url("../media/glass/process.png") !important; }
-
   .menuWrap .return {
     left: -150px !important; }
-
   .content .tile {
     width: 48%;
     display: inline-block;
     margin: 0% 1% 2% 1%; }
-
   .division .stakeholder {
     width: 49%;
     display: inline-block; }
-
   .workContent .bannerWrap .seeMore {
     top: 35%;
     font-size: 1em;
     line-height: 2em; } }
+
 @media only screen and (min-width: 1600px) {
   .content .tile {
     width: 48%;
     display: inline-block;
     margin: 0% 1% 2% 1%; }
-
   .wrap {
     max-width: 1600px;
     margin: 5% auto !important; }
@@ -198,6 +199,7 @@ h3 {
       .wrap .tracker h1 {
         font-size: 1.2em;
         margin: 0px; } }
+
 .menuFixed {
   position: fixed;
   top: 0px; }
@@ -404,9 +406,17 @@ h3 {
   background-color: #7fb049;
   transition: .5s all; }
 
+.sproutBG {
+  background-color: #6e973f;
+  color: #ddd; }
+
 .hover.glass {
   background-color: #4080bb;
   transition: .5s all; }
+
+.glassBG {
+  background-color: #4080bb;
+  color: #ddd; }
 
 .hover.firefly {
   background-color: #e55;
@@ -447,7 +457,11 @@ h3 {
   width: 250px;
   margin: 50px auto; }
 
-.headerPage {
+.fullLook {
+  min-height: 100px !important;
+  padding: 30px 10px !important; }
+
+.headerPage, .fullLook {
   color: #fff;
   font-family: 'Monda', sans-serif;
   min-height: 180px;
@@ -456,14 +470,14 @@ h3 {
   background-size: cover;
   text-align: center;
   display: block; }
-  .headerPage p {
+  .headerPage p, .fullLook p {
     width: 70%;
     margin: 10px auto 20px auto;
     font-size: 1em;
     text-align: center; }
-  .headerPage .description {
+  .headerPage .description, .fullLook .description {
     color: #ddd; }
-  .headerPage .disclaimer {
+  .headerPage .disclaimer, .fullLook .disclaimer {
     color: #aaa;
     font-style: italic;
     font-size: 0.7em;
@@ -490,7 +504,8 @@ h3 {
   .division ul {
     text-align: left; }
   .division h1, .division h2, .division h3 {
-    margin: 10px 20px 20px 20px; }
+    margin: 10px 20px 20px 20px;
+    line-height: 1.4em; }
   .division .description {
     margin: 10px 20px 20px 20px;
     font-size: 0.8em; }
@@ -621,5 +636,3 @@ h3 {
 .backToTop:hover .arrowTop {
   background-color: #222;
   transition: .5s all; }
-
-/*# sourceMappingURL=main.css.map */

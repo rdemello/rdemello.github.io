@@ -652,9 +652,19 @@ h3{
     transition:.5s all;
 }
 
+.sproutBG{
+    background-color: rgb(110, 151, 63);
+    color:#ddd;
+}
+
 .hover.glass{
     background-color: rgb(64,128,187);
     transition:.5s all;
+}
+
+.glassBG{
+    background-color: rgb(64,128,187);
+    color:#ddd;
 }
 
 .hover.firefly{ 
@@ -709,15 +719,18 @@ h3{
 
 //SPROUT
 
-.headerPage{
+.fullLook{
+    min-height:100px !important;
+    padding:30px 10px !important; 
+}
+
+.headerPage, .fullLook{
     color:#fff;
     font-family: 'Monda', sans-serif;
     min-height:180px;
     height:auto;
     padding:50px 10px;
-    // background-position: 50% 50%;
     background-size: cover;
-    // background-color: $bg;
     text-align: center;
     display:block;
 
@@ -770,6 +783,7 @@ h3{
 
     h1, h2, h3{
         margin: 10px 20px 20px 20px;
+        line-height:1.4em;
     }
 
     
