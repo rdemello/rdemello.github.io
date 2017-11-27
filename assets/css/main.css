@@ -111,7 +111,8 @@ h3 {
 
 .menu {
   text-transform: uppercase;
-  text-align: right; }
+  text-align: center;
+  margin-top: 20px; }
   .menu p {
     color: #777;
     display: inline-block;
@@ -125,6 +126,9 @@ h3 {
     transition: .2s all; }
 
 @media only screen and (min-width: 720px) {
+  .menu {
+    margin-top: 0px;
+    text-align: right; }
   .intro {
     padding-left: 10px; }
     .intro .mainTitle {
