@@ -43,20 +43,17 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
   }
 
+
+
 a{
     text-decoration: none;
 }
 
-.alignment{
-    vertical-align: top;
-    display:inline-block;
-}
-
 body{
     width:100%;
-    // min-width:500px;
     height:100%;
-    @extend .trim;
+    margin:0px;
+    padding:0px;
     background-color: #eee;
     font-family: 'Monda', sans-serif;
     line-height: 1.6em;
@@ -118,7 +115,55 @@ h3{
     margin:0px auto;
 }
 
+.intro{
+    padding:0px 20px;
+    // width:100%;
+    max-width:400px;
+
+    .mainTitle{
+        font-family: 'Jaldi', sans-serif;
+        font-size: 3em;
+        font-weight:800;
+        margin:50px 0px 50px 0px;
+    }
+
+    .aboutMe{
+        margin:50px 0px 50px 0px;
+        font-size:0.8em;
+    }
+
+}
+
+.menu{
+    text-transform: uppercase;
+    text-align: right;
+    p {
+        color:#777;
+        display: inline-block;
+        font-size: 0.8em;
+        margin:0px 5px 0px 5px;
+        padding:3px;
+        cursor:pointer;
+        transition: .2s all;
+    }
+    p:hover{
+        color:#333;
+        transition: .2s all;
+        // background-color: #e55;
+    }
+}
+
 @media only screen and (min-width: 720px){
+
+    .intro{
+        padding-left:10px;
+        .mainTitle{
+            margin:100px 0px 80px 0px;
+        }
+        .aboutMe{
+            margin:80px 0px 80px 0px;
+        }
+    }
 
     .project.wrap{
         margin-right:0%;
@@ -166,10 +211,9 @@ h3{
     .wrap{
         width:80%;
         padding:0%;
-        margin:10%;
+        margin:5% 10%;
         
         .content{
-            // margin-left:8%;
             display:block;
             width:auto;
 
@@ -186,12 +230,6 @@ h3{
                     margin-left:230px;
                     border-radius: 0px 5px 5px 0px;
                 }
-            }
-
-            .aboutMe{
-                text-align: center;
-                width:60%;
-                margin:10px auto;
             }
         }
     }
@@ -265,9 +303,8 @@ h3{
             display: inline-block;
             margin: 0% 1% 2% 1%;
         }
-        // margin-left: 180px;
-        
     }
+
     .wrap{
         max-width:1600px;
         margin:5% auto !important;
@@ -297,126 +334,8 @@ h3{
             }
         }
 
-        // .menu{
-        //     width:160px;
-        //     margin:0px;
-        //     position:absolute;
-        //     display:block;
-
-        //     .menuItem{
-        //         width:130px;
-        //         height:30px;
-        //         padding:15px;
-        //         margin:3px 0px 0px 0px;
-                
-        //         // border-top:3px solid #e1ddda;
-                
-        //         transition: .5s all;
-        //         color:#eee;
-        //         text-align: left;
-        //     }
-
-        //     .menuItem.dark{
-        //         color:#fff;
-        //         background-color:#333;
-        //     }
-
-        //     .menuItem.white{
-        //         color: #333;
-        //         background-color: #fff ;
-        //     }
-            
-        //     .menuItem:hover{
-        //         background-color:#555;
-        //         color:#fff;
-        //         transition: .5s all;
-        //     }
-        // }
-        // .menuWrap{
-            
-        //     .headerWrap{
-        //         width:auto;
-        //         margin:0px;
-        //     }
-            
-        //     margin:0px;
-        //     position:absolute;
-        //     display:block;
-        // }
     }
 }
-
-// .menu{
-//     padding:0px;
-//     margin:5px 0px;
-//     min-width: 160px;
-//     text-align:center;
-//     position: relative;
-//     display:block;
-// }
-
-
-.menuFixed{
-    position:fixed;
-    top:0px;
-}
-
-.menuMove{
-    position:absolute;
-    top:380px;
-}
-
-// .menu{
-//     width:90%;
-//     margin:0px 5%;
-//     padding:10px 0px;
-//     height:35px;
-//     background-color: rgba(0,0,0,0);
-//     color:#fff;
-//     border-bottom:0px solid #666;
-//     z-index:1;
-
-//     transition:.5s background-color;
-//     text-align: center;
-    
-
-//     .align{
-//         width:800px;
-//         margin:0px auto;
-//         .sub{
-//             font-size:0.8em;
-//             cursor:pointer;
-//             border-bottom:2px solid rgba(255,255,255,0);
-//             height:27px;
-//             transition: .2s all;
-//             width:140px;
-//             display:inline-block;
-//             text-align: left;
-//         }
-
-//         .sub:hover{
-//             border-bottom:2px solid rgba(255,255,255,1);
-//             transition: .2s all;
-//         }
-
-
-//         a{
-//             color:#fff;
-//         }
-//     }
-
-// }
-
-// .menu p{
-//     display:inline-block;
-//     margin:0px 15px;
-// }
-
-
-
-// .tracker{
-//     display:none;
-// }
 
 .content{
     width:100%;
@@ -428,70 +347,10 @@ h3{
     vertical-align: top;
 }
 
-.headerWrap{
-    width:160px;
-    height:160px;
-    margin:20px auto;
-    display: inline-block;
-}
-
-
-
-.return:hover .arrow{
-    left:-10px;
-    color:#222;
-    transition: .5s all;
-}
-
-.return:hover .rop{
-    color:#222;
-    transition: .5s all;
-}
-
-
 .footer{
     width:300px;
     margin:0px auto;
-    .return{
-        display:inline-block;
-        width:100px;
-        vertical-align: top;
-        font-size:1em;
-        color:#888;
-        line-height: 1em;
-        margin-top:130px;
-        text-align: center;
-        left:-100px;
-        position:relative;
-        cursor:pointer;
-        transition: .5s all;
-        -webkit-user-select: none;
-        .rop{
-            display:inline-block;
-            font-size:0.9em;
-            font-family: 'Jaldi', sans-serif;
-            transition: .5s all;
-            font-weight: bold;
-        }
-        .arrow{
-            display: inline-block;
-            top:-3px;
-            transition: .5s all;
-            left:0px;
-            font-weight:400;
-            color:#aaa;
-        }
-    }
-    .return:hover .arrow{
-        left:-10px;
-        color:#222;
-        transition: .5s all;
-    }
-    
-    .return:hover .rop{
-        color:#222;
-        transition: .5s all;
-    }
+    text-align: center;
 }
 
 .menuWrap{
@@ -545,7 +404,6 @@ h3{
 
 }
 
-
 .titleHeader{
     @include header-font(800,17px,#eee);
     width:140px;
@@ -565,7 +423,8 @@ h3{
 }
 
 .pixelGrid{
-    @extend .trim;
+    margin:0px;
+    padding:0px;
     top:0;
     position:relative;
 }
@@ -573,14 +432,17 @@ h3{
 .pixelCol{
     height:60px;
     width:20px;
-    @extend .trim;
-    @extend .alignment;
+    margin:0px;
+    padding:0px;
+    vertical-align: top;
+    display:inline-block;
 }
 
 .pixel{
     width:20px;
     height:20px;
-    @extend .trim;
+    margin:0px;
+    padding:0px;
     background-color:#323232;
     transition: 2s all;
 }
@@ -591,28 +453,6 @@ h3{
     background-color:#e88;
     display:inline-block;
     @include transition(.5s);
-}
-
-.menuItem{
-    @include header-font(800,17px ,#333 );
-    @extend .alignment;
-    width:40%;
-    height:30px;
-    padding:5px 0px;
-    text-align: center;
-    margin:5px 0px 5px 0px;
-    background-color:transparent;
-    transition: .5s all;
-    position:relative;
-    cursor:pointer;
-}
-
-.menuItem.white{
-    color:#fff;
-}
-
-.GIT{
-    margin-left:2%;
 }
 
 .tile{
@@ -649,7 +489,7 @@ h3{
 
 .hover.sprout{
     background-color: rgb(127,176,73);
-    transition:.5s all;
+    transition:.2s all;
 }
 
 .sproutBG{
@@ -659,7 +499,7 @@ h3{
 
 .hover.glass{
     background-color: rgb(64,128,187);
-    transition:.5s all;
+    transition:.2s all;
 }
 
 .glassBG{
@@ -669,12 +509,12 @@ h3{
 
 .hover.firefly{ 
     background-color: #e55;
-    transition:.5s all;
+    transition:.2s all;
 }
 
 .hover.beo{
     background-color: #555;
-    transition:.5s all;
+    transition:.2s all;
 }
 
 .image{
@@ -692,7 +532,8 @@ h3{
     width:150px;
     padding:15px;
     position:absolute;
-    @extend .alignment;
+    vertical-align: top;
+    display:inline-block;
     line-height:1.2em;
 
 }
@@ -702,19 +543,6 @@ h3{
     position:relative;
     font-size:0.9em;
     font-family: 'Jaldi', sans-serif;
-}
-
-//ABOUT
-
-.aboutMe{
-    text-align: center;
-    margin:0px 50px;
-}
-
-.profilePic{
-    border-radius: 50%;
-    width:250px;
-    margin:50px auto;
 }
 
 //SPROUT
@@ -838,16 +666,11 @@ h3{
     transition: .2s all;
 }
 
-// .seeMore:hover{
-//     color:#fff;
-//     background-color: #333;
-//     transition:.2s all;
-// }
-
 .img{
     width:100%;
     display:block;
     margin:0px auto;
+    vertical-align: top;
 }
 
 .smallImg{
@@ -866,9 +689,6 @@ h3{
     margin:0px auto;
     display:block;
 }
-
-
-
 
 .stakeholder{
     width:100%;
@@ -949,7 +769,7 @@ h3{
     height: 2px;
     background-color: #888;
 }
-
+    
 .backToTop:hover .arrow,{
     top:-10px;
     color:#222;
@@ -960,3 +780,4 @@ h3{
     background-color:#222;
     transition: .5s all;
 }
+    

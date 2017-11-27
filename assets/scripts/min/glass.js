@@ -1,24 +1,15 @@
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        $('.menu').css('opacity',1)
-    }
-    else {
-        $('.menu').css('opacity',0)
-    }
-});
-
 $(document).ready(function(){
     // setColor(39,130,62)
     // color(39, 130, 62,10);
 
-    setColor(64,128,187);
-    color(64,128,187,8)
-    $('.menu').css("background-color","rgb(64,128,187)")
+    // setColor(64,128,187);
+    // color(64,128,187,8)
+    // $('.menu').css("background-color","rgb(64,128,187)")
     
-    colourChange();
-    window.setInterval(function(){
-        colourChange();
-    }, 500);
+    // colourChange();
+    // window.setInterval(function(){
+    //     colourChange();
+    // }, 500);
 
 
 

@@ -48,11 +48,12 @@ function colourChange(){
 }
 
 $(document).ready(function(){
-    createGrid(8,8)
+    // createGrid(8,8)
 
     window.sr = ScrollReveal();
     sr.reveal('.description', { duration: 700, scale:1, viewFactor:0.1 });
-    sr.reveal('h1, h2, .tile', { duration: 500, scale:1, viewFactor:0.1  });
+    sr.reveal('h1, h2', { duration: 500, scale:1, viewFactor:0.1  });
+    sr.reveal('.tile', { duration: 200, scale:1, viewFactor:0.1  });
 
     $(".menuItem").hover(function(){
         $(this).next(".selection").toggleClass("hover")

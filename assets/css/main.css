@@ -41,13 +41,11 @@
 a {
   text-decoration: none; }
 
-.alignment, .pixelCol, .menuItem, .tileContent {
-  vertical-align: top;
-  display: inline-block; }
-
 body {
   width: 100%;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
   background-color: #eee;
   font-family: 'Monda', sans-serif;
   line-height: 1.6em;
@@ -66,7 +64,7 @@ h3 {
   margin: 0px 0px;
   padding: 0px; }
 
-.trim, body, .pixelGrid, .pixelCol, .pixel {
+.trim {
   margin: 0px;
   padding: 0px; }
 
@@ -99,7 +97,40 @@ h3 {
   max-width: 150px;
   margin: 0px auto; }
 
+.intro {
+  padding: 0px 20px;
+  max-width: 400px; }
+  .intro .mainTitle {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin: 50px 0px 50px 0px; }
+  .intro .aboutMe {
+    margin: 50px 0px 50px 0px;
+    font-size: 0.8em; }
+
+.menu {
+  text-transform: uppercase;
+  text-align: right; }
+  .menu p {
+    color: #777;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 0px 5px 0px 5px;
+    padding: 3px;
+    cursor: pointer;
+    transition: .2s all; }
+  .menu p:hover {
+    color: #333;
+    transition: .2s all; }
+
 @media only screen and (min-width: 720px) {
+  .intro {
+    padding-left: 10px; }
+    .intro .mainTitle {
+      margin: 100px 0px 80px 0px; }
+    .intro .aboutMe {
+      margin: 80px 0px 80px 0px; }
   .project.wrap {
     margin-right: 0%;
     width: 80%; }
@@ -125,7 +156,7 @@ h3 {
   .wrap {
     width: 80%;
     padding: 0%;
-    margin: 10%; }
+    margin: 5% 10%; }
     .wrap .content {
       display: block;
       width: auto; }
@@ -138,11 +169,7 @@ h3 {
           line-height: 1.2em; }
         .wrap .content .tile .image {
           margin-left: 230px;
-          border-radius: 0px 5px 5px 0px; }
-      .wrap .content .aboutMe {
-        text-align: center;
-        width: 60%;
-        margin: 10px auto; } }
+          border-radius: 0px 5px 5px 0px; } }
 
 @media only screen and (min-width: 900px) {
   .division .kpi {
@@ -200,14 +227,6 @@ h3 {
         font-size: 1.2em;
         margin: 0px; } }
 
-.menuFixed {
-  position: fixed;
-  top: 0px; }
-
-.menuMove {
-  position: absolute;
-  top: 380px; }
-
 .content {
   width: 100%;
   padding: 0px 0px;
@@ -217,58 +236,10 @@ h3 {
   display: inline-block;
   vertical-align: top; }
 
-.headerWrap {
-  width: 160px;
-  height: 160px;
-  margin: 20px auto;
-  display: inline-block; }
-
-.return:hover .arrow {
-  left: -10px;
-  color: #222;
-  transition: .5s all; }
-
-.return:hover .rop {
-  color: #222;
-  transition: .5s all; }
-
 .footer {
   width: 300px;
-  margin: 0px auto; }
-  .footer .return {
-    display: inline-block;
-    width: 100px;
-    vertical-align: top;
-    font-size: 1em;
-    color: #888;
-    line-height: 1em;
-    margin-top: 130px;
-    text-align: center;
-    left: -100px;
-    position: relative;
-    cursor: pointer;
-    transition: .5s all;
-    -webkit-user-select: none; }
-    .footer .return .rop {
-      display: inline-block;
-      font-size: 0.9em;
-      font-family: 'Jaldi', sans-serif;
-      transition: .5s all;
-      font-weight: bold; }
-    .footer .return .arrow {
-      display: inline-block;
-      top: -3px;
-      transition: .5s all;
-      left: 0px;
-      font-weight: 400;
-      color: #aaa; }
-  .footer .return:hover .arrow {
-    left: -10px;
-    color: #222;
-    transition: .5s all; }
-  .footer .return:hover .rop {
-    color: #222;
-    transition: .5s all; }
+  margin: 0px auto;
+  text-align: center; }
 
 .menuWrap {
   padding: 0px;
@@ -330,16 +301,24 @@ h3 {
   color: #333; }
 
 .pixelGrid {
+  margin: 0px;
+  padding: 0px;
   top: 0;
   position: relative; }
 
 .pixelCol {
   height: 60px;
-  width: 20px; }
+  width: 20px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  display: inline-block; }
 
 .pixel {
   width: 20px;
   height: 20px;
+  margin: 0px;
+  padding: 0px;
   background-color: #323232;
   transition: 2s all; }
 
@@ -352,26 +331,6 @@ h3 {
   -moz-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all; }
-
-.menuItem {
-  font-weight: 800;
-  font-size: 17px;
-  color: #333;
-  width: 40%;
-  height: 30px;
-  padding: 5px 0px;
-  text-align: center;
-  margin: 5px 0px 5px 0px;
-  background-color: transparent;
-  transition: .5s all;
-  position: relative;
-  cursor: pointer; }
-
-.menuItem.white {
-  color: #fff; }
-
-.GIT {
-  margin-left: 2%; }
 
 .tile {
   height: 280px;
@@ -404,7 +363,7 @@ h3 {
 
 .hover.sprout {
   background-color: #7fb049;
-  transition: .5s all; }
+  transition: .2s all; }
 
 .sproutBG {
   background-color: #6e973f;
@@ -412,7 +371,7 @@ h3 {
 
 .hover.glass {
   background-color: #4080bb;
-  transition: .5s all; }
+  transition: .2s all; }
 
 .glassBG {
   background-color: #4080bb;
@@ -420,11 +379,11 @@ h3 {
 
 .hover.firefly {
   background-color: #e55;
-  transition: .5s all; }
+  transition: .2s all; }
 
 .hover.beo {
   background-color: #555;
-  transition: .5s all; }
+  transition: .2s all; }
 
 .image {
   height: 280px;
@@ -440,6 +399,8 @@ h3 {
   width: 150px;
   padding: 15px;
   position: absolute;
+  vertical-align: top;
+  display: inline-block;
   line-height: 1.2em; }
 
 .description {
@@ -447,15 +408,6 @@ h3 {
   position: relative;
   font-size: 0.9em;
   font-family: 'Jaldi', sans-serif; }
-
-.aboutMe {
-  text-align: center;
-  margin: 0px 50px; }
-
-.profilePic {
-  border-radius: 50%;
-  width: 250px;
-  margin: 50px auto; }
 
 .fullLook {
   min-height: 100px !important;
@@ -549,7 +501,8 @@ h3 {
 .img {
   width: 100%;
   display: block;
-  margin: 0px auto; }
+  margin: 0px auto;
+  vertical-align: top; }
 
 .smallImg {
   width: 100%;
