@@ -2,8 +2,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Google Sheets API Quickstart</title>
+    <title>Biotracker</title>
     <meta charset='utf-8' />
+
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+
+      <link id="defaultSheet" rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+
     <script type="text/javascript" src="assets/script/jquery.js"></script>
     <script type="text/javascript" src="assets/script/fetch-jsonp.js"></script>
     <script type="text/javascript" src="assets/script/spreadsheet.js"></script>
@@ -11,9 +19,32 @@
   </head>
   <body>
 
-      <div id="output">
-          ...
+      
+      <div class="wrapper">
+          <div class="card header" id="output">
+              Biotracker
+          </div>
+
+          <div class="card dataCard">
+              <h1>Current Weight</h1>
+              <p class="info" id="currentWeight"></p>
+              <br><p class="unit">lbs</p>
+          </div>
+
+          <div class="card dataCard">
+              <h1>Last Alcohol</h1>
+              <p class="info" id="latestAlcohol"></p>
+              <br><p class="unit">days ago</p>
+          </div>
+
+          <div class="card dataCard">
+              <h1>Last Caffeine</h1>
+              <p class="info" id="latestCoffee"></p>
+              <br><p class="unit">days ago</p>
+          </div>
+
       </div>
+
     
 
   </body>
