@@ -11,6 +11,13 @@ body {
   max-width: 1440px;
   margin: 40px auto; }
 
+.wrap {
+  display: inline-block; }
+
+.doubleCard .wrap {
+  width: 100px;
+  margin-top: 10px; }
+
 .card {
   background-color: #fff;
   padding: 10px;
@@ -21,7 +28,9 @@ body {
 
 .dataCard {
   padding: 20px;
-  text-align: center; }
+  text-align: center;
+  height: 100px;
+  vertical-align: top; }
 
 h1 {
   margin: 0px;
@@ -55,5 +64,9 @@ h1 {
   line-height: 200px;
   padding: 0px;
   border-radius: 5px; }
+
+.miniHeader {
+  width: 100%;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

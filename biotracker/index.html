@@ -11,7 +11,7 @@
 
       <link id="defaultSheet" rel="stylesheet" type="text/css" href="assets/css/main.css">
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="assets/script/jquery.js"></script>
     <script type="text/javascript" src="assets/script/fetch-jsonp.js"></script>
     <script type="text/javascript" src="assets/script/spreadsheet.js"></script>
@@ -25,27 +25,59 @@
               Biotracker
           </div>
 
-          <div class="card dataCard">
-              <h1>Current Weight</h1>
-              <p class="info" id="currentWeight"></p>
-              <br><p class="unit">lbs</p>
+
+        <div class="card dataCard doubleCard">
+          <h1>Weight</h1>
+          <div class="wrap">
+            <p class="info" id="3dayWeightlb"></p>
+            <p class="unit">lbs</p>
           </div>
 
+          <div class="wrap">
+            <p class="info" id="3dayWeightkg"></p>
+            <p class="unit">kg</p>
+          </div>
+        </div>
+
+        <div class="card dataCard doubleCard">
+          <h1>Blood Pressure</h1>
+          <div class="wrap">
+            <p class="info" id="3daySys"></p>
+            <p class="unit">Sys</p>
+          </div>
+
+          <div class="wrap">
+            <p class="info" id="3dayDia"></p>
+            <p class="unit">Dia</p>
+          </div>
+        </div>
+
           <div class="card dataCard">
-              <h1>Last Alcohol</h1>
+              <h1>Sober for</h1>
               <p class="info" id="latestAlcohol"></p>
-              <br><p class="unit">days ago</p>
+              <br><p class="unit">days</p>
           </div>
 
           <div class="card dataCard">
-              <h1>Last Caffeine</h1>
+              <h1>Caffeine Free</h1>
               <p class="info" id="latestCoffee"></p>
-              <br><p class="unit">days ago</p>
+              <br><p class="unit">days</p>
           </div>
 
+        
+
+        <div class="card dataCard">
+          <h1>Peak VO2 Max</h1>
+          <div class="wrap">
+            <p class="info" id="3dayVO2"></p>
+            <br><p class="unit">L/min</p>
+          </div>
+        </div>
       </div>
 
-    
+      <div class="wrapper">
+        <canvas id="bpChart" width="400" height="200"></canvas>
+      </div>
 
   </body>
 </html>
