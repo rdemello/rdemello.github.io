@@ -442,17 +442,18 @@ function loadVitChart(){
     });
 }
 
-function updateChart(){
-    bpChart.update();
-    bpChart.resize();
-}
-
 $(document).ready(function(){
+
     checkSheet();
-    loadWeightChart()
-    loadBPChart();
-    loadBPMChart();
-    loadCreatineChart();
-    loadProteinChart();
-    loadVitChart();
+
+    setTimeout(function(){
+        loadWeightChart();
+        loadBPChart();
+        loadBPMChart();
+        loadCreatineChart();
+        loadProteinChart();
+        loadVitChart();
+    }, 500)
+    
+
 })
