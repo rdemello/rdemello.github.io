@@ -1,5 +1,6 @@
 var rawData;
 var bpChart;
+var weightChart;
 
 
 var cleanedData =[];
@@ -113,7 +114,60 @@ function threeDayAverage(){
     document.getElementById("3dayVO2").innerHTML = threeDayAverageCalc(VO2Data)
 }
 
-function loadChart(){
+function loadWeightChart(){
+    var ctx = document.getElementById('weightChart').getContext('2d');
+        weightChart = new Chart(ctx, {
+        type: 'line',
+
+        data: {
+            labels: dateData,
+            datasets: [{
+                label: "Weight",
+                fill: false,
+                borderColor: 'rgb(150,150,150)',
+                data: weightData
+            }]
+        },
+
+        options: {
+            legend: {
+                display:false
+            },
+            spanGaps:true,
+            tooltips:{
+                mode:'index',
+                axis: 'x',
+                intersect: false
+            },
+            scales: {
+                yAxes: [{
+                    type: "linear",
+                    display: true,
+                    position: "left",
+                    gridLines:{
+                        display: false
+                    },
+                    labels: {
+                        show:true,
+                    },
+                    ticks:{
+                        min:140
+                    }
+                }],
+                xAxes:[{
+                    display: true,
+                    gridLines:{
+                        display: true
+                    },
+                    position: "top",
+                    
+                }]
+            }
+        }
+    });
+}
+
+function loadBPChart(){
     var ctx = document.getElementById('bpChart').getContext('2d');
         bpChart = new Chart(ctx, {
         type: 'line',
@@ -137,10 +191,252 @@ function loadChart(){
             legend: {
                 display:false
             },
+            spanGaps:true,
             tooltips:{
                 mode:'index',
                 axis: 'x',
                 intersect: false
+            },
+            scales: {
+                yAxes: [{
+                    type: "linear",
+                    display: true,
+                    position: "left",
+                    gridLines:{
+                        display: false
+                    },
+                    labels: {
+                        show:true,
+                    }
+                }],
+                xAxes:[{
+                    gridLines: {
+                        drawBorder: false,
+                    },
+                    ticks:{
+                        display:false
+                    }
+                }]
+                
+            }
+        }
+    });
+}
+
+function loadBPMChart(){
+    var ctx = document.getElementById('bpmChart').getContext('2d');
+        bpChart = new Chart(ctx, {
+        type: 'line',
+
+        data: {
+            labels: dateData,
+            datasets: [{
+                label: "RPBM",
+                fill: false,
+                borderColor: 'rgb(242, 185, 133)',
+                data: bpmData,
+            }]
+        },
+
+        options: {
+            legend: {
+                display:false
+            },
+            spanGaps:true,
+            tooltips:{
+                mode:'index',
+                axis: 'x',
+                intersect: false
+            },
+            scales: {
+                yAxes: [{
+                    type: "linear",
+                    display: true,
+                    position: "left",
+                    gridLines:{
+                        display: false
+                    },
+                    labels: {
+                        show:true,
+                    }
+                }],
+                xAxes:[{
+                    gridLines: {
+                        drawBorder: false,
+                    },
+                    ticks:{
+                        display:false
+                    }
+                }]
+                
+            }
+        }
+    });
+}
+
+function loadCreatineChart(){
+     var ctx = document.getElementById('creatineChart').getContext('2d');
+        bpChart = new Chart(ctx, {
+        type: 'line',
+
+        data: {
+            labels: dateData,
+            datasets: [{
+                label: "Creatine",
+                fill: false,
+                borderColor: 'rgb(242, 185, 133)',
+                data: creatineData,
+                showLine:false
+            }]
+        },
+
+        options: {
+            legend: {
+                display:false
+            },
+            spanGaps:true,
+            tooltips:{
+                mode:'index',
+                axis: 'x',
+                intersect: false
+            },
+            scales: {
+                yAxes: [{
+                    type: "linear",
+                    display: true,
+                    position: "left",
+                    gridLines:{
+                        display: false
+                    },
+                    labels: {
+                        show:true,
+                    },
+                    ticks:{
+                        min:1,
+                        max:1,
+                    }
+                }],
+                xAxes:[{
+                    gridLines: {
+                        drawBorder: false,
+                    },
+                    ticks:{
+                        display:false
+                    }
+                }]
+                
+            }
+        }
+    });
+}
+
+function loadProteinChart(){
+     var ctx = document.getElementById('proteinChart').getContext('2d');
+        bpChart = new Chart(ctx, {
+        type: 'line',
+        
+        data: {
+            labels: dateData,
+            datasets: [{
+                label: "Protein",
+                fill: false,
+                borderColor: 'rgb(242, 185, 133)',
+                data: proteinData  ,
+                showLine:false
+            }]
+        },
+
+        options: {
+            legend: {
+                display:false
+            },
+            spanGaps:true,
+            tooltips:{
+                mode:'index',
+                axis: 'x',
+                intersect: false
+            },
+            scales: {
+                yAxes: [{
+                    type: "linear",
+                    display: true,
+                    position: "left",
+                    gridLines:{
+                        display: false
+                    },
+                    labels: {
+                        show:true,
+                    },
+                    ticks:{
+                        min:1,
+                        max:1,
+                    }
+                }],
+                xAxes:[{
+                    gridLines: {
+                        drawBorder: false,
+                    },
+                    ticks:{
+                        display:false
+                    }
+                }]
+                
+            }
+        }
+    });
+}
+
+function loadVitChart(){
+     var ctx = document.getElementById('vitChart').getContext('2d');
+        bpChart = new Chart(ctx, {
+        type: 'line',
+        
+        data: {
+            labels: dateData,
+            datasets: [{
+                label: "Multi Vit",
+                fill: false,
+                borderColor: 'rgb(242, 185, 133)',
+                data: multiVitData,
+                showLine:false
+            }]
+        },
+
+        options: {
+            legend: {
+                display:false
+            },
+            spanGaps:true,
+            tooltips:{
+                mode:'index',
+                axis: 'x',
+                intersect: false
+            },
+            scales: {
+                yAxes: [{
+                    type: "linear",
+                    display: true,
+                    position: "left",
+                    gridLines:{
+                        display: false
+                    },
+                    labels: {
+                        show:true,
+                    },
+                    ticks:{
+                        min:1,
+                        max:1,
+                    }
+                }],
+                xAxes:[{
+                    gridLines: {
+                        drawBorder: false,
+                    },
+                    ticks:{
+                        display:false
+                    }
+                }]
+                
             }
         }
     });
@@ -153,6 +449,10 @@ function updateChart(){
 
 $(document).ready(function(){
     checkSheet();
-    loadChart();
-    // updateChart();
+    loadWeightChart()
+    loadBPChart();
+    loadBPMChart();
+    loadCreatineChart();
+    loadProteinChart();
+    loadVitChart();
 })
