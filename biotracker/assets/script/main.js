@@ -284,7 +284,8 @@ function loadCreatineChart(){
             datasets: [{
                 label: "Creatine",
                 fill: false,
-                borderColor: 'rgb(242, 185, 133)',
+                pointBackgroundColor:'rgb(142, 185, 233)',
+                borderColor: 'rgb(142, 185, 233)',
                 data: creatineData,
                 showLine:false
             }]
@@ -340,7 +341,8 @@ function loadProteinChart(){
             datasets: [{
                 label: "Protein",
                 fill: false,
-                borderColor: 'rgb(242, 185, 133)',
+                pointBackgroundColor:'rgb(252, 185, 133)',
+                borderColor: 'rgb(252, 185, 133)',
                 data: proteinData  ,
                 showLine:false
             }]
@@ -395,8 +397,8 @@ function loadVitChart(){
             labels: dateData,
             datasets: [{
                 label: "Multi Vit",
-                fill: false,
-                borderColor: 'rgb(242, 185, 133)',
+                pointBackgroundColor: 'rgb(242, 105, 133)',
+                borderColor: 'rgb(242, 105, 133)',
                 data: multiVitData,
                 showLine:false
             }]
