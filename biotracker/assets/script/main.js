@@ -455,7 +455,7 @@ $(document).ready(function(){
         loadCreatineChart();
         loadProteinChart();
         loadVitChart();
-    }, 500)
+    }, 1000)
     
 
 })
