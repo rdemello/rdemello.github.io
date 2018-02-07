@@ -64,21 +64,20 @@ function checkSheet(){
 
 function sortData(){
     for(i=1;i<rawData.length;i++){
-        if(rawData[i].length>15){
+        if(rawData[i].length>13){
             dateData.push(rawData[i][0])
-            sysData.push(parseInt(rawData[i][3]))
-            diaData.push(parseInt(rawData[i][4]))
-            bpmData.push(parseInt(rawData[i][5]))
-            boData.push(parseInt(rawData[i][6]))
-            bpm2Data.push(parseInt(rawData[i][7]))
-            weightData.push(parseInt(rawData[i][8]))
-            VO2Data.push(parseInt(rawData[i][9]))
-            caffeineData.push(parseInt(rawData[i][10]))
-            alcoholData.push(parseInt(rawData[i][11]))
-            creatineData.push(parseInt(rawData[i][12]))
-            proteinData.push(parseInt(rawData[i][13]))
-            biotinData.push(parseInt(rawData[i][14]))
-            multiVitData.push(parseInt(rawData[i][15]))
+            sysData.push(parseInt(rawData[i][2]))
+            diaData.push(parseInt(rawData[i][3]))
+            bpmData.push(parseInt(rawData[i][4]))
+            boData.push(parseInt(rawData[i][5]))
+            bpm2Data.push(parseInt(rawData[i][6]))
+            weightData.push(parseInt(rawData[i][7]))
+            VO2Data.push(parseInt(rawData[i][8]))
+            caffeineData.push(parseInt(rawData[i][9]))
+            alcoholData.push(parseInt(rawData[i][10]))
+            creatineData.push(parseInt(rawData[i][11]))
+            proteinData.push(parseInt(rawData[i][12]))
+            multiVitData.push(parseInt(rawData[i][13]))
         }
     }
 }
@@ -457,5 +456,8 @@ $(document).ready(function(){
         loadVitChart();
     }, 1000)
     
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 
 })

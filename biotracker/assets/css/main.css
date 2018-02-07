@@ -54,9 +54,6 @@ h1 {
   height: 200px;
   display: block !important;
   text-align: center;
-  background-image: url("../../assets/media/bg.JPG");
-  background-size: cover;
-  background-position: 50% 50%;
   text-align: center;
   font-size: 3em;
   font-weight: 800;
