@@ -1,12 +1,3 @@
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        $('.menu').css('opacity',1)
-    }
-    else {
-        $('.menu').css('opacity',0)
-    }
-});
-
 $(document).ready(function(){
 
     setColor(220,75,75);
