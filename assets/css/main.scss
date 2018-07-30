@@ -103,10 +103,10 @@ h3{
 }
 
 .source{
-    font-size: 0.8em;
+    font-size: 0.7em !important;
     font-style: italic;
     color: #ccc;
-    float:right;
+    text-align:right;
 }
 
 .icon{
@@ -296,7 +296,7 @@ h3{
     }
 }
 
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1400px){
     .content{
         .tile{
             width:48%;
@@ -306,7 +306,7 @@ h3{
     }
 
     .wrap{
-        max-width:1600px;
+        max-width:1200px;
         margin:5% auto !important;
 
         .tracker{
