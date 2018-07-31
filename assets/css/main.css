@@ -196,7 +196,7 @@ h3 {
         border-radius: 5px; }
         .wrap .content .tile .tileContent {
           width: 200px;
-          padding: 15px;
+          padding: 17px;
           position: absolute;
           line-height: 1.2em; }
         .wrap .content .tile .image {
@@ -416,6 +416,10 @@ h3 {
   color: #fff;
   transition: .5s all; }
 
+.hover.mrcd {
+  background-color: #e8a319;
+  transition: .2s all; }
+
 .hover.sprout {
   background-color: #7fb049;
   transition: .2s all; }
@@ -449,6 +453,8 @@ h3 {
   border-radius: 0px;
   display: block;
   position: relative; }
+  .image a:hover {
+    color: #fff; }
 
 .tileContent {
   width: 150px;
