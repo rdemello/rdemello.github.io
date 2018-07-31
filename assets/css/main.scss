@@ -49,6 +49,16 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color:#333;
+    transition: 0.3s color;
+}
+
+a:hover{
+    color:#777;
+    transition: 0.3s color;
+}
+
 body{
     width:100%;
     height:100%;
@@ -94,6 +104,7 @@ h3{
     width:100%;
     font-size: 0.9em;
     margin:0px auto;
+    line-height:1.5;
 }
 
 .kpiTitle{
@@ -116,8 +127,7 @@ h3{
 }
 
 .intro{
-    padding:0px 20px;
-    max-width:400px;
+    padding-left:70px;
 
     .mainTitle{
         font-family: 'Jaldi', sans-serif;
@@ -127,11 +137,26 @@ h3{
     }
 
     .aboutMe{
-        margin:50px 0px 50px 0px;
-        font-size:0.8em;
+        margin:40px 40px 0px 40px;
+        font-size:0.9em;
+        display:inline-block;
+        vertical-align:top;
+        line-height:1.8;
+        max-width:80%;
+        a{
+            font-weight:800;
+        }
     }
 
+    .profileImg{
+        margin:0px auto;
+        width:250px;
+        display:block;
+        border-radius:4px;
+    }
 }
+
+
 
 .menu{
     text-transform: uppercase;
@@ -159,15 +184,7 @@ h3{
         text-align: right;
     }
 
-    .intro{
-        padding-left:10px;
-        .mainTitle{
-            margin:100px 0px 80px 0px;
-        }
-        .aboutMe{
-            margin:80px 0px 80px 0px;
-        }
-    }
+
 
     .project.wrap{
         margin-right:0%;
@@ -242,6 +259,22 @@ h3{
             margin:0px 2% 10px 2%; 
         }
     }
+
+    .intro{
+        padding-left:70px !important;
+        .aboutMe{
+            margin:0px 0px 0px 20px;
+            font-size:0.9em;
+            line-height:1.5;
+            max-width:40%;
+        }
+        .profileImg{
+            display:inline-block;
+            width:50%;
+            max-width:400px;
+        }
+    }
+
 }
 
 @media only screen and (max-width:600px){
@@ -260,6 +293,12 @@ h3{
 @media screen and (min-width: 1200px) {
     .glassProcess{
         content:url("../media/glass/process.png") !important;
+    }
+
+   .intro{
+        .aboutMe{
+            margin:0px 0px 0px 50px;
+        }
     }
 
     .menuWrap{
@@ -302,6 +341,12 @@ h3{
             width:48%;
             display: inline-block;
             margin: 0% 1% 2% 1%;
+        }
+    }
+
+   .intro{
+        .aboutMe{
+            margin:0px 0px 0px 80px;
         }
     }
 
@@ -670,7 +715,7 @@ h3{
     width:100%;
     display:block;
     margin:0px auto;
-    vertical-align: top;
+    vertical-align:top;
 }
 
 .smallImg{
