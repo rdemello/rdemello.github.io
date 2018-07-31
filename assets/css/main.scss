@@ -131,11 +131,28 @@ h3{
 
     .mainTitle{
         font-family: 'Jaldi', sans-serif;
+        line-height:1;
         font-size: 3em;
         font-weight:800;
-        margin:50px 0px 50px 0px;
+        margin:50px 40px 50px 0px;
     }
 
+    .aboutMeSmall{
+        line-height:2;
+        margin:20px 40px 40px 0px;
+        max-width:400px;
+        font-size:0.9em;
+    }
+
+}
+
+.aboutIntro{
+    .profileImg{
+        margin:0px auto;
+        width:250px;
+        display:block;
+        border-radius:4px;
+    }
     .aboutMe{
         margin:40px 40px 0px 40px;
         font-size:0.9em;
@@ -148,21 +165,15 @@ h3{
         }
     }
 
-    .aboutMeSmall{
-        line-height:2;
-        margin:20px 0px 40px 0px;
-        max-width:400px;
-    }
-
-    .profileImg{
-        margin:0px auto;
-        width:250px;
-        display:block;
-        border-radius:4px;
+    .title{
+        font-family: 'Indie Flower', cursive;
+        font-weight:800;
+        font-size:3em;
+        margin-top:0px;
+        margin-left:40px;
+        line-height:1;
     }
 }
-
-
 
 .menu{
     text-transform: uppercase;
@@ -190,6 +201,9 @@ h3{
         text-align: right;
     }
 
+    .intro{
+        padding-left:0px;
+    }
 
 
     .project.wrap{
@@ -266,8 +280,11 @@ h3{
         }
     }
 
-    .intro{
+    .aboutIntro{
         padding-left:70px !important;
+        .title{
+            margin-left:0px;
+        }
         .aboutMe{
             margin:0px 0px 0px 20px;
             font-size:0.9em;
@@ -302,6 +319,7 @@ h3{
     }
 
    .intro{
+       padding-left:12px;
         .aboutMe{
             margin:0px 0px 0px 50px;
         }

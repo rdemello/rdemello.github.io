@@ -105,27 +105,37 @@ h3 {
   padding-left: 70px; }
   .intro .mainTitle {
     font-family: 'Jaldi', sans-serif;
+    line-height: 1;
     font-size: 3em;
     font-weight: 800;
-    margin: 50px 0px 50px 0px; }
-  .intro .aboutMe {
-    margin: 40px 40px 0px 40px;
-    font-size: 0.9em;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 1.8;
-    max-width: 80%; }
-    .intro .aboutMe a {
-      font-weight: 800; }
+    margin: 50px 40px 50px 0px; }
   .intro .aboutMeSmall {
     line-height: 2;
-    margin: 20px 0px 40px 0px;
-    max-width: 400px; }
-  .intro .profileImg {
-    margin: 0px auto;
-    width: 250px;
-    display: block;
-    border-radius: 4px; }
+    margin: 20px 40px 40px 0px;
+    max-width: 400px;
+    font-size: 0.9em; }
+
+.aboutIntro .profileImg {
+  margin: 0px auto;
+  width: 250px;
+  display: block;
+  border-radius: 4px; }
+.aboutIntro .aboutMe {
+  margin: 40px 40px 0px 40px;
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.8;
+  max-width: 80%; }
+  .aboutIntro .aboutMe a {
+    font-weight: 800; }
+.aboutIntro .title {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 800;
+  font-size: 3em;
+  margin-top: 0px;
+  margin-left: 40px;
+  line-height: 1; }
 
 .menu {
   text-transform: uppercase;
@@ -147,6 +157,9 @@ h3 {
   .menu {
     margin-top: 0px;
     text-align: right; }
+
+  .intro {
+    padding-left: 0px; }
 
   .project.wrap {
     margin-right: 0%;
@@ -194,14 +207,16 @@ h3 {
     width: 28%;
     margin: 0px 2% 10px 2%; }
 
-  .intro {
+  .aboutIntro {
     padding-left: 70px !important; }
-    .intro .aboutMe {
+    .aboutIntro .title {
+      margin-left: 0px; }
+    .aboutIntro .aboutMe {
       margin: 0px 0px 0px 20px;
       font-size: 0.9em;
       line-height: 1.5;
       max-width: 40%; }
-    .intro .profileImg {
+    .aboutIntro .profileImg {
       display: inline-block;
       width: 50%;
       max-width: 400px; } }
@@ -215,8 +230,10 @@ h3 {
   .glassProcess {
     content: url("../media/glass/process.png") !important; }
 
-  .intro .aboutMe {
-    margin: 0px 0px 0px 50px; }
+  .intro {
+    padding-left: 12px; }
+    .intro .aboutMe {
+      margin: 0px 0px 0px 50px; }
 
   .menuWrap .return {
     left: -150px !important; }
