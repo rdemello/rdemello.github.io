@@ -177,10 +177,7 @@
                 <h1>Research</h1>
                 <p class="description">Ultimately this meant that the important information wasn't accessible to the designers.
                     From speaking with architects and the managers on projects, the tasks related to sifting through the 
-                    information would be delegated to a handful of "experts" or not considered at all.
-                    <br><br>
-                    It was clearly important to understand what exactly the barriers were.    
-                </p>
+                    information would be delegated to a handful of "experts" or not considered. So how was this done?</p>
             </div>
         
             <div class="division workDivision">
@@ -265,27 +262,55 @@
                 <p class="description">
                     <img src="../../assets/media/sprout/process_cropped.jpg" style="max-width:1100px;" class="img">
                 </p>
+                <br><br>
                 <p class="description">
                     Ultimately, these steps could be broken down into the following:
                 </p>
-
+                <h3>Project Location</h3>
                 <p class="description">
-                    <span class="bullet">&#9679</span>Project Location<br>
-                    <span class="bullet">&#9679</span>Choose Material/Product<br>
-                    <span class="bullet">&#9679</span>Dimensions<br>
-                    <span class="bullet">&#9679</span>Manufacturer Location<br>
-                    <span class="bullet">&#9679</span>Transport Methods<br>
-                    <span class="bullet">&#9679</span>Results<br>
-                    <span class="bullet">&#9679</span>Prototyping<br>
-                </p>
+                    The project location will never change, but importantly by allowing them to search for a physical world location, this can be geocoded and the longitude and latitude can 
+                    be used later to calculate estimated distances automatically.
+                </p><br>
 
+                <h3>Choose Material/Product</h3>
+                <p class="description">
+                    Supporting information on each material and product would help validate the decisions, but importantly give the transparency where necessary to see the source of the data
+                    if further clarification is needed.
+                </p><br>
+                
+                <h3>Dimensions</h3>
+                <p class="description">
+                    The functional unit in EPD's vary so much, and architects are familiar with both volumetric values for elements such as structure, and surface area for the skin. Some of them even
+                    struggled with converting between these functional unit, opening up the analysis to mistakes. By interpretting the EPD's, and forming a new dataset with comparable values, the user
+                    would be able to choose their volumes in a language they were more familiar with.
+                </p><br>
+
+                <h3>Manufacturer Location</h3>
+                <p class="description">
+                    The other tools require a value to be inputted for the transport in either km or miles, which would either be calculated using Google Maps or similar, or guessed entirely with an
+                    arbitrary value. However this task could be automated through geocoding the place names and using a formula to calculate the distance, thus simplifying the process.
+                </p><br>
+
+                <h3>Transport Methods</h3>
+                <p class="description">
+                    There are times in projects where poor planning can result in the need for speedier transport. Whilst the actual distance is an obvious component in scaling the impacts of sourcing,
+                    the transport method has a much bigger impact due to the magnitude of difference between transporting an item a certain distance between sea freight and plane (almost x100).
+                </p><br>
+
+                <h3>Results</h3>
+                <p class="description">
+                    The existing tools keep the final outcomes behind the calculations, which can be a lengthy process. If changes were to be made to any of the entries, the entire process would have to be
+                    started again. With all these variables, it would be essential to have the results update instantly, so that the user can quickly learn how the sustainability of their decisions.
+                </p><br>
+
+                <h2>Prototyping</h2>
                 <p class="description">
                     This then laid out the flow of the design, and so I began to make quick principle proving prototypes in Excel VBA in order to test out a number of the features and ideas, but also
-                    to guage how valuable it could be.
+                    to guage how valuable it could be
                     <br><br>
                     <img src="../../assets/media/sprout/prototype.png" class="smallImg" style="display:block; width:100%;margin:0px auto;"></img>
                     <br><br>
-                    The sheet was set up so the user fills out a form on a step-by-step basis using a breakdown of the overall process.
+                    The sheet was set up on the "Holding the Hand" principle, having the user fill out a form on a step-by-step basis using a breakdown of the overall process.
                     It was distributed to architects and engineers for testing and feedback.
                 </p>
                 <br><br>
@@ -318,6 +343,7 @@
             </div>
 
             <div class="division workDivision">
+                <h1>Initial Prototype</h1>
                 <p class="description">
                     Wireframing was carried out to follow the breakdown of the analysis, and lead the user through the calculations. The following sections were based on some of the user feedback
                     on other areas of interest beyond the carbon footprint of the material
@@ -325,12 +351,18 @@
                 </p>
                 <img src="../../assets/media/sprout/sprout_frames.png" class="img" style="max-width:400px;"></img>
                 <br><br>
+                <p class="description">
+                    The first prototype working prototype was put together and tested with some users for feedback
+                    <br><br>
+                </p>
+
+                <img src="../../assets/media/glass/development.jpg" class="img" style="max-width:600px;"></img>
 
             </div>
             
 
             <div class="division sproutBG">
-                <h1>Development</h1>
+                <h1>Launching</h1>
                 <br><br>
                 <img src="../../assets/media/glass/finish.png" class="img" style="max-width:800px;"></img>
                 <p class="description">
