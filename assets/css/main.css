@@ -490,7 +490,8 @@ h3 {
   padding: 50px 10px;
   background-size: cover;
   text-align: center;
-  display: block; }
+  display: block;
+  line-height: 1.2; }
   .headerPage p, .fullLook p {
     width: 70%;
     margin: 10px auto 20px auto;
