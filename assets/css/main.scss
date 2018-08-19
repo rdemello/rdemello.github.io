@@ -49,6 +49,16 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color:#333;
+    transition: 0.3s color;
+}
+
+a:hover{
+    color:#777;
+    transition: 0.3s color;
+}
+
 body{
     width:100%;
     height:100%;
@@ -94,6 +104,7 @@ h3{
     width:100%;
     font-size: 0.9em;
     margin:0px auto;
+    line-height:1.5;
 }
 
 .kpiTitle{
@@ -103,10 +114,10 @@ h3{
 }
 
 .source{
-    font-size: 0.8em;
+    font-size: 0.7em !important;
     font-style: italic;
     color: #ccc;
-    float:right;
+    text-align:right;
 }
 
 .icon{
@@ -116,21 +127,67 @@ h3{
 }
 
 .intro{
-    padding:0px 20px;
-    max-width:400px;
+    padding-left:70px;
 
     .mainTitle{
         font-family: 'Jaldi', sans-serif;
+        line-height:1;
         font-size: 3em;
         font-weight:800;
-        margin:50px 0px 50px 0px;
+        margin:50px 40px 50px 0px;
     }
+
+    .aboutMeSmall{
+        line-height:2;
+        margin:20px 40px 40px 0px;
+        max-width:400px;
+        font-size:0.9em;
+    }
+
+}
+
+.aboutIntro{
+    .profileImg{
+        margin:0px auto;
+        width:250px;
+        display:block;
+        border-radius:4px;
+        text-align: center;
+
+        .profilePhoto{
+            width:100%;
+        }
+
+        .profileCaption{
+            font-family: 'Indie Flower', cursive;
+            font-size:0.9em;
+            font-weight:600;
+            margin:0px;
+        }
+
+    }
+
 
     .aboutMe{
-        margin:50px 0px 50px 0px;
-        font-size:0.8em;
+        margin:40px 40px 0px 40px;
+        font-size:0.9em;
+        display:inline-block;
+        vertical-align:top;
+        line-height:1.8;
+        max-width:80%;
+        a{
+            font-weight:800;
+        }
     }
 
+    .title{
+        font-family: 'Indie Flower', cursive;
+        font-weight:800;
+        font-size:3em;
+        margin-top:0px;
+        margin-left:40px;
+        line-height:1;
+    }
 }
 
 .menu{
@@ -160,14 +217,9 @@ h3{
     }
 
     .intro{
-        padding-left:10px;
-        .mainTitle{
-            margin:100px 0px 80px 0px;
-        }
-        .aboutMe{
-            margin:80px 0px 80px 0px;
-        }
+        padding-left:0px;
     }
+
 
     .project.wrap{
         margin-right:0%;
@@ -221,7 +273,7 @@ h3{
                 border-radius: 5px;
                 .tileContent{
                     width:200px;
-                    padding:15px;
+                    padding:17px;
                     position:absolute;
                     
                     line-height:1.2em;
@@ -242,6 +294,25 @@ h3{
             margin:0px 2% 10px 2%; 
         }
     }
+
+    .aboutIntro{
+        padding-left:70px !important;
+        .title{
+            margin-left:0px;
+        }
+        .aboutMe{
+            margin:0px 0px 0px 20px;
+            font-size:0.9em;
+            line-height:1.5;
+            max-width:40%;
+        }
+        .profileImg{
+            display:inline-block;
+            width:50%;
+            max-width:400px;
+        }
+    }
+
 }
 
 @media only screen and (max-width:600px){
@@ -260,6 +331,13 @@ h3{
 @media screen and (min-width: 1200px) {
     .glassProcess{
         content:url("../media/glass/process.png") !important;
+    }
+
+   .intro{
+       padding-left:12px;
+        .aboutMe{
+            margin:0px 0px 0px 50px;
+        }
     }
 
     .menuWrap{
@@ -296,7 +374,7 @@ h3{
     }
 }
 
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1400px){
     .content{
         .tile{
             width:48%;
@@ -305,8 +383,14 @@ h3{
         }
     }
 
+   .intro{
+        .aboutMe{
+            margin:0px 0px 0px 80px;
+        }
+    }
+
     .wrap{
-        max-width:1600px;
+        max-width:1200px;
         margin:5% auto !important;
 
         .tracker{
@@ -487,6 +571,11 @@ h3{
     transition:.5s all;
 }
 
+.hover.mrcd{
+    background-color: rgb(232, 163, 25);
+    transition:.2s all;
+}
+
 .hover.sprout{
     background-color: rgb(127,176,73);
     transition:.2s all;
@@ -504,7 +593,7 @@ h3{
 
 .glassBG{
     background-color: rgb(64,128,187);
-    color:#ddd;
+    color:#eee;
 }
 
 .hover.firefly{ 
@@ -526,6 +615,9 @@ h3{
     border-radius: 0px;
     display:block;
     position: relative;
+    a:hover{
+        color:#fff;
+    }
 }
 
 .tileContent{
@@ -537,6 +629,7 @@ h3{
     line-height:1.2em;
 
 }
+
 
 .description{
     margin-top:20px;
@@ -555,12 +648,13 @@ h3{
 .headerPage, .fullLook{
     color:#fff;
     font-family: 'Monda', sans-serif;
-    min-height:180px;
+    min-height:140px;
     height:auto;
     padding:50px 10px;
     background-size: cover;
     text-align: center;
     display:block;
+    line-height:1.2;
 
     p{
         width:70%;
@@ -670,7 +764,7 @@ h3{
     width:100%;
     display:block;
     margin:0px auto;
-    vertical-align: top;
+    vertical-align:top;
 }
 
 .smallImg{

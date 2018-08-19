@@ -5,7 +5,6 @@
   font-weight: 400;
   src: local("Monda Regular"), local("Monda-Regular"), url(https://fonts.gstatic.com/s/monda/v7/Y20I6o_YfoFb_IiaBS52CIDGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
 /* latin */
 @font-face {
   font-family: 'Monda';
@@ -13,7 +12,6 @@
   font-weight: 400;
   src: local("Monda Regular"), local("Monda-Regular"), url(https://fonts.gstatic.com/s/monda/v7/ChjMNN9DcSvFUU7hNHsyKaCWcynf_cDxXwCLxiixG1c.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
 /* devanagari */
 @font-face {
   font-family: 'Jaldi';
@@ -21,7 +19,6 @@
   font-weight: 400;
   src: local("Jaldi"), local("Jaldi-Regular"), url(https://fonts.gstatic.com/s/jaldi/v3/kTRAg9q58LudDIEZFZXIcYDGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
   unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
-
 /* latin-ext */
 @font-face {
   font-family: 'Jaldi';
@@ -29,7 +26,6 @@
   font-weight: 400;
   src: local("Jaldi"), local("Jaldi-Regular"), url(https://fonts.gstatic.com/s/jaldi/v3/foHLzZKtaHoaIW1zgrfkyYDGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
 /* latin */
 @font-face {
   font-family: 'Jaldi';
@@ -37,9 +33,16 @@
   font-weight: 400;
   src: local("Jaldi"), local("Jaldi-Regular"), url(https://fonts.gstatic.com/s/jaldi/v3/R7sRqFCzItiE1f2XuS2_TaCWcynf_cDxXwCLxiixG1c.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-
 a {
   text-decoration: none; }
+
+a:visited {
+  color: #333;
+  transition: 0.3s color; }
+
+a:hover {
+  color: #777;
+  transition: 0.3s color; }
 
 body {
   width: 100%;
@@ -79,7 +82,8 @@ h3 {
   max-width: 400px;
   width: 100%;
   font-size: 0.9em;
-  margin: 0px auto; }
+  margin: 0px auto;
+  line-height: 1.5; }
 
 .kpiTitle {
   font-size: 1.1em;
@@ -87,10 +91,10 @@ h3 {
   margin-bottom: 0px; }
 
 .source {
-  font-size: 0.8em;
+  font-size: 0.7em !important;
   font-style: italic;
   color: #ccc;
-  float: right; }
+  text-align: right; }
 
 .icon {
   width: 100%;
@@ -98,16 +102,48 @@ h3 {
   margin: 0px auto; }
 
 .intro {
-  padding: 0px 20px;
-  max-width: 400px; }
+  padding-left: 70px; }
   .intro .mainTitle {
     font-family: 'Jaldi', sans-serif;
+    line-height: 1;
     font-size: 3em;
     font-weight: 800;
-    margin: 50px 0px 50px 0px; }
-  .intro .aboutMe {
-    margin: 50px 0px 50px 0px;
-    font-size: 0.8em; }
+    margin: 50px 40px 50px 0px; }
+  .intro .aboutMeSmall {
+    line-height: 2;
+    margin: 20px 40px 40px 0px;
+    max-width: 400px;
+    font-size: 0.9em; }
+
+.aboutIntro .profileImg {
+  margin: 0px auto;
+  width: 250px;
+  display: block;
+  border-radius: 4px;
+  text-align: center; }
+  .aboutIntro .profileImg .profilePhoto {
+    width: 100%; }
+  .aboutIntro .profileImg .profileCaption {
+    font-family: 'Indie Flower', cursive;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0px; }
+.aboutIntro .aboutMe {
+  margin: 40px 40px 0px 40px;
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.8;
+  max-width: 80%; }
+  .aboutIntro .aboutMe a {
+    font-weight: 800; }
+.aboutIntro .title {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 800;
+  font-size: 3em;
+  margin-top: 0px;
+  margin-left: 40px;
+  line-height: 1; }
 
 .menu {
   text-transform: uppercase;
@@ -129,15 +165,14 @@ h3 {
   .menu {
     margin-top: 0px;
     text-align: right; }
+
   .intro {
-    padding-left: 10px; }
-    .intro .mainTitle {
-      margin: 100px 0px 80px 0px; }
-    .intro .aboutMe {
-      margin: 80px 0px 80px 0px; }
+    padding-left: 0px; }
+
   .project.wrap {
     margin-right: 0%;
     width: 80%; }
+
   .workContent .division {
     text-align: left; }
     .workContent .division h1 {
@@ -157,6 +192,7 @@ h3 {
     top: 25%;
     font-size: 0.9em;
     line-height: 2em; }
+
   .wrap {
     width: 80%;
     padding: 0%;
@@ -168,48 +204,72 @@ h3 {
         border-radius: 5px; }
         .wrap .content .tile .tileContent {
           width: 200px;
-          padding: 15px;
+          padding: 17px;
           position: absolute;
           line-height: 1.2em; }
         .wrap .content .tile .image {
           margin-left: 230px;
           border-radius: 0px 5px 5px 0px; } }
-
 @media only screen and (min-width: 900px) {
   .division .kpi {
     width: 28%;
-    margin: 0px 2% 10px 2%; } }
+    margin: 0px 2% 10px 2%; }
 
+  .aboutIntro {
+    padding-left: 70px !important; }
+    .aboutIntro .title {
+      margin-left: 0px; }
+    .aboutIntro .aboutMe {
+      margin: 0px 0px 0px 20px;
+      font-size: 0.9em;
+      line-height: 1.5;
+      max-width: 40%; }
+    .aboutIntro .profileImg {
+      display: inline-block;
+      width: 50%;
+      max-width: 400px; } }
 @media only screen and (max-width: 600px) {
   .menuWrap .return {
     left: -10px !important; }
+
   .footer .return {
     left: -20px !important; } }
-
 @media screen and (min-width: 1200px) {
   .glassProcess {
     content: url("../media/glass/process.png") !important; }
+
+  .intro {
+    padding-left: 12px; }
+    .intro .aboutMe {
+      margin: 0px 0px 0px 50px; }
+
   .menuWrap .return {
     left: -150px !important; }
+
   .content .tile {
     width: 48%;
     display: inline-block;
     margin: 0% 1% 2% 1%; }
+
   .division .stakeholder {
     width: 49%;
     display: inline-block; }
+
   .workContent .bannerWrap .seeMore {
     top: 35%;
     font-size: 1em;
     line-height: 2em; } }
-
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
   .content .tile {
     width: 48%;
     display: inline-block;
     margin: 0% 1% 2% 1%; }
+
+  .intro .aboutMe {
+    margin: 0px 0px 0px 80px; }
+
   .wrap {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 5% auto !important; }
     .wrap .tracker {
       opacity: 0;
@@ -230,7 +290,6 @@ h3 {
       .wrap .tracker h1 {
         font-size: 1.2em;
         margin: 0px; } }
-
 .content {
   width: 100%;
   padding: 0px 0px;
@@ -365,6 +424,10 @@ h3 {
   color: #fff;
   transition: .5s all; }
 
+.hover.mrcd {
+  background-color: #e8a319;
+  transition: .2s all; }
+
 .hover.sprout {
   background-color: #7fb049;
   transition: .2s all; }
@@ -379,7 +442,7 @@ h3 {
 
 .glassBG {
   background-color: #4080bb;
-  color: #ddd; }
+  color: #eee; }
 
 .hover.firefly {
   background-color: #e55;
@@ -398,6 +461,8 @@ h3 {
   border-radius: 0px;
   display: block;
   position: relative; }
+  .image a:hover {
+    color: #fff; }
 
 .tileContent {
   width: 150px;
@@ -420,12 +485,13 @@ h3 {
 .headerPage, .fullLook {
   color: #fff;
   font-family: 'Monda', sans-serif;
-  min-height: 180px;
+  min-height: 140px;
   height: auto;
   padding: 50px 10px;
   background-size: cover;
   text-align: center;
-  display: block; }
+  display: block;
+  line-height: 1.2; }
   .headerPage p, .fullLook p {
     width: 70%;
     margin: 10px auto 20px auto;
@@ -592,3 +658,5 @@ h3 {
 .backToTop:hover .arrowTop {
   background-color: #222;
   transition: .5s all; }
+
+/*# sourceMappingURL=main.css.map */
