@@ -102,17 +102,17 @@ h3 {
   margin: 0px auto; }
 
 .intro {
-  padding-left: 70px; }
+  text-align: center; }
   .intro .mainTitle {
     font-family: 'Jaldi', sans-serif;
     line-height: 1;
     font-size: 3em;
     font-weight: 800;
-    margin: 50px 40px 50px 0px; }
+    margin: 50px 0px 50px 0px; }
   .intro .aboutMeSmall {
     line-height: 2;
-    margin: 20px 40px 40px 0px;
-    max-width: 400px;
+    margin: 20px auto 40px auto;
+    max-width: 450px;
     font-size: 0.9em; }
 
 .aboutIntro .profileImg {
@@ -167,7 +167,13 @@ h3 {
     text-align: right; }
 
   .intro {
-    padding-left: 0px; }
+    padding-left: 0px;
+    text-align: left !important; }
+    .intro .aboutMeSmall {
+      margin: 0px 0px 40px 0px; }
+
+  .divide {
+    text-align: left !important; }
 
   .project.wrap {
     margin-right: 0%;
@@ -405,6 +411,12 @@ h3 {
   background-color: #fff;
   transition: .2s all;
   border-radius: 0px; }
+
+.divide {
+  margin: 15px 1% 15px 1%;
+  text-align: center;
+  color: #999;
+  font-size: 0.8em; }
 
 .button {
   font-size: 0.8em;
