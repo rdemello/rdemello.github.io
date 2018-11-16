@@ -47,6 +47,8 @@
 
 a{
     text-decoration: none;
+    -moz-text-decoration-color: #333;
+    color:inherit;
 }
 
 a:visited{
@@ -65,7 +67,7 @@ body{
     margin:0px;
     padding:0px;
     background-color: #eee;
-    font-family: 'Monda', sans-serif;
+    font-family: 'Jaldi', sans-serif;
     line-height: 1.6em;
     font-size: 1.2em;
     color:#333;
@@ -138,7 +140,7 @@ h3{
     }
 
     .aboutMeSmall{
-        line-height:2;
+        line-height:1.2;
         margin:20px auto 40px auto;
         max-width:450px;
         font-size:0.9em;
@@ -279,16 +281,20 @@ h3{
 
             .tile{
                 border-radius: 5px;
+
                 .tileContent{
-                    width:200px;
-                    padding:17px;
+                    width:auto;
+                    padding:15px 15px 15px 15px;
                     position:absolute;
-                    
-                    line-height:1.2em;
+                    line-height:1em;
+                    color:#333;
+                    .description{
+                        margin-top:8px !important;
+                    }
                 }
                 .image{
-                    margin-left:230px;
-                    border-radius: 0px 5px 5px 0px;
+                    margin-left:0px;
+                    border-radius: 5px 5px 5px 5px;
                 }
             }
         }
@@ -356,9 +362,9 @@ h3{
 
     .content{
         .tile{
-            width:48%;
+            width:46%;
             display: inline-block;
-            margin: 0% 1% 2% 1%;
+            margin: 0% 2% 4% 2%;
         }
         // margin-left: 180px;
         
@@ -385,9 +391,9 @@ h3{
 @media only screen and (min-width: 1400px){
     .content{
         .tile{
-            width:48%;
+            width:46%;
             display: inline-block;
-            margin: 0% 1% 2% 1%;
+            margin: 0% 2% 4% 2%;
         }
     }
 
@@ -514,30 +520,33 @@ h3{
     color:#333;
 }
 
-.pixelGrid{
-    margin:0px;
-    padding:0px;
-    top:0;
-    position:relative;
+.pixels{
+    .pixelGrid{
+        margin:0px;
+        padding:0px;
+        top:0;
+        position:relative;
+    }
+
+    .pixelCol{
+        height:60px;
+        width:20px;
+        margin:0px;
+        padding:0px;
+        vertical-align: top;
+        display:inline-block;
+    }
+
+    .pixel{
+        width:20px;
+        height:20px;
+        margin:0px;
+        padding:0px;
+        background-color:#323232;
+        transition: 2s all;
+    }
 }
 
-.pixelCol{
-    height:60px;
-    width:20px;
-    margin:0px;
-    padding:0px;
-    vertical-align: top;
-    display:inline-block;
-}
-
-.pixel{
-    width:20px;
-    height:20px;
-    margin:0px;
-    padding:0px;
-    background-color:#323232;
-    transition: 2s all;
-}
 
 .selection{
     position:relative;
@@ -548,15 +557,52 @@ h3{
 }
 
 .tile{
-    height:280px;
+    height:320px;
     width:100%;
     padding:0px;
     vertical-align: top;
     margin:0px 0px 15px 0px;
-    margin-bottom:10px;
-    background-color: #fff;
+    margin-bottom:35px;
+    // background-color: #fff;
     transition: .2s all;
     border-radius: 0px;
+    a:hover{
+        color:#fff;
+    }
+}
+
+.slider{
+    height:6px;
+    border-radius: 0px 0px 5px 5px;
+    width:0%;
+    display: block;
+    position: relative;
+    top: -5px;
+
+}
+
+.image{
+    height:220px;
+    // margin-left:180px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #e1ddda;
+    border-radius: 0px;
+    display:block;
+    position: relative;
+}
+
+.tileContent{
+    width:auto;
+    padding:15px 15px 15px 15px;
+    position:absolute;
+    vertical-align: top;
+    display:inline-block;
+    line-height:1em;
+    color:#333;
+    .description{
+        margin-top:8px !important;
+    }
 }
 
 .divide{
@@ -581,29 +627,34 @@ h3{
     transition: .2s all;
 }
 
-.hover{
-    color:#fff;
-    transition:.5s all;
+.hover .slider{
+    width:100%;
+    transition:.2s all;
 }
 
-.hover.mrcd{
+.mrcd{
     background-color: rgb(232, 163, 25);
-    transition:.2s all;
+    transition:.2s background-color;
 }
 
-.hover.sprout{
+.sprout{
     background-color: rgb(127,176,73);
-    transition:.2s all;
+    transition:.2s background-color;
 }
 
-.sproutBG{
-    background-color: rgb(110, 151, 63);
-    color:#ddd;
-}
-
-.hover.glass{
+.glass{
     background-color: rgb(64,128,187);
-    transition:.2s all;
+    transition:.2s background-color;
+}
+
+.firefly{ 
+    background-color: #e55;
+    transition:.2s background-color;
+}
+
+.beo{
+    background-color: #666;
+    transition:.2s background-color;
 }
 
 .glassBG{
@@ -611,40 +662,10 @@ h3{
     color:#eee;
 }
 
-.hover.firefly{ 
-    background-color: #e55;
-    transition:.2s all;
+.sproutBG{
+    background-color: rgb(110, 151, 63);
+    color:#ddd;
 }
-
-.hover.beo{
-    background-color: #555;
-    transition:.2s all;
-}
-
-.image{
-    height:280px;
-    margin-left:180px;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-color: #e1ddda;
-    border-radius: 0px;
-    display:block;
-    position: relative;
-    a:hover{
-        color:#fff;
-    }
-}
-
-.tileContent{
-    width:150px;
-    padding:15px;
-    position:absolute;
-    vertical-align: top;
-    display:inline-block;
-    line-height:1.2em;
-
-}
-
 
 .description{
     margin-top:20px;
@@ -661,7 +682,7 @@ h3{
 }
 
 .headerPage.big{
-    height:235px !important
+    height:195px !important
 }
 
 .headerPage, .fullLook{
@@ -809,50 +830,11 @@ h3{
     margin-bottom: 30px;
 }
 
-.potImage{
-    // width:350px;
-    // height:700px;
-    width:30%;
-    display:inline-block;
-}
-
-.potImage .base{
-    z-index: 2;
-    position:absolute;
-    margin-right:200px;
-    opacity:1;
-    transition:1s all;
-}
-
-.potImage .soil{
-    margin-top:415px;
-}
-
-.potImage .carbon{
-    margin-top:342px;
-}
-
-.potImage .pot{
-    margin-top:325px;
-}
-
-.potImage .plant{
-    margin-top:32px;
-}
-
 .overlays{
     opacity:0.1;
     z-index: 3;
     position: absolute;
     transition:1s all;
-}
-
-.potText h2{
-    margin-bottom:0px;
-}
-
-.potText p{
-    margin-top:5px;
 }
 
 .backToTop{
@@ -894,3 +876,32 @@ h3{
     transition: .5s all;
 }
     
+
+@keyframes cf3FadeInOut {
+  0% {
+        opacity:1;
+    }
+    40% {
+        opacity:1;
+    }
+    60% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+#gmaps {
+    position:relative;
+    img.gmap {
+        animation-name: cf3FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        position:absolute;
+        // transition: 1s opacity;
+        top:0;
+    }
+}

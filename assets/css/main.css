@@ -833,4 +833,53 @@ h3 {
   -webkit-transition: .5s all;
   transition: .5s all;
 }
+
+@-webkit-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#gmaps {
+  position: relative;
+}
+
+#gmaps img.gmap {
+  -webkit-animation-name: cf3FadeInOut;
+          animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  position: absolute;
+  top: 0;
+}
 /*# sourceMappingURL=main.css.map */

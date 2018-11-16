@@ -40,234 +40,56 @@
                 <p class="disclaimer">Some information has been omitted from this case study due to confidentiality. The views and information shown are based of my own opinions and findings, which are not necessarily representative of Foster+Partners</p>
             </div>
 
-            <div class="fullLook glassBG">
-                <h2>Summary</h2>
-                <p class="description">
-                    A quick overview of the project
-                </p>
-            </div>
-
-            <div class="division workDivision" style="padding-bottom:20px">
-                <!-- <h3>Problem</h3>
-                <p class="description">
-                    Selecting the glass for the envelope of a building can be a tricky process. A number of stakeholders involved will have their own priorities
-                    whether it's the thermal performance of the build up or the overall aesthetic and the impact on the design. At different stages of the a project, there are also varying levels
-                    of engagement with manufacturers of these products, particularly at early stages there is a heavy reliance on purely the data of the products in order
-                    to make a selection. The issue is that there is a big difference in the way the information is presented between manufacturers of similar products, which can slow down
-                    the overall process and present difficulties to the user.
-                    <br><br>
-                </p> -->
-            <!-- </div>
-            <img src="../../assets/media/glass/mrc.JPG" style="width:100%; height:300px;vertical-align:top;" 
-            ><div class="division workDivision"> -->
-                <h3>Goal</h3>
-                <p class="description">
-                    In my day-to-day job, I was routinely asked about information on glass performance and specification, for which data can be hard to find, and quite time consuming. The goal of this project was to create a 
-                    tool that could hold all the data required, and to scale it out company wide so that it would benefit employees outside of my typical remit.
-                    <br><br>
-                </p>
-
-                <h3>My Role</h3> 
-                <p class="description">
-                    I primarily carried out the research from the various stakeholders and data, as well testing of prototypes, and the design and code of the final tool as launched.
-                    <br><br>
-                </p>
-
-                <h3>Research & Design</h3> 
-                <p class="description">
-                    Research was carried out initially to establish where the issues were with evaluating glass options. Some basic insights were used to create the first prototype of the tool to check the viability, using Excel with VBA. 
-                    From that point onwards, all prototyping was done with coded versions using HTML/SASS/JS, with design being carried out in Sketch. These iterative prototypes were regularly exposed to users.
-                    This lead to a fast development process, with new features and changes being implemented on a weekly basis for testing.
-                    <br><br>
-                </p>
-
-                <!-- <div class="description">
-                    <img src="../../assets/media/glass/excel.jpg" class="smallImg" style="max-width:200px;"></img>
-                    <img src="../../assets/media/glass/wireframe.jpg" class="smallImg" style="max-width:200px;"></img>
-                </div> -->
-                
-                <img src="../../assets/media/glass/lowfiwireframe.png" class="img" style="max-width:400px;"></img><br><br>
-                <h3>Development & Evaluation</h3> 
-                <p class="description">
-                    A 1.0 version was launched onto the F+P intranet for everyone within the practice to use. Feedback post launch was positive, no tool tackling this issue existed at the time, and it had made navigating the glass
-                    market easier. However there was room from improvement: From tracking the users, the primary demographic wasn't the architect, but instead the multi-disciplinary support teams. They were using the tool to support
-                    their discussions with the architect, but ultimately became the primary user interacting with the tool.<br><br>
-                    As future versions are now in development, they offer the opportunity to instead cater to these more specialised requirements.
-                    <br><br>
-                </p>
-                <img src="../../assets/media/glass/finish.png" class="img" style="max-width:700px;"></img>
-                <br><br>
-            </div>
-            <br><br><br>
-            <div class="fullLook glassBG">
-                <h2>Full Journey</h2>
-                <p class="description">
-                    An in-depth look into the research, reasoning and creation of the tool
-                </p>
-            </div>
-
             <div class="division myRole">
-                <h1>The Problem</h1>
+                <h1>Introduction</h1>
                 <p class="description">
-                        My desk at Foster+Partners (F+P) was located in a room filled with over 20,000
-                        materials. One section of this room was devoted to double glazing
-                        samples, with metal coatings applied to them in order to repel heat (Infra-red parts of the spectrum) 
-                        but allow light in.<br><br>
-                        These kind of coatings were of huge importance in the overall design of a building, not
-                        only did they dramatically affect the visual aesthetic of the building,
-                        but they also needed to conform to performance requirements in
-                        order to meet regulations, and create a sustainable design.<br><br>
-
-                        Each company has their own format for presenting this information, there are multiple
-                        products that achieve the same performance, there are different glass substrates, build-ups
-                        and there is not a single centralised resource which allows for comparison between them.
+                    Choosing glazing options for buildings can rely on a number of varying factors due to performance requirements laid out by legislation.
+                    Each manufacturer has their own format for presenting this information, there are multiple
+                    products that achieve the same performance, and there is not a single centralised resource which allows for comparison between them.
                     <br><br>
+                    Being part of this process of glass selection, I saw an opportunity to design and create a tool to assist 
+                    <br><br>
+                    <b style="font-weight:800;">My Role:</b> Researcher, Designer and Developer
                 </p>
             </div
             
             ><div id="mrc" src="../../assets/media/glass/mrc.JPG" style="width:100%; height:600px;" ></div
                 
             ><div class=" division workDivision">
-                <h1>The Starting Point</h1>
+                <h1>The Context</h1>
                 <p class="description">
                     Specifying glass into a building is a long and complicated process, and more often than not, non-linear. Although the architect would have been thought to be the driving force,
                     they are often referred to as the conductor of an orchestra of specialties ranging from visualisers to environmental engineers. A simplified process would be:
                 </p>
-
                 <br><br>
-
-                <!--<div class="stakeholder">
-                    <h3>The Architects</h3>
-                    <p class="description">
-                        They have the vision for the building and
-                        need the glass to fit in with the bigger picture,
-                        relying on renders and mockups to make their
-                        selection
-                    </p>
-                </div>
-
-                <div class="stakeholder">
-                    <h3>Environmental Engineering (EE)</h3>
-                    <p class="description">
-                        EE needs the building to perform in the
-                        required ways, particularly to meet relevant
-                        codes and standards. Their laid out
-                        requirements must be me
-                    </p>
-                </div>
-
-                <div class="stakeholder">
-                    <h3>Specialist Modelling Group (SMG)</h3>
-                    <p class="description">
-                        In complex projects, they work on
-                        parametrically modelling geometry,
-                        and other aspects of design such as
-                        lighting or acoustics
-                    </p>
-                </div>
-
-                <div class="stakeholder">
-                    <h3>Structural Engineering</h3>
-                    <p class="description">
-                        Models the architects designs, adding
-                        structure and analysing to ensure
-                        suitability
-                    </p>
-                </div>
-
-                <div class="stakeholder">
-                    <h3>Construction Review Group (CRG)</h3>
-                    <p class="description">
-                        Reviews the final concept ensuring
-                        the specified design is suitable for
-                        construction
-                    </p>
-                </div>
-
-                <div class="stakeholder">
-                    <h3>Sustainability Group</h3>
-                    <p class="description">
-                        Evaluates the performance of the
-                        project in relation to any standards or
-                        qualifications that it is aiming for
-                    </p>
-                </div>
-
-                <div class="stakeholder">
-                    <h3>Material Research Centre (MRC)</h3>
-                    <p class="description">
-                        Supports the teams in choosing the
-                        correct materials, usually with the
-                        physical samples to evaluate
-                    </p>
-                </div>
-
-                <div class="stakeholder">
-                    <h3>Visualisation</h3>
-                    <p class="description">
-                        Creates all the visuals for the project,
-                        which are presented both internally
-                        and to clients
-                    </p>
-                </div>
-                <br><br>-->
-
                 <img class="glassProcess">
-                
             </div>
 
-
-
-
             <div class="division workDivisionDark">
-                <h1>Research</h1>
+                <h1>The Research</h1>
                 <p class="description 2col">
                     Whilst this is a big list of stakeholders, ultimately the architects and environmental engineers have the biggest influence on the decision making:<br><br>
                     The architects would relay the feedback from the client, and concentrate feedback from the various other support teams on the project. 
-                    EE had "make or break" requirements, every building would have to comply with their laid out requirements, with no other acceptable outcome.
+                    The engineers had "make or break" requirements, every building would have to comply with their laid out requirements, with no other acceptable outcome.
                 </p>
             </div>
         
             <div class="division workDivision">
                 <h1>User Journeys</h1>
                 <p class="description">
-                    With the two primary users identified, I began to create user journeys for them. Unfortunately, as expected these aren't always straight forward. Not only do some projects take up to 7 years
-                    to complete, there are numerous interactions, with different elements put on hold and restarted. Speaking to the more experienced users who had worked on a few projects helped to piece together
+                    Speaking to the more experienced users who had worked on a few projects helped to piece together
                     idealised journeys:
                 </p>
                 <br><br>
                 <h2>The Architect:</h2>
                 <a href="../../assets/media/glass/architectProcess.PNG" data-lightbox="image-1" data-title="Architect Journey"><img src="../../assets/media/glass/architectProcess.png" class="img" style="max-width:1000px;"></a>
                 <br><br><br>
-                <!--<h2>The Environmental Engineer:</h2><br>
-                <a href="../../assets/media/glass/engineerProcess.PNG" data-lightbox="image-2" data-title="Engineer Journey"><img src="../../assets/media/glass/engineerProcess.png" class="img" style="max-width:1000px;"></a>-->
-                <!--<br>-->
                 <p class="description">
                     There tends to be a lot of doubled work as well as stages that are repeated. Furthermore,
-                    the projects can go on for some time, so meetings that take place, and the knowledge gained from discussions
-                    with specialists tend to get lost, thus resulting in more times spent in meetings with companies whenever there are changes in the project.
-                    However a lot of this information is static, and has routes to be made more accessible.
-                    <!--<br><br>
-                    Importantly, the key information from the suppliers isn't held anywhere formally beyond emails and individual data sheets.
-                    This results in multiple consultations with company representatives in order to gain the information they require whenever
-                    the there's a change of requirements, but a lot of this information is static, and there's potential to access it much quicker.-->
-                    <!-- <br><br><br> -->
-                    <!-- <img src="../assets/media/glass/postit.jpg" class="smallImg" style="width: 300px; margin:0px auto; display:block;"> -->
+                    there are a number of hold ups relying on meeting company representatives, however this information is mostly static, and has routes to be made more accessible.
                 </p>
-            </div>
-
-            <div class="division workDivisionDark">
+                <br>
                 <h1>Going to the Source</h1>
-                <p class="description">
-                    The next step was to understand the information that architects actually needed, as at different stages there are varying characteristics
-                    that are considered for the glass product. <br><br>Towards the end of the specification process, it is inevitable that a company will be contacted
-                    for information specific to that project. However in the first stages where vast ranges of glass are being selected from, there is a reliance purely
-                    on the performance of the products.<br><br>
-                    In these cases, the datasheets produced by companies are the initial source of the decision making. 
-                </p>
-            </div>
-
-            <div class="division workDivision">
                 <p class="description">
                     I began to look at the datasheets, below are examples of the format from two different companies with two comparable products highlighted:
                     <a href="../../assets/media/glass/sgg_datasheet.JPG" data-lightbox="image-3" data-title="Saint-Gobain Glass Datasheet"><br><img src="../../assets/media/glass/sgg_datasheet.JPG" class="smallImg"></a
@@ -276,22 +98,18 @@
                     <br>
                     Some of the differences between these two include:<br><br>
                     <span class="bullet">&#9679</span>An individual datasheet compared to a datasheet for all products available</br>
-                    <span class="bullet">&#9679</span>There's overall differing format/layouts</br>
+                    <span class="bullet">&#9679</span>Overall differing graphical layouts</br>
                     <span class="bullet">&#9679</span>Different levels of detail for each product on characteristics</br>
                     <span class="bullet">&#9679</span>Different naming conventions and terms for similar performing products</br>
                     <br>
-                    However there are multiple companies that offer products in this market, all suffering the same disparities as the above. 
-                    In my role at the time, I was fortunate to be in touch with these companies on a regular basis,
-                    and so used my contacts to start to get the companies on board. This group included:
-                    <br>
-                    <br>
+                    However there are multiple companies that offer products in this market, all suffering the same disparities as the above. I worked
+                    directly with these companies to better understand their products and naming conventions:
+                    <br><br>
                     <img src="../../assets/media/glass/companies.JPG" class="smallImg" style="display:block; max-width:500px; width:100%;margin:0px auto;">
                     <br><br>
-
-                    From discussions with them, I put together a database of all the datasheets from all the products of these companies. 
-                    One of the early issues was inconsistencies in data between the products, but also not all the information included was relevant.<br><br>
-                    Using some basic VBA, I turned this into a prototype tool that allowed the entire dataset to be searched. Although "Quick and Dirty",
-                    it proved useful in establishing what would be useful for the users.
+                    Using some basic VBA, I created a prototype tool in excel that housed the variety of data from the above suppliers,
+                    allowing the entire dataset to be searched. Although "Quick and Dirty",
+                    it proved effective in establishing what would be useful for the architects and engineers.
                     <br><br>
                     <img src="../../assets/media/glass/excel.jpg" class="smallImg" style="display:block; width:100%;margin:0px auto;"></img>
                     <br><br>
@@ -303,7 +121,7 @@
                     <div class="kpi">
                         <p class="kpiTitle">Interactivity</p>
                         <img class="icon" src="../../assets/media/glass/icon1.jpg">
-                        <p class="kpiInfo">Dynamically selection was really well received, particularly being able to adjust the parameters to open up new results</p>
+                        <p class="kpiInfo">Dynamically selecting was really well received, particularly being able to adjust the parameters to open up new results</p>
                     </div
                     ><div class="kpi">
                         <p class="kpiTitle">Samples</p>
@@ -323,7 +141,7 @@
             <div class="division workDivisionDark">
                 <h1>Prototyping & Design</h1>
                 <p class="description">
-                    Moving forward with some of the outcomes from discussions, I began prototyping a web-based solution which could handle the streamlined data and present this information in an easy to use way.<br><br>
+                    I began prototyping a web-based solution which could handle the streamlined data and present this information in an easy to use way.<br><br>
                     Whilst this was mostly fueled from the insights gained from the use of the prototype tool, no tool like this existed, and so the users had plenty of ideas and suggestions of what could improve
                     their workflow. 
                     <br><br>
@@ -337,9 +155,8 @@
 
             <div class="division workDivision">
                 <p class="description">
-                    Contrary to what was expected from a selection process that relied on prescriptive input, the engineers in particular sought the ability to "explore" the options. From
-                    their calculations, they would always give a soft and hard limit for the environmental performance of the structure, and so they used their results as a conversation starter
-                    for discussions, with leeway in their parameters.<br><br>
+                    Contrary to what was expected from a selection process that relied on prescriptive input, the engineers in particular sought the ability to "explore" the options. They would sometimes 
+                    give a soft and hard limit for the performance, to allow for more of a discussion with clients and designers.
                     The tool was therefore divided into 3 sections:
                 </p>
                 <br>
@@ -379,7 +196,7 @@
                 <br><br>
                 <img src="../../assets/media/glass/finish.png" class="img" style="max-width:800px;"></img>
                 <p class="description">
-                    Following an initial approval process, the tool was launched onto the Foster+Partners intranet, a long with a logger to be able to track who was using it. 
+                    Following an initial approval process, the tool was launched onto the Foster+Partners intranet, along with a logger to be able to track who was using it. 
                     Overall it was received quite well, with a high number of users from various teams.<br><br>
                     Following this initial launch, the logger was analysed to reveal that the primary users of the tool were actually members from support teams, including EE, SMG, Sustainability and CRG.
                     I had spoke with some of them, and found that they had been using it both as a supporting tool when discussing with architects, but also for their own work which involves modelling or suggestions that 
@@ -391,13 +208,13 @@
                 <h1>Moving Forward</h1>
                 <p class="description">
                     From the post-launch discussions, I had learnt a bit more about the culture that was unique to F+P. As mentioned at the start,
-                    it's a big practice, which allows for multiple teams to be able to support architects with their work. This means that although
+                    it's a large office, which allows for multiple teams to be able to support architects with their work. This means that although
                     the architect in theory has the biggest decisions when it comes to glass, they have the luxury of ensuring that there is someone
                     from a support team there to be able to help with the technical aspects of it<br><br>
                     There were also a number of suggestions from the situations where the technical experts were using the tool independently:<br>
                     <span class="bullet">&#9679</span>F+P Specific building data including past projects</br>
                     <span class="bullet">&#9679</span>Further technical information such as spectral transmission data</br>
-                    <span class="bullet">&#9679</span>And others...</br><br>
+                    <span class="bullet">&#9679</span>Rendered images or photos of the glass products in-situ on a building</br><br>
                     Some of these features are currently being evaluated for feasibility, and a design criteria will be drawn up for version 2.0 
                 </p>
             </div>

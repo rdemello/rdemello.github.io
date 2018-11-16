@@ -43,11 +43,9 @@
             ><div class="division myRole">
                 <h1>Introduction</h1>
                 <p class="description">
-                    
-                    The Material Research Centre (MRC) had been developing a database in order to hold a record of all the material samples available in the library, and make it accessible practice wide.<br><br>
-                    When this database went live, usership was quite low, and so I was tasked with redesiging a system that worked better.
-
-                    
+                    The Material Research Centre (MRC) within Foster+Partners had been developing a database in order to hold a record of all the material samples available in the library, 
+                    and make it accessible practice wide.
+                    When this database went live, it didn't have the impact that was desired, and so I was tasked with redesiging a system that could be more effective.                    
                     <br><br>
                     <b style="font-weight:800;">My Role:</b> Researcher and Designer
                     
@@ -55,83 +53,78 @@
             </div>
 
             <div class=" division workDivision">
-                <h1>The Problem</h1>
+                <h1>The Context</h1>
                 <p class="description">
-                    The original design brief of the database had not been clearly laid out previously, and as such over time began to morph and grow: users would request features,
-                    and the programmer would write them in, without any guidance or intervention from a designer. This led to a system that attempted to do too much, but also failed to function at its
-                    core goal of aiding the team in managing the library, and allowing other members of the practice to effectively search for materials.
+                    The MRC has one of the biggest materials library, housing over 25,000 samples ranging from concrete to photovoltaics. The team had started using
+                    an internal web-based application to record and manage this library with the intention of opening this database to the whole office.
+                    <br><br>           
+                    However it wasn't received as well as the team had hoped. I requested a tracker be implemented in order to see who was using it, and I collated this data over 4 months.
+                    In general, the user count was perceived to be quite low averaging just under 3 hits per day:<br><br>
                 </p>
-                <p class="description">
-                    <img class="img" src="../../assets/media/mrcd/olddb.png">   
+                <p class="description" style="text-align: center">
+                     <img class="img" src="../../assets/media/mrcd/usership.png">
+                     <span class="kpiInfo">Daily hits over a 4 month period</span>
                 </p>
+                <br>
                 <p class="description">
-                    From user feedback and review, some of the issues included:<br>
+                    From discussing directly with some of these users, there were a range of issues and pain points that they were experiencing:<br><br>
                     <span class="bullet">&#9679</span>Location focused interface, with a map taking up over 70% of a screen<br>
                     <span class="bullet">&#9679</span>Small images of materials<br>
-                    <span class="bullet">&#9679</span>Problematic search, due to data structure behind the front end<br>
-                    <span class="bullet">&#9679</span>Unnecessary information, and poor information hierarchy, resulting in a "busy" page<br>
+                    <span class="bullet">&#9679</span>Problematic search that didn't function effectively<br>
+                    <span class="bullet">&#9679</span>Unnecessary information, and poor information hierarchy, resulting in a "busy" page that's hard to navigate<br>
                 </p>
+               
                 <p class="description">
-                    These issues became clear in usership, which had just under 3 hits per working day on average:<br><br>
-                     <img class="img" src="../../assets/media/mrcd/usership.png">
+                    Problematically, there were  no clear performance targets set at the start of the process, meaning it was hard to accurately measure the success/failure post-launch, however the feedback was overwhelmingly negative.
                 </p>
             </div>
 
             <div class="division workDivisionDark">
                 <h1>Research</h1>
                 <p class="description">
-                    With a number of issues with the application, I chose to go right to the start and actually clearly define the tool: <br>Who is it for, and why is it needed?
+                    With a number of issues with the application, I chose to go right to the start and clearly define the tool: <br>Who is it for, and why is it needed?
                 </p>               
             </div>
             
             <div class="division workDivision">
                 <h1>The Intention</h1>
                 <p class="description">
-                    When speaking about the database to the MRC team, it became clear that the main desire of the tool was to allow architects to access a digital library of material information,
-                    with the intention to alleviate the work load of the team from questions on materials that were requested and enable access to the wealth of information to F+P offices around the world. 
-                    However when asked specifically about what work it should assist with, the answers became subjective and qualatitive. The view of how the database should be handling workflows was quite different to the reality.<br><br>
-                    I ran a workshop, creating user journeys for members of the office with typical questions that the team would be asked.  This could then formulate categories for the types of work the team deals with:
+                    Surprisingly the MRC hadn't viewed the tool as a primary way to manage the library. Instead it was seen as a tool for the office which could help alleviate work load from themselves by making the library accessible to the whole office.
+                    However there weren't clear objectives as to how it would help with what designers were looking for, and so I ran a workshop to go through some user journeys to understand the potential use cases:
                     <br><br>
                     <img class="img" src="../../assets/media/mrcd/user_profiles.jpg">
                     <br>
-                    From these 8 categories, I created a work tracking system, so that the team would log the type of queries they would recieve (amongst other information) so that we could clearly see
-                    a spread of what they were being asked:
+                    From these 8 categories, I created a work tracking system, so that the team would log the type of queries they would recieve (amongst other information) to create a quantitative dataset of what was being asked:
                     <br><br>
                     <img class="img" src="../../assets/media/mrcd/queries.png">
                     <br>
-                    Which could then be cross-referenced with the functionality of the existing tool, to see how much it was actually helping, and how much it could help.
+                    This could then be cross-referenced with the functionality of the existing tool, to see how much it was actually helping and where the opportunities were.
                 </p>
                 <br>
                 <h1>The Data</h1>
                 <p class="description">
-                    One of the main comments from external users was they "could not find what (they) were looking for". Whilst this was typically attributed to the technological limitations of the database,
-                    the team was overlooking a crucial fact: that only a small % of the samples in the library were captured digitally.
+                    One of the main comments from external users was they "could not find what (they) were looking for". The team typically attributed this to poor search functionality of the database, however
+                    they overlooked a crucial fact: that only a small percentage of the samples in the library were captured digitally.
                     <br><br>
-                    This would have huge impacts on usership, after all, no one would use a maps service if only a fraction of the map data was there:
+                    This would have huge impacts on usership, after all, no one would use a maps service if only a fraction of the map was there:
                     <br><br>
-                    <img class="img" src="../../assets/media/mrcd/google.png">
-                    <br>
-                    <img class="img" src="../../assets/media/mrcd/nogoogle.png">
-                    <br><br>
-                    With an incomplete dataset, it became irrelevant as to how well you present or access the information, the focus of the tool should be on effectively capturing the information in the library.
-                    This became apparent when discussed with the team, as the database was the primary method of managing the library. 
-                    <br><br>
-                    However due to the lack of clear direction from the start, it had  become inundated with 
-                    information that not only slowed down the process of documenting samples, but in a lot of cases weren't even relevant to employees outside of the team. A number of these features were added in based on
-                    beliefs of what would be useful, rather than engaging the users (in this case the architects) to understand what they needed from the tool. 
                 </p>
-
+                <p id="gmaps" class="description">
+                    <img class="img" src="../../assets/media/mrcd/google.png">
+                    <img class="img gmap" src="../../assets/media/mrcd/nogoogle.png">
+                </p>
                 <p class="description">
-                    The core issue was though, that there simply wasn't enough information captured in for it to be a useful database, and so the focus switched to how this could be streamlined.
-                    A user flow was documented for the process of actually databasing a sample:
                     <br><br>
+                    With an incomplete dataset, user count would always be poor as designers preferred to come to the library directly where they knew all the information physically way.
+                    In order to try identify why there was so litle captured, a user flow was documented for the process of actually databasing a sample:
+                    <br><br><br>
                     <img class="img" src="../../assets/media/mrcd/userflow.png">
                     <br><br>
-                    When actually written down, it was clear that a 50+ step process to document a sample was far too long, especially with a library in excess of 20,000 materials. It also brought up the issue of
-                    overall process management, how are the samples handled throughout their life at the company, when they're received by the team, if an employee needs to borrow them etc. These processes and stages were
-                    also identified, and required the flows for the samples management:
+                    When written down, it was clear that a 50+ step process to document a sample was far too long, especially with a library in excess of 25,000 materials. Over time the team had inundated the process with ideas of potential
+                    information that could be useful, without actually validating their choices with the users, creating an overburdened process. This was communicated to management with a projection of how long
+                    it would take to completely document all the samples:
                     <br><br>
-                    <img class="img" src="../../assets/media/mrcd/samplelife.png">
+                    <img class="img" src="../../assets/media/mrcd/projectedsamples.PNG">
                 </p>
             </div>
 
@@ -152,18 +145,23 @@
                     <img class="img" src="../../assets/media/mrcd/newdb.png">
                 </p>
                 <p class="description">
+                    <img class="img" style="border-radius:5px" src="../../assets/media/mrcd/db.gif"> 
+                    <br><br>
                     A prototype version was created, with a small subset of materials to allow users to trial. The visuals were kept quite clean, with colour only being used to highlight
                     continuous themes e.g. Materials or Companies, in order to have a "clean" palette to bring attention more to the materials. A better information hierachy was created,
                     creating consistency between headings, and information, so that the salient information was clearly presented.<br><br>
-                    <img class="img" style="border: 9px solid #797979; border-radius:5px" src="../../assets/media/mrcd/db.gif">    
+                </p>
+                <p class="description" style="text-align: center">
+                    <img class="img" src="../../assets/media/mrcd/database_edit.jpg">
                 </p>
             </div>
             
             <div class="division workDivisionDark">
                 <h1>Evaluation</h1>
                 <p class="description">
-                    At the current stage, the interface is undergoing continued work, but importantly the user processes that surround the whole system are being evaluated,
-                    to then design in features that best compliment, and shorten the workflow of inputting samples 
+                    At the current stage, the interface update is aimed at being an interim solution to a number of the UI concerns, making the tool more accessible. 
+                    <br><br>
+                    In conjunction the user processes that surround the whole system are being evaluated and optimised shorten the workflow of inputting samples.
                 </p>
             </div>
             
