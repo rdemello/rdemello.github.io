@@ -23,9 +23,8 @@ $(document).ready(function(){
 
     $('#toTop').on('click',function(){
         $('html, body').animate({ scrollTop: 0 }, 'bounce');
-
     })
 
     $('.headerPage').parallax({imageSrc: '../../assets/media/big/sprout.jpg'});
-    $('#epdPic').parallax({imageSrc: '../../assets/media/sprout/epd.JPG'});
+    $('#epdPic').parallax({imageSrc: '../../assets/media/sprout/epd2.JPG'});
 })

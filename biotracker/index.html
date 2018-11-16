@@ -2,19 +2,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Google Sheets API Quickstart</title>
+    <title>Biotracker</title>
     <meta charset='utf-8' />
+
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+
+      <link id="defaultSheet" rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="assets/script/jquery.js"></script>
+    <script src="assets/script/particles.js"></script>
     <script type="text/javascript" src="assets/script/fetch-jsonp.js"></script>
     <script type="text/javascript" src="assets/script/spreadsheet.js"></script>
     <script type="text/javascript" src="assets/script/main.js"></script>
   </head>
   <body>
 
-      <div id="output">
-          ...
+      
+      <div class="wrapper">
+        <div class="card header" id="particles-js">
+          <p class="headerText">Biotracker</h1>
+        </div>
+
+
+        <div class="card dataCard doubleCard">
+          <h1>Weight</h1>
+          <div class="wrap">
+            <p class="info" id="3dayWeightlb"></p>
+            <p class="unit">lbs</p>
+          </div>
+
+          <div class="wrap">
+            <p class="info" id="3dayWeightkg"></p>
+            <p class="unit">kg</p>
+          </div>
+        </div>
+
+        <div class="card dataCard doubleCard">
+          <h1>Blood Pressure</h1>
+          <div class="wrap">
+            <p class="info" id="3daySys"></p>
+            <p class="unit">Sys</p>
+          </div>
+
+          <div class="wrap">
+            <p class="info" id="3dayDia"></p>
+            <p class="unit">Dia</p>
+          </div>
+        </div>
+
+          <div class="card dataCard">
+              <h1>Sober for</h1>
+              <p class="info" id="latestAlcohol"></p>
+              <br><p class="unit">days</p>
+          </div>
+
+          <div class="card dataCard">
+              <h1>Caffeine Free</h1>
+              <p class="info" id="latestCoffee"></p>
+              <br><p class="unit">days</p>
+          </div>
+
+        
+
+        <div class="card dataCard">
+          <h1>Peak VO2 Max</h1>
+          <div class="wrap">
+            <p class="info" id="3dayVO2"></p>
+            <br><p class="unit">L/min</p>
+          </div>
+        </div>
       </div>
-    
+
+      <div class="wrapper">
+        <canvas id="weightChart" width="400" height="80"></canvas>
+        <br><canvas id="bpChart" width="400" height="100"></canvas>
+        <br><canvas id="bpmChart" width="400" height="50"></canvas>
+        <br><canvas id="creatineChart" width="400" height="35"></canvas>
+        <canvas id="proteinChart" width="400" height="35"></canvas>
+        <canvas id="vitChart" width="400" height="35"></canvas>
+      </div>
+
+      <script>
+      
+        
+      </script>
 
   </body>
 </html>
