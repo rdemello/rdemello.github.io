@@ -279,7 +279,7 @@ h3 {
   }
   .wrap .content .tile .tileContent {
     width: auto;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 0px 15px 0px;
     position: absolute;
     line-height: 1em;
     color: #333;
@@ -335,6 +335,9 @@ h3 {
   }
   .intro .aboutMe {
     margin: 0px 0px 0px 50px;
+  }
+  .menu {
+    margin-right: 15px;
   }
   .menuWrap .return {
     left: -150px !important;
