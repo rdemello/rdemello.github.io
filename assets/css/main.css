@@ -159,6 +159,7 @@ h3 {
 
 .aboutIntro .profileImg {
   margin: 0px auto;
+  margin-top: 40px;
   width: 250px;
   display: block;
   border-radius: 4px;
@@ -177,12 +178,12 @@ h3 {
 }
 
 .aboutIntro .aboutMe {
-  margin: 40px 40px 0px 40px;
+  margin: 40px 0px 0px 40px;
   font-size: 0.9em;
   display: inline-block;
   vertical-align: top;
   line-height: 1.8;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .aboutIntro .aboutMe a {
@@ -305,14 +306,17 @@ h3 {
     margin-left: 0px;
   }
   .aboutIntro .aboutMe {
-    margin: 0px 0px 0px 20px;
+    margin: 0px 40px 0px 20px;
     font-size: 0.9em;
     line-height: 1.5;
     max-width: 40%;
   }
   .aboutIntro .profileImg {
     display: inline-block;
-    width: 50%;
+    float: right;
+    margin-top: 0px;
+    margin-right: 50px;
+    width: 40%;
     max-width: 400px;
   }
 }
@@ -334,7 +338,7 @@ h3 {
     padding-left: 19px;
   }
   .intro .aboutMe {
-    margin: 0px 0px 0px 50px;
+    margin: 0px 50px 0px 50px;
   }
   .menu {
     margin-right: 15px;
