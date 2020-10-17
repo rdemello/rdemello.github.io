@@ -116,7 +116,7 @@ h3 {
   width: 100%;
   font-size: 0.9em;
   margin: 0px auto;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .kpiTitle {
@@ -184,10 +184,6 @@ h3 {
   vertical-align: top;
   line-height: 1.8;
   max-width: 70%;
-}
-
-.aboutIntro .aboutMe a {
-  font-weight: 800;
 }
 
 .aboutIntro .title {
@@ -728,6 +724,10 @@ h3 {
 .division .description {
   margin: 10px 20px 20px 20px;
   font-size: 0.8em;
+}
+
+.division .description a {
+  text-decoration: underline;
 }
 
 .epdGraph {

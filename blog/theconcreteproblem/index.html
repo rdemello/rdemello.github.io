@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en" xmlns:og="http://opengraphprotocol.org/schema/">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta name="title" content="The Concrete Problem">
+    <meta name="description" content="Ryan de Mello climate change blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Concrete Problem</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="../../assets/media/favicon.ico" />
+    <link id="defaultSheet" rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-104412811-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<script src="../../assets/scripts/lib/Chart.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <div class="project wrap">
+        
+        <div class="menu">
+            <a href="../../"><p>Projects</p></a>
+            <a href="../../about/"><p>About</p></a>
+        </div>
+
+        <div class="content workContent">
+            <div class="headerPage big"><br>
+                <h1>The Concrete Problem</h1>
+                <p class="disclaimer">Week 1 | Word Count: 918</p>
+            </div>
+        
+            <div class=" division workDivision">
+                <p class="description">
+                    When you look around a modern city today, beneath the slick glass facades lies a material that dates back to ancient Rome. 
+                    The versatility and availability 
+                    of concrete has lead it to be one of the most consumed materials around the world. In 2014, it was found to be the 2nd 
+                    most consumer material, only <a href="https://www.sciencedirect.com/science/article/pii/S1350630714000387">beaten by water</a>.
+                    This had been the trend for some decades, only levelling of in recent years with
+                    China produce more cement than the rest of the world together. The second and third biggest producers were India and USA 
+                    respectively, lagging someway behind. 
+                </p>
+                <br>
+                <p class="description" style="text-align: center">
+                    <canvas id="concreteProduction" width="700" height="400"></canvas><br>
+                    <span class="kpiInfo">Global production of Cement in millions of tons, split between the 3 largest producers and the Rest of the World</span>
+                </p>
+                <p class="source description">Source: <a href="https://www.usgs.gov/centers/nmic/cement-statistics-and-information">USGS</a></p>
+                <br>
+                <p class="description">
+                    Concrete is made up of many components, with cement acting as the binder that cures to 
+                    hold everything together. Typically cement makes up 8-15% of concrete by volume depending 
+                    on the strength required. However the majority of greenhouse gas emissions come from the 
+                    production of cement, which is why it 
+                    usually ends up being the focus of conversations around the sustainability of concrete
+                </p>
+                <p class="description">
+                    Close to 90% of the carbon footprint of concrete is from the cement production. 
+                    Part of this is due to the energy sources used in the process predominantly being fossil fuel based, 
+                    however a large portion is also released chemically during the 
+                    <a href="https://pdfs.semanticscholar.org/9d05/1b1dfacf2f1ebea83ce9625d5cdb7837eb20.pdf">production of clinker</a>
+                    , a precursor to 
+                    cement. Various clays and limestones are baked at high temperatures (1450c) and ground to form a fine 
+                    powder with other mineral components. Furthermore the calcium carbonate within the limestone reacts during the baking
+                    and forms carbon dioxide. 
+                </p>
+                <br>
+                <p class="description" style="text-align: center">
+                    <canvas id="clinkerChart" width="700" height="300"></canvas><br>
+                    <span class="kpiInfo">Breakdown of the GHG emissions from the production of cement where chemical emissions are those from the reaction of 
+                        calcium carbonate, thermal emissions are from the fossil fuels needed to heat the kiln, and the remaining encapsulate all other emissions
+                        from the production process</span>
+                </p>
+                <p class="source description">Source: <a href="https://www.chathamhouse.org/2018/06/making-concrete-change-innovation-low-carbon-cement-and-concrete">Chatham House</a></p>
+                <br>
+
+                <p class="description">
+                    Combining  the huge production quantities of cement with its moderate carbon footprint, results 
+                    in an industry that is responsible for <a href="https://edgar.jrc.ec.europa.eu/news_docs/jrc-2016-trends-in-global-co2-emissions-2016-report-103425.pdf">
+                    8% of global greenhouse gas emissions</a>. 
+                </p>
+            </div>
+            <div class="division workDivisionDark" style="text-align: center;">
+                <h1>So how did we get here?</h1>
+            </div>
+            <div id="dam" src="../../assets/media/glass/mrc.JPG" style="width:100%; height:500px;" ></div>
+            <div class=" division workDivision">
+                <p class="description">
+                    The increasing demand of concrete was by no accident, as the function it 
+                    fulfils can be seldom replaced by other materials. Some of the largest 
+                    concrete structure such as the Three Gorges Dam (pictured above) or the Hoover 
+                    Dam would not be possible in other materials. There is even speculation that the 
+                    concrete within the Hoover Dam is still setting, some 90 years after it’s initial 
+                    construction, a testament to the pure mass of material used, and the research and 
+                    development required to realise the structure.
+                    <br><br>
+                    Within our cities too, concrete is used everywhere from infrastructure projects, 
+                    structures that sit above ground and the foundations that lay below. 
+                    Beyond the cost effectiveness and availability, it also imparts increased thermal mass 
+                    to a building, allowing it to normalise diurnal temperature variations and 
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0306261911007148">lower the energy</a> 
+                    demand of buildings to regulate internal temperature. 
+                    <br><br>
+                    2000 years ago, the Romans used chemically similar ingredients to create a concrete used to 
+                    construct the Pantheon and the Colosseum. Whilst the concrete itself may be weaker than modern
+                    day mixes, these structures that still stand today and will continue to in the future thanks 
+                    to the <a href="https://www.smithsonianmag.com/history/the-secrets-of-ancient-romes-buildings-234992/">durability</a> 
+                    of the mix the Romans had used.
+
+                    <br><br>
+                    Fast forward to today, and concrete is being reinvigorated with modern technology; 
+                    <a href="https://www.3dprintedhouse.nl/en/">houses</a> (below) are being printed to benefit 
+                    from unique builds ups and reduced wastage. 
+                    Other mixes incorporate passive agents such as 
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167577X19303003">titanium dioxide</a>
+                    that limit the build-up of dirt and mould, 
+                    reducing the required maintenance to keep the surface clean.
+                </p>
+            </div>
+            <div id="3dprint" src="../../assets/media/glass/mrc.JPG" style="width:100%; height:500px;" ></div>
+            <div class=" division workDivision">
+                <p class="description">
+                    Concrete has found itself to be a cornerstone of modern urbanised areas, and doesn’t seem to be 
+                    going anywhere soon. However, with imposing decarbonisation goals to reduce anthropogenic emissions, 
+                    this multi-billion-pound industry is facing scrutiny as to how it will adapt.
+                </p>
+                
+            </div>
+            <div class="division workDivisionDark" style="text-align: center;">
+                <h1>Weaning off Cement</h1>
+            </div>
+            <div class=" division workDivision">
+                <p class="description">
+                    The environmental impact of concrete has been no secret to the construction industry, 
+                    and there have been many technological developments to address this issue. As expected, 
+                    they generally focus on reducing the cement component in concrete mixes.
+                    <br><br>
+                    One method utilises by-products from other industries, which can be used to reduce 
+                    the cement content. Iron is typically produced through a blast furnace, a large kiln 
+                    that takes the ore amongst other ingredients. As part of this process, a slag is 
+                    produced which is filtered off and generally considered a waste product. If this 
+                    slag is allowed to harden, and then ground, it has a chemical consistency which 
+                    works well as a supplement to cement, and is known as ground granulated blast furnace 
+                    slag (GGBS). Similarly, fly ash is collected from the flues at coal plants, which 
+                    can then be ground into a powder to supplement cement, known as pulverised fly ash 
+                    (PFA). As both these substances are readily being produced in existing systems, they are
+                    considered to have an extremely low carbon footprint. There are also codified 
+                    <a href="https://www.cemex.co.uk/documents/45807659/45840198/mortar-cementitious.pdf/46571b2a-3efd-4743-20c8-d33feb1aed9d">grades</a> 
+                    which take into account these cement replacements making it extremely accessible to specify
+                    and use. However, the replacement alters the consistency of the final concrete, and as 
+                    such there are limits to how much cement they can replace. Furthermore, both substances
+                    are derived from industries that will likely shift away from their established processes.
+                    <br><br>
+                    As such there is now a rise of more innovative solutions that look to push what is possible. 
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0959652619307401">Geopolymer</a> 
+                    concrete aims to replace the cement component entirely with an alternate binder 
+                    with much smaller GHG emissions. 
+                    <br><br>
+                </p>
+                <p class="description" style="text-align: center;">
+                    <img class="img" style="max-width:700px;" src="../../assets/media/blog/week1/geopolymer.jpg">
+                    <span class="kpiInfo">Geopolymer floor for the turning node at Brisbane West Wellcamp airport</span>
+                </p>
+                <p class="description">     
+                    <br><br>
+                    <a href="https://www.solidiatech.com/">Solidiatech</a> takes it a step further and use carbon 
+                    dioxide in the setting process to sequester 
+                    carbon during the curing process. Whilst this is still uses cement, it can find use 
+                    for carbon dioxide captured through other processes.
+                    <br><br>
+                    These are just some of the technologies that being researched, with multiple options available. 
+                    However questions are still raised as to whether incremental changes are enough, and how soon 
+                    these technologies can be implemented.  Whilst concrete will still be used through our urban 
+                    environment, there is still some hope that it will be able to clean itself up and start to 
+                    cut down on its GHG emissions.
+                    <br><br>
+                    For more information on this topic, the <a href="https://www.theguardian.com/cities/2019/feb/25/concrete-the-most-destructive-material-on-earth">Guardian</a> 
+                    has a great write up on the state of concrete 
+                    from a year ago as part of their Concrete Week investigation.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="backToTop">
+                <hr class="arrowTop">
+                <p class="arrow">&#8593</p>
+                <p class="description">Back to Top</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+    <script src="../../assets/scripts/min/scrollreveal-min.js" type="text/javascript"></script>
+    <script src="../../assets/scripts/min/parallax-min.js" type="text/javascript"></script>
+    <script src="../../assets/scripts/min/script-min.js" type="text/javascript"></script>
+    <script src="../../assets/scripts/blog/week1.js" type="text/javascript"></script>
+
+</body>
