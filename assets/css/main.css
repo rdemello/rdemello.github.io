@@ -138,6 +138,12 @@ h3 {
   margin: 0px auto;
 }
 
+.imageicon {
+  width: 100%;
+  max-width: 300px;
+  margin: 0px auto;
+}
+
 .intro {
   text-align: center;
 }
@@ -903,5 +909,22 @@ h3 {
           animation-direction: alternate;
   position: absolute;
   top: 0;
+}
+
+.vidWrapper {
+  height: auto;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.vidWrapper .bgVid {
+  width: 100%;
+  min-width: 1200px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
