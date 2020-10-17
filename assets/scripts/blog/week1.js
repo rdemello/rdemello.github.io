@@ -1,6 +1,6 @@
 $('.headerPage').parallax({imageSrc: '../../assets/media/blog/week1/concrete.jpg'});
 $('#dam').parallax({imageSrc: '../../assets/media/blog/week1/threeGorges.jpg'});
-$('#3dprint').parallax({imageSrc: '../../assets/media/blog/week1/3DPrint.jpg'});
+$('#3dprint').parallax({imageSrc: '../../assets/media/blog/week1/3dPrint.jpg'});
 
 function setupConcreteChart(){
     var ctx = document.getElementById("concreteProduction").getContext("2d");
