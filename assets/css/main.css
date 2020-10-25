@@ -645,6 +645,12 @@ h3 {
   transition: .2s background-color;
 }
 
+.timber {
+  background-color: #ba853f;
+  -webkit-transition: .2s background-color;
+  transition: .2s background-color;
+}
+
 .glassBG {
   background-color: #4080bb;
   color: #eee;
