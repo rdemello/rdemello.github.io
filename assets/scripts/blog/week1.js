@@ -155,8 +155,6 @@ function setupClinkerChart(){
             }
           }]
       });
-
-
      
 }
 
