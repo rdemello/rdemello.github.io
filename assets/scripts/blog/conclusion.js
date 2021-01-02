@@ -1,0 +1,1 @@
+$('.headerPage').parallax({imageSrc: '../../assets/media/blog/conclusion/forest_dark.jpg'});
