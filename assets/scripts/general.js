@@ -12,5 +12,9 @@ $(document).ready(function(){
     $('.tile').hover(function(){
         $(this).toggleClass('hover')
     })
+
+    $('.filter').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
     
 })

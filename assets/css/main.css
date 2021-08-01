@@ -56,7 +56,6 @@ sup {
   vertical-align: top;
   position: relative;
   top: -0.5em;
-  font-size:0.6em;
 }
 
 a {
@@ -939,5 +938,47 @@ h3 {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -1;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.filterBar {
+  max-width: 450px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.filterBar .filter {
+  font-size: 0.9em;
+  padding: 2px 14px;
+  border: 1px solid #dbdbdb;
+  display: inline-block;
+  border-radius: 18px;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.filterBar .filter.active {
+  background-color: #a7dab0;
+  border: 1px solid #4fa373;
+  color: #000;
+  -webkit-transition: .3s all;
+  transition: .3s all;
 }
 /*# sourceMappingURL=main.css.map */
