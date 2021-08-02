@@ -1,13 +1,15 @@
+var $grid = $('.content').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'masonry'
+});
+
+$('.filterBar').on( 'click', 'div', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+});
+
+
 $(document).ready(function(){
-    // color(238,85,85);
-
-    // setColor(50,50,50)
-    // color(50,50,50,20);
-
-    // colourChange();
-    // window.setInterval(function(){
-    //     colourChange();
-    // }, 500);
     
     $('.tile').hover(function(){
         $(this).toggleClass('hover')
@@ -15,6 +17,7 @@ $(document).ready(function(){
 
     $('.filter').click(function(){
         $(this).addClass('active').siblings().removeClass('active');
+    
     })
     
 })
