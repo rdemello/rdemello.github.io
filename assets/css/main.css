@@ -981,4 +981,9 @@ h3 {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
+
+sup {
+  font-size: 0.7em;
+  top: -6px;
+}
 /*# sourceMappingURL=main.css.map */
